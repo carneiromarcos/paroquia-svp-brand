@@ -10,9 +10,9 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
---navy:#1C3B6A;--gold:#CC9A1E;--crimson:#B52D1E;--green:#5C7C28;
---cream:#F5EFE0;--dark:#252830;--muted:#D4CFC5;
---purple:#6B3FA0;--white:#FFFFFF;
+--navy:#501714;--gold:#CC9A1E;--crimson:#B52D1E;--green:#5C7C28;
+--cream:#F5EFE0;--dark:#2E1E1C;--muted:#D4CFC5;
+--purple:#6B3FA0;--white:#FFFFFF;--blue:#1C3B6A;
 --ff-heading:'Playfair Display',Georgia,serif;
 --ff-body:'Inter',system-ui,sans-serif;
 --ff-accent:'Cormorant Garamond',Georgia,serif;
@@ -23,7 +23,7 @@ img{max-width:100%;display:block}
 
 /* NAV */
 .nav{position:sticky;top:0;z-index:100;padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;
-background:rgba(27,42,74,.72);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+background:rgba(80,23,20,.88);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
 border-bottom:1px solid rgba(200,162,77,.18)}
 .nav-brand{font-family:var(--ff-heading);color:var(--gold);font-size:1.05rem;font-weight:600;letter-spacing:.04em}
 .nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}
@@ -132,7 +132,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 /* PHOTO */
 .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .photo-placeholder{aspect-ratio:4/3;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.8);text-align:center;padding:1rem}
-.photo-good{background:linear-gradient(135deg,rgba(27,42,74,.7),rgba(90,122,58,.5));border:2px solid var(--green)}
+.photo-good{background:linear-gradient(135deg,rgba(80,23,20,.6),rgba(90,122,58,.5));border:2px solid var(--green)}
 .photo-bad{background:linear-gradient(135deg,rgba(139,35,50,.4),rgba(44,44,44,.5));border:2px solid var(--crimson)}
 
 /* LITURGICAL CALENDAR */
@@ -156,7 +156,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 .mockup-bottom-bar{position:absolute;bottom:0;left:0;right:0;padding:.6rem;display:flex;align-items:center;gap:.5rem}
 .mockup-avatar{width:24px;height:24px;border-radius:50%;background:var(--gold);flex-shrink:0}
 .mockup-handle{font-size:.65rem;font-weight:600}
-.mockup--evento .mockup-inner{background:linear-gradient(160deg,var(--navy) 0%,#253a5e 100%);color:var(--white)}
+.mockup--evento .mockup-inner{background:linear-gradient(160deg,var(--navy) 0%,#6B2420 100%);color:var(--white)}
 .mockup--evento .mockup-cta{background:var(--gold);color:var(--navy)}
 .mockup--frase .mockup-inner{background:var(--cream);color:var(--navy)}
 .mockup--frase .mockup-title{font-family:var(--ff-accent);font-style:italic;font-size:1.1rem}
@@ -164,7 +164,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 .mockup--carousel-capa .mockup-inner{background:var(--navy);color:var(--white)}
 .mockup--carousel-content .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
 .mockup--carousel-cta .mockup-inner{background:var(--gold);color:var(--navy)}
-.mockup--story-frase .mockup-inner{background:linear-gradient(180deg,var(--navy),#2a3f65);color:var(--white)}
+.mockup--story-frase .mockup-inner{background:linear-gradient(180deg,var(--navy),#6B2420);color:var(--white)}
 .mockup--story-evento .mockup-inner{background:var(--cream);color:var(--navy)}
 .mockup--story-horarios .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
 
@@ -192,7 +192,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 .invite-mock .invite-btn{display:inline-block;margin-top:1rem;padding:.6rem 2rem;background:var(--gold);color:var(--navy);border-radius:24px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 
 /* APPLICATIONS */
-.app-avatar{width:100px;height:100px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 4px 16px rgba(27,42,74,.3)}
+.app-avatar{width:100px;height:100px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 4px 16px rgba(80,23,20,.3)}
 .app-avatar .logo-text .l1{font-size:.35rem}
 .app-avatar .logo-text .l2{font-size:.85rem}
 .app-avatar .logo-text .l3{font-size:.5rem}
@@ -214,7 +214,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 .boletim-body p{font-size:.78rem;line-height:1.6;color:rgba(44,44,44,.65);margin-bottom:.75rem}
 .boletim-body .boletim-line{height:1px;background:var(--muted);margin:.75rem 0}
 
-.banner-mock{max-width:600px;margin:0 auto;aspect-ratio:3/1;background:linear-gradient(135deg,var(--navy),#253a5e);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--white);padding:2rem;text-align:center;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.banner-mock{max-width:600px;margin:0 auto;aspect-ratio:3/1;background:linear-gradient(135deg,var(--navy),#6B2420);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--white);padding:2rem;text-align:center;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.12)}
 .banner-mock::after{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,transparent,rgba(200,162,77,.08))}
 .banner-mock .banner-content{position:relative;z-index:1}
 .banner-mock h4{font-family:var(--ff-heading);font-size:1.5rem;margin-bottom:.4rem}
@@ -247,7 +247,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 .section--navy .quote-block{color:rgba(255,255,255,.8)}
 .tag{display:inline-block;padding:.25rem .75rem;border-radius:20px;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 .tag--gold{background:rgba(200,162,77,.12);color:var(--gold)}
-.tag--navy{background:rgba(27,42,74,.08);color:var(--navy)}
+.tag--navy{background:rgba(80,23,20,.08);color:var(--navy)}
 </style>
 </head>
 <body>
@@ -309,7 +309,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 
   <div class="card mt-3" style="border-left:3px solid var(--gold)">
    <h3>O legado de Sao Vicente de Paulo</h3>
-   <p>Sao Vicente de Paulo (1581&ndash;1660) dedicou sua vida aos pobres, doentes e abandonados. Fundou as Damas da Caridade e a Congregacao da Missao, revolucionando a assistencia social na Franca. Seu vitral em nossa igreja &mdash; com tons de azul celestial, vermelho liturgico, dourado sagrado e verde esperanca &mdash; inspira toda a identidade visual da paroquia.</p>
+   <p>Sao Vicente de Paulo (1581&ndash;1660) dedicou sua vida aos pobres, doentes e abandonados. Fundou as Damas da Caridade e a Congregacao da Missao, revolucionando a assistencia social na Franca. Seu vitral em nossa igreja &mdash; com o vermelho vibrante da moldura, o dourado sagrado dos arabescos, o verde esperanca do manto e o azul celestial do ceu &mdash; inspira toda a identidade visual da paroquia.</p>
   </div>
 
   <div class="mt-3">
@@ -356,7 +356,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
       <span class="line-accent"></span>
      </div>
     </div>
-    <p class="logo-caption">Fundo navy (digital / destaque)</p>
+    <p class="logo-caption">Fundo burgundy (digital / destaque)</p>
    </div>
   </div>
   <div class="grid-2 mb-4">
@@ -456,51 +456,59 @@ border-bottom:1px solid rgba(200,162,77,.18)}
  <div class="container">
   <p class="section-number">03 / Paleta de Cores</p>
   <h2 class="section-title">Cores da marca</h2>
-  <p class="section-desc">A paleta foi extraida diretamente do vitral de Sao Vicente de Paulo da paroquia &mdash; o azul cobalto do ceu, o vermelho vibrante da moldura, o dourado ambar dos arabescos, e o verde-oliva do manto. Cada cor carrega significado liturgico e emocional.</p>
+  <p class="section-desc">A paleta foi extraida diretamente do vitral de Sao Vicente de Paulo da paroquia. O vermelho vibrante da moldura circular &mdash; a cor mais marcante do vitral &mdash; e a base da identidade. O dourado ambar dos arabescos, o verde-oliva do manto e o azul celestial do ceu complementam a composicao.</p>
 
+  <h3 class="font-heading mb-1">Cores principais</h3>
   <div class="grid-4 mb-4">
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#1C3B6A"></div>
-    <p class="swatch-name">Cobalt Blue</p>
-    <p class="swatch-hex">#1C3B6A</p>
-    <p class="swatch-hex">HSL 216, 58%, 26%</p>
-    <p class="swatch-usage">Cor principal. Backgrounds, headers, logo. Extraida do ceu do vitral.</p>
-   </div>
-   <div class="swatch-wrap">
-    <div class="swatch" style="background:#CC9A1E"></div>
-    <p class="swatch-name">Amber Gold</p>
-    <p class="swatch-hex">#CC9A1E</p>
-    <p class="swatch-hex">HSL 43, 75%, 46%</p>
-    <p class="swatch-usage">Acento sagrado. Destaques, icones, linhas. Extraida dos arabescos dourados.</p>
+    <div class="swatch" style="background:#501714"></div>
+    <p class="swatch-name">Deep Burgundy</p>
+    <p class="swatch-hex">#501714</p>
+    <p class="swatch-hex">HSL 4, 58%, 20%</p>
+    <p class="swatch-usage">Cor dominante. Backgrounds, headers, nav. Vermelho do vitral escurecido para fundos.</p>
    </div>
    <div class="swatch-wrap">
     <div class="swatch" style="background:#B52D1E"></div>
     <p class="swatch-name">Vitral Red</p>
     <p class="swatch-hex">#B52D1E</p>
     <p class="swatch-hex">HSL 6, 72%, 41%</p>
-    <p class="swatch-usage">Moldura e destaque. Pentecostes, celebracoes, martyres. Extraida da moldura circular.</p>
+    <p class="swatch-usage">Cor vibrante. CTAs, destaques, bordas, elementos de acao. Moldura circular do vitral.</p>
+   </div>
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#CC9A1E"></div>
+    <p class="swatch-name">Amber Gold</p>
+    <p class="swatch-hex">#CC9A1E</p>
+    <p class="swatch-hex">HSL 43, 75%, 46%</p>
+    <p class="swatch-usage">Acento sagrado. Icones, linhas decorativas, labels. Arabescos dourados da moldura.</p>
    </div>
    <div class="swatch-wrap">
     <div class="swatch" style="background:#5C7C28"></div>
     <p class="swatch-name">Olive Green</p>
     <p class="swatch-hex">#5C7C28</p>
     <p class="swatch-hex">HSL 83, 51%, 32%</p>
-    <p class="swatch-usage">Terciaria. Tempo Comum, esperanca, caridade. Extraida do manto do bebe.</p>
+    <p class="swatch-usage">Terciaria. Tempo Comum, esperanca, caridade. Manto do bebe no vitral.</p>
    </div>
   </div>
 
+  <h3 class="font-heading mb-1">Cores de suporte</h3>
   <div class="grid-4 mb-3">
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#1C3B6A"></div>
+    <p class="swatch-name">Cobalt Blue</p>
+    <p class="swatch-hex">#1C3B6A</p>
+    <p class="swatch-usage">Uso pontual. Mariano, liturgico, links. Ceu do vitral.</p>
+   </div>
    <div class="swatch-wrap">
     <div class="swatch" style="background:#F5EFE0"></div>
     <p class="swatch-name">Warm Cream</p>
     <p class="swatch-hex">#F5EFE0</p>
-    <p class="swatch-usage">Backgrounds claros, impressos. Tom das pedras claras do vitral.</p>
+    <p class="swatch-usage">Backgrounds claros, impressos. Pedras claras do vitral.</p>
    </div>
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#252830"></div>
+    <div class="swatch" style="background:#2E1E1C"></div>
     <p class="swatch-name">Cassock Dark</p>
-    <p class="swatch-hex">#252830</p>
-    <p class="swatch-usage">Textos, paragrafos. Tom das vestes de Sao Vicente.</p>
+    <p class="swatch-hex">#2E1E1C</p>
+    <p class="swatch-usage">Textos, paragrafos. Vestes escuras de Sao Vicente.</p>
    </div>
    <div class="swatch-wrap">
     <div class="swatch" style="background:#D4CFC5"></div>
@@ -508,23 +516,18 @@ border-bottom:1px solid rgba(200,162,77,.18)}
     <p class="swatch-hex">#D4CFC5</p>
     <p class="swatch-usage">Bordas, divisores, elementos sutis.</p>
    </div>
-   <div class="swatch-wrap">
-    <div class="swatch" style="background:#FFFFFF;border:1px solid #D4CFC5"></div>
-    <p class="swatch-name">Branco</p>
-    <p class="swatch-hex">#FFFFFF</p>
-    <p class="swatch-usage">Cards, fundos limpos.</p>
-   </div>
   </div>
 
   <h3 class="font-heading mb-1">Proporcao de uso</h3>
   <div style="display:flex;height:40px;border-radius:8px;overflow:hidden;margin-bottom:1rem">
-   <div style="flex:50;background:var(--navy)" title="Navy 50%"></div>
-   <div style="flex:20;background:var(--cream)" title="Cream 20%"></div>
+   <div style="flex:35;background:var(--navy)" title="Burgundy 35%"></div>
+   <div style="flex:25;background:var(--cream)" title="Cream 25%"></div>
    <div style="flex:15;background:var(--gold)" title="Gold 15%"></div>
+   <div style="flex:12;background:var(--crimson)" title="Red 12%"></div>
    <div style="flex:8;background:var(--green)" title="Green 8%"></div>
-   <div style="flex:7;background:var(--crimson)" title="Crimson 7%"></div>
+   <div style="flex:5;background:var(--blue)" title="Blue 5%"></div>
   </div>
-  <p class="text-small" style="color:rgba(44,44,44,.5)">Navy 50% &middot; Cream 20% &middot; Gold 15% &middot; Green 8% &middot; Crimson 7%</p>
+  <p class="text-small" style="color:rgba(44,44,44,.5)">Burgundy 35% &middot; Cream 25% &middot; Gold 15% &middot; Vitral Red 12% &middot; Green 8% &middot; Blue 5%</p>
  </div>
 </section>
 
@@ -703,7 +706,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
   <div class="card" style="border-left:3px solid var(--gold)">
    <h3>Diretrizes de iconografia</h3>
    <p>&bull; Estilo: linha fina (stroke 1.5&ndash;2px), cantos arredondados<br>
-   &bull; Cores: navy (#1B2A4A) ou gold (#C8A24D) sobre fundos claros; branco sobre fundos escuros<br>
+   &bull; Cores: burgundy (#501714) ou gold (#CC9A1E) sobre fundos claros; branco sobre fundos escuros<br>
    &bull; Tamanho minimo: 24x24px<br>
    &bull; Manter peso visual consistente entre todos os icones<br>
    &bull; Evitar icones preenchidos (filled) &mdash; preferir outline<br>
@@ -753,7 +756,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
    </div>
    <div class="card">
     <h3>Pos-producao</h3>
-    <p>Tons quentes, leve reducao de saturacao, contraste suave. O tratamento deve reforcar a paleta da marca (navy, gold, cream).</p>
+    <p>Tons quentes, leve reducao de saturacao, contraste suave. O tratamento deve reforcar a paleta da marca (burgundy, gold, cream).</p>
    </div>
   </div>
  </div>
@@ -774,22 +777,22 @@ border-bottom:1px solid rgba(200,162,77,.18)}
     <p>Preparacao, penitencia, conversao. Cor liturgica: Roxo.</p>
     <p class="lit-hex">#6B3FA0</p>
    </div>
-   <div class="lit-card" style="background:linear-gradient(135deg,#FFFFFF 0%,#C8A24D 100%);color:var(--navy)">
+   <div class="lit-card" style="background:linear-gradient(135deg,#FFFFFF 0%,#CC9A1E 100%);color:var(--navy)">
     <h4>Natal / Pascoa</h4>
     <p>Celebracao, alegria, ressurreicao. Cores: Branco + Dourado.</p>
-    <p class="lit-hex" style="color:var(--navy)">#FFFFFF + #C8A24D</p>
+    <p class="lit-hex" style="color:var(--navy)">#FFFFFF + #CC9A1E</p>
    </div>
-   <div class="lit-card" style="background:#8B2332">
+   <div class="lit-card" style="background:#B52D1E">
     <h4>Pentecostes / Martires</h4>
     <p>Espirito Santo, coragem, testemunho. Cor: Vermelho.</p>
-    <p class="lit-hex">#8B2332</p>
+    <p class="lit-hex">#B52D1E</p>
    </div>
-   <div class="lit-card" style="background:#5A7A3A">
+   <div class="lit-card" style="background:#5C7C28">
     <h4>Tempo Comum</h4>
     <p>Crescimento, esperanca, caminhada. Cor: Verde.</p>
-    <p class="lit-hex">#5A7A3A</p>
+    <p class="lit-hex">#5C7C28</p>
    </div>
-   <div class="lit-card" style="background:#2C2C2C">
+   <div class="lit-card" style="background:#2E1E1C">
     <h4>Luto / Sexta-feira Santa</h4>
     <p>Sobriedade, respeito, silencio. Cor: Preto.</p>
     <p class="lit-hex">#2C2C2C</p>
@@ -804,7 +807,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
   <div class="card card--navy mt-3" style="border-left:3px solid var(--gold)">
    <h3 style="color:var(--gold)">Como aplicar</h3>
    <p style="color:rgba(255,255,255,.7)">&bull; Usar a cor liturgica como acento secundario (substituindo o gold em destaques sazonais)<br>
-   &bull; Manter o navy como cor base &mdash; a cor liturgica complementa, nao substitui<br>
+   &bull; Manter o burgundy como cor base &mdash; a cor liturgica complementa, nao substitui<br>
    &bull; Em posts de redes sociais, usar faixa ou borda na cor do tempo liturgico<br>
    &bull; No boletim impresso, aplicar a cor no cabecalho da edicao<br>
    &bull; Stories podem ter fundo na cor liturgica com texto branco</p>
@@ -846,7 +849,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
      <div class="mockup-inner">
       <p class="mockup-label" style="color:var(--gold)">Santo do Dia</p>
       <p class="mockup-title">&ldquo;A caridade e o amor posto em acao.&rdquo;</p>
-      <p class="mockup-body" style="color:rgba(27,42,74,.5)">&mdash; Sao Vicente de Paulo</p>
+      <p class="mockup-body" style="color:rgba(80,23,20,.5)">&mdash; Sao Vicente de Paulo</p>
       <div class="mockup-bottom-bar">
        <div class="mockup-avatar" style="background:var(--navy)"></div>
        <span class="mockup-handle" style="color:var(--navy);opacity:.4">@saovicentealdeota</span>
@@ -908,7 +911,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
       <p style="font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);opacity:.6;margin-bottom:.5rem">Gostou?</p>
       <p class="mockup-title" style="font-family:var(--ff-heading);font-size:1.3rem;color:var(--navy)">Salve e compartilhe!</p>
       <div style="width:30px;height:2px;background:var(--navy);margin:.75rem auto"></div>
-      <p class="mockup-body" style="color:rgba(27,42,74,.6)">Siga @saovicentealdeota<br>para mais conteudo de fe</p>
+      <p class="mockup-body" style="color:rgba(80,23,20,.6)">Siga @saovicentealdeota<br>para mais conteudo de fe</p>
      </div>
     </div>
     <p class="logo-caption">Slide Final: CTA</p>
@@ -937,7 +940,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
       <div style="background:var(--navy);color:var(--white);padding:.5rem 1rem;border-radius:8px;margin-top:.75rem">
        <p style="font-size:.75rem;font-weight:600">18h &middot; Capela</p>
       </div>
-      <p style="font-size:.65rem;color:rgba(27,42,74,.4);margin-top:1rem">Toque para mais informacoes &uarr;</p>
+      <p style="font-size:.65rem;color:rgba(80,23,20,.4);margin-top:1rem">Toque para mais informacoes &uarr;</p>
      </div>
     </div>
     <p class="logo-caption">Story: Evento</p>

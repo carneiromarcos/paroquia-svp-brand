@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Book — Paroquia Sao Vicente de Paulo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--navy:#1B2A4A;--gold:#C8A24D;--crimson:#8B2332;--green:#5A7A3A;
+--cream:#F5F0E8;--dark:#2C2C2C;--muted:#D4CFC5;
+--purple:#6B3FA0;--white:#FFFFFF;
+--ff-heading:'Playfair Display',Georgia,serif;
+--ff-body:'Inter',system-ui,sans-serif;
+--ff-accent:'Cormorant Garamond',Georgia,serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-body);color:var(--dark);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;
+background:rgba(27,42,74,.72);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+border-bottom:1px solid rgba(200,162,77,.18)}
+.nav-brand{font-family:var(--ff-heading);color:var(--gold);font-size:1.05rem;font-weight:600;letter-spacing:.04em}
+.nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}
+.nav-links a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+
+/* HERO */
+.hero{background:var(--navy);color:var(--white);text-align:center;padding:6rem 2rem 5rem}
+.hero-label{font-family:var(--ff-body);font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.hero h1{font-family:var(--ff-heading);font-size:clamp(2.2rem,5vw,4rem);font-weight:700;line-height:1.15;margin-bottom:1rem}
+.hero h1 span{color:var(--gold)}
+.hero-tagline{font-family:var(--ff-accent);font-style:italic;font-size:1.35rem;color:rgba(255,255,255,.7);max-width:600px;margin:0 auto 2rem}
+.hero-line{width:60px;height:2px;background:var(--gold);margin:0 auto}
+
+/* SECTIONS */
+.section{padding:5rem 2rem}
+.section--navy{background:var(--navy);color:var(--white)}
+.section--cream{background:var(--cream)}
+.section--white{background:var(--white)}
+.container{max-width:1100px;margin:0 auto}
+.section-number{font-family:var(--ff-body);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.section-title{font-family:var(--ff-heading);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;margin-bottom:1.5rem;line-height:1.2}
+.section--navy .section-title{color:var(--white)}
+.section-desc{max-width:680px;font-size:1.02rem;color:rgba(44,44,44,.72);line-height:1.75;margin-bottom:2.5rem}
+.section--navy .section-desc{color:rgba(255,255,255,.65)}
+
+/* GRID */
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2.5rem;align-items:start}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+
+/* CARDS */
+.card{background:var(--white);border:1px solid var(--muted);border-radius:12px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.card--navy{background:var(--navy);border-color:rgba(200,162,77,.15);color:var(--white)}
+.card h3{font-family:var(--ff-heading);font-size:1.2rem;margin-bottom:.75rem}
+.card p{font-size:.92rem;line-height:1.65;color:rgba(44,44,44,.7)}
+.card--navy p{color:rgba(255,255,255,.6)}
+
+/* GOLD DIVIDER */
+.divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0}
+
+/* COLOR SWATCH */
+.swatch-wrap{text-align:center}
+.swatch{width:100%;aspect-ratio:1;border-radius:12px;margin-bottom:1rem;border:1px solid rgba(0,0,0,.06)}
+.swatch-name{font-family:var(--ff-heading);font-size:1rem;font-weight:600;margin-bottom:.25rem}
+.swatch-hex{font-family:var(--ff-body);font-size:.82rem;color:rgba(44,44,44,.55);font-weight:500}
+.swatch-usage{font-size:.78rem;color:rgba(44,44,44,.5);margin-top:.35rem;line-height:1.5}
+
+/* LOGO */
+.logo-block{display:flex;align-items:center;justify-content:center;padding:3rem 2rem;border-radius:12px;min-height:220px}
+.logo-text{text-align:center;position:relative}
+.logo-text .l1{font-family:var(--ff-body);font-size:.65rem;font-weight:600;letter-spacing:.35em;text-transform:uppercase;margin-bottom:.2rem}
+.logo-text .l2{font-family:var(--ff-heading);font-size:2rem;font-weight:700;line-height:1.1;letter-spacing:.02em}
+.logo-text .l3{font-family:var(--ff-heading);font-size:1.1rem;font-weight:400;letter-spacing:.08em;margin-top:.1rem}
+.logo-text .cross{color:var(--gold);font-size:1.4rem;margin-bottom:.35rem}
+.logo-text .line-accent{display:block;width:50px;height:2px;background:var(--gold);margin:.6rem auto 0}
+.logo-on-white{background:var(--white);border:1px solid var(--muted)}
+.logo-on-white .l1,.logo-on-white .l2,.logo-on-white .l3{color:var(--navy)}
+.logo-on-navy{background:var(--navy)}
+.logo-on-navy .l1,.logo-on-navy .l2,.logo-on-navy .l3{color:var(--white)}
+.logo-on-cream{background:var(--cream);border:1px solid var(--muted)}
+.logo-on-cream .l1,.logo-on-cream .l2,.logo-on-cream .l3{color:var(--navy)}
+.logo-on-mono{background:var(--white);border:1px solid var(--muted)}
+.logo-on-mono .l1,.logo-on-mono .l2,.logo-on-mono .l3{color:var(--dark)}
+.logo-on-mono .cross,.logo-on-mono .line-accent{color:var(--dark)!important;background:var(--dark)!important}
+.logo-caption{text-align:center;font-size:.78rem;color:rgba(44,44,44,.5);margin-top:.75rem;font-weight:500}
+
+/* PROTECTION */
+.protection-box{border:2px dashed var(--gold);padding:3rem;display:flex;align-items:center;justify-content:center;border-radius:12px;position:relative;background:var(--white)}
+.protection-box::before{content:'X';position:absolute;top:.5rem;left:.75rem;font-size:.7rem;color:var(--gold);font-weight:700}
+.protection-box::after{content:'X';position:absolute;bottom:.5rem;right:.75rem;font-size:.7rem;color:var(--gold);font-weight:700}
+
+/* PROHIBITED */
+.prohibited-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+.prohibited-item{background:var(--white);border:1px solid var(--muted);border-radius:10px;padding:1.5rem;text-align:center;position:relative}
+.prohibited-item::after{content:'\\2716';position:absolute;top:.75rem;right:.75rem;color:var(--crimson);font-size:1.2rem;font-weight:700}
+.prohibited-item p{font-size:.82rem;color:rgba(44,44,44,.6);margin-top:.5rem}
+
+/* TYPO SPECIMEN */
+.type-specimen{margin-bottom:2rem}
+.type-specimen h4{font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.type-sample{font-size:2.5rem;line-height:1.3;margin-bottom:.5rem}
+.type-weights{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:.75rem}
+.type-weight{font-size:1.1rem}
+.type-scale{display:flex;flex-direction:column;gap:.5rem;margin-top:1.5rem}
+.type-scale-item{display:flex;align-items:baseline;gap:1rem;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.type-scale-item .size{font-size:.75rem;color:var(--gold);font-weight:600;min-width:70px}
+.type-scale-item .sample-heading{font-family:var(--ff-heading)}
+.type-scale-item .sample-body{font-family:var(--ff-body)}
+
+/* VOICE */
+.voice-example{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
+.voice-good,.voice-bad{padding:1.5rem;border-radius:10px;font-size:.9rem;line-height:1.6}
+.voice-good{background:rgba(90,122,58,.08);border-left:3px solid var(--green)}
+.voice-bad{background:rgba(139,35,50,.06);border-left:3px solid var(--crimson)}
+.voice-label{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.5rem}
+.voice-good .voice-label{color:var(--green)}
+.voice-bad .voice-label{color:var(--crimson)}
+
+/* ICONS */
+.icon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1.5rem}
+.icon-item{text-align:center;padding:1.5rem 1rem;background:var(--white);border:1px solid var(--muted);border-radius:10px}
+.icon-svg{width:48px;height:48px;margin:0 auto .75rem;color:var(--navy)}
+.icon-item span{font-size:.78rem;color:rgba(44,44,44,.6)}
+
+/* PHOTO */
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.photo-placeholder{aspect-ratio:4/3;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.8);text-align:center;padding:1rem}
+.photo-good{background:linear-gradient(135deg,rgba(27,42,74,.7),rgba(90,122,58,.5));border:2px solid var(--green)}
+.photo-bad{background:linear-gradient(135deg,rgba(139,35,50,.4),rgba(44,44,44,.5));border:2px solid var(--crimson)}
+
+/* LITURGICAL CALENDAR */
+.lit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem}
+.lit-card{border-radius:12px;padding:1.5rem;text-align:center;color:var(--white);position:relative;overflow:hidden}
+.lit-card h4{font-family:var(--ff-heading);font-size:1.1rem;margin-bottom:.5rem}
+.lit-card p{font-size:.82rem;opacity:.8;line-height:1.5}
+.lit-card .lit-hex{font-size:.72rem;opacity:.6;margin-top:.5rem;font-family:var(--ff-body);font-weight:500}
+
+/* SOCIAL MOCKUPS */
+.mockup-row{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem}
+.mockup{border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);flex-shrink:0}
+.mockup-feed{width:300px;height:300px}
+.mockup-carousel{width:270px;height:338px}
+.mockup-story{width:200px;height:356px}
+.mockup-inner{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.5rem;text-align:center;position:relative}
+.mockup-label{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.mockup-title{font-family:var(--ff-heading);font-size:1.2rem;line-height:1.3;margin-bottom:.5rem}
+.mockup-body{font-size:.78rem;line-height:1.5;opacity:.7}
+.mockup-cta{display:inline-block;margin-top:.75rem;padding:.4rem 1.2rem;border-radius:20px;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.mockup-bottom-bar{position:absolute;bottom:0;left:0;right:0;padding:.6rem;display:flex;align-items:center;gap:.5rem}
+.mockup-avatar{width:24px;height:24px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.mockup-handle{font-size:.65rem;font-weight:600}
+.mockup--evento .mockup-inner{background:linear-gradient(160deg,var(--navy) 0%,#253a5e 100%);color:var(--white)}
+.mockup--evento .mockup-cta{background:var(--gold);color:var(--navy)}
+.mockup--frase .mockup-inner{background:var(--cream);color:var(--navy)}
+.mockup--frase .mockup-title{font-family:var(--ff-accent);font-style:italic;font-size:1.1rem}
+.mockup--info .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
+.mockup--carousel-capa .mockup-inner{background:var(--navy);color:var(--white)}
+.mockup--carousel-content .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
+.mockup--carousel-cta .mockup-inner{background:var(--gold);color:var(--navy)}
+.mockup--story-frase .mockup-inner{background:linear-gradient(180deg,var(--navy),#2a3f65);color:var(--white)}
+.mockup--story-evento .mockup-inner{background:var(--cream);color:var(--navy)}
+.mockup--story-horarios .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
+
+/* WEEKLY SCHEDULE */
+.schedule-mock{max-width:400px;margin:0 auto;background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);border:1px solid var(--muted)}
+.schedule-header{background:var(--navy);color:var(--white);padding:1.25rem 1.5rem;text-align:center}
+.schedule-header h4{font-family:var(--ff-heading);font-size:1.1rem;margin-bottom:.2rem}
+.schedule-header p{font-size:.72rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase}
+.schedule-body{padding:1rem 1.5rem}
+.schedule-day{padding:.65rem 0;border-bottom:1px solid rgba(0,0,0,.05);display:flex;justify-content:space-between;align-items:center}
+.schedule-day:last-child{border-bottom:none}
+.schedule-day-name{font-weight:600;font-size:.85rem;color:var(--navy)}
+.schedule-day-time{font-size:.8rem;color:rgba(44,44,44,.55)}
+.schedule-footer{background:var(--cream);padding:1rem 1.5rem;text-align:center}
+.schedule-footer p{font-size:.72rem;color:var(--gold);font-weight:600;letter-spacing:.1em}
+
+/* EVENT INVITE */
+.invite-mock{max-width:400px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1)}
+.invite-mock .invite-top{background:var(--navy);color:var(--white);padding:2.5rem 2rem;text-align:center;position:relative}
+.invite-mock .invite-top::before{content:'+';position:absolute;top:1rem;left:50%;transform:translateX(-50%);font-size:2rem;color:var(--gold);font-weight:300}
+.invite-mock .invite-top .invite-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem;margin-top:1.5rem}
+.invite-mock .invite-top h4{font-family:var(--ff-heading);font-size:1.5rem;line-height:1.3}
+.invite-mock .invite-bottom{background:var(--white);padding:1.5rem 2rem;text-align:center}
+.invite-mock .invite-detail{font-size:.85rem;color:rgba(44,44,44,.65);margin-bottom:.3rem}
+.invite-mock .invite-btn{display:inline-block;margin-top:1rem;padding:.6rem 2rem;background:var(--gold);color:var(--navy);border-radius:24px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+
+/* APPLICATIONS */
+.app-avatar{width:100px;height:100px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 4px 16px rgba(27,42,74,.3)}
+.app-avatar .logo-text .l1{font-size:.35rem}
+.app-avatar .logo-text .l2{font-size:.85rem}
+.app-avatar .logo-text .l3{font-size:.5rem}
+.app-avatar .logo-text .cross{font-size:.7rem;margin-bottom:.15rem}
+.app-avatar .logo-text .line-accent{width:20px;height:1px;margin-top:.3rem}
+
+.slide-mock{max-width:520px;margin:0 auto;aspect-ratio:16/9;background:var(--navy);border-radius:10px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--white);padding:2rem;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.12);position:relative;overflow:hidden}
+.slide-mock::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold)}
+.slide-mock .slide-title{font-family:var(--ff-heading);font-size:1.4rem;margin-bottom:.5rem}
+.slide-mock .slide-sub{font-size:.82rem;color:rgba(255,255,255,.6)}
+.slide-mock .slide-logo{position:absolute;bottom:1rem;right:1.5rem;font-family:var(--ff-heading);font-size:.6rem;color:var(--gold)}
+
+.boletim-mock{max-width:380px;margin:0 auto;background:var(--white);border:1px solid var(--muted);border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.boletim-header{background:var(--navy);color:var(--white);padding:1.25rem;text-align:center}
+.boletim-header h4{font-family:var(--ff-heading);font-size:1rem}
+.boletim-header p{font-size:.7rem;color:var(--gold);margin-top:.2rem}
+.boletim-body{padding:1.25rem}
+.boletim-body h5{font-family:var(--ff-heading);font-size:.9rem;color:var(--navy);margin-bottom:.5rem}
+.boletim-body p{font-size:.78rem;line-height:1.6;color:rgba(44,44,44,.65);margin-bottom:.75rem}
+.boletim-body .boletim-line{height:1px;background:var(--muted);margin:.75rem 0}
+
+.banner-mock{max-width:600px;margin:0 auto;aspect-ratio:3/1;background:linear-gradient(135deg,var(--navy),#253a5e);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--white);padding:2rem;text-align:center;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.banner-mock::after{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,transparent,rgba(200,162,77,.08))}
+.banner-mock .banner-content{position:relative;z-index:1}
+.banner-mock h4{font-family:var(--ff-heading);font-size:1.5rem;margin-bottom:.4rem}
+.banner-mock p{font-size:.85rem;color:rgba(255,255,255,.6)}
+
+/* FOOTER */
+.footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;padding:3rem 2rem}
+.footer p{font-size:.82rem;margin-bottom:.3rem}
+.footer .footer-brand{color:var(--gold);font-family:var(--ff-heading);font-size:1rem;margin-bottom:.5rem}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+ .nav-links{display:none}
+ .grid-2,.voice-example{grid-template-columns:1fr}
+ .photo-grid{grid-template-columns:1fr 1fr}
+ .mockup-row{flex-direction:column;align-items:center}
+}
+
+/* UTILS */
+.mb-1{margin-bottom:1rem}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}.mb-4{margin-bottom:4rem}
+.mt-1{margin-top:1rem}.mt-2{margin-top:2rem}.mt-3{margin-top:3rem}
+.text-center{text-align:center}
+.text-gold{color:var(--gold)}
+.text-navy{color:var(--navy)}
+.text-small{font-size:.85rem}
+.font-heading{font-family:var(--ff-heading)}
+.font-accent{font-family:var(--ff-accent)}
+.italic{font-style:italic}
+.quote-block{font-family:var(--ff-accent);font-style:italic;font-size:1.3rem;color:var(--navy);border-left:3px solid var(--gold);padding-left:1.5rem;margin:2rem 0;line-height:1.6}
+.section--navy .quote-block{color:rgba(255,255,255,.8)}
+.tag{display:inline-block;padding:.25rem .75rem;border-radius:20px;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.tag--gold{background:rgba(200,162,77,.12);color:var(--gold)}
+.tag--navy{background:rgba(27,42,74,.08);color:var(--navy)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+ <div class="nav-brand">PSVP Brand Book</div>
+ <div class="nav-links">
+  <a href="#identidade">Identidade</a>
+  <a href="#logomarca">Logomarca</a>
+  <a href="#cores">Cores</a>
+  <a href="#tipografia">Tipografia</a>
+  <a href="#voz">Tom de Voz</a>
+  <a href="#iconografia">Iconografia</a>
+  <a href="#fotografia">Fotografia</a>
+  <a href="#liturgico">Liturgico</a>
+  <a href="#social">Social Media</a>
+  <a href="#aplicacoes">Aplicacoes</a>
+ </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+ <div class="hero-label">Brand Book &mdash; v1.0</div>
+ <h1>Paroquia<br><span>Sao Vicente de Paulo</span></h1>
+ <p class="hero-tagline">&ldquo;A caridade e o amor posto em acao.&rdquo;</p>
+ <div class="hero-line"></div>
+ <p style="margin-top:1.5rem;font-size:.82rem;color:rgba(255,255,255,.4)">Aldeota &middot; Fortaleza/CE &middot; @saovicentealdeota</p>
+</header>
+
+<div class="divider"></div>
+
+<!-- 01 IDENTIDADE -->
+<section id="identidade" class="section section--cream">
+ <div class="container">
+  <p class="section-number">01 / Identidade</p>
+  <h2 class="section-title">Quem somos</h2>
+  <p class="section-desc">A Paroquia Sao Vicente de Paulo, situada no coracao da Aldeota em Fortaleza, e uma comunidade de fe que une tradicao e acolhimento. Inspirada pelo legado de Sao Vicente de Paulo &mdash; padroeiro da caridade &mdash; nossa missao e ser ponte entre a fe e a acao social, servindo a todos com reverencia e amor.</p>
+
+  <div class="quote-block">
+   &ldquo;A caridade e o amor posto em acao.&rdquo;<br>
+   <span style="font-size:.85rem;font-style:normal;color:var(--gold)">&mdash; Sao Vicente de Paulo</span>
+  </div>
+
+  <div class="grid-3 mt-3">
+   <div class="card">
+    <h3>Missao</h3>
+    <p>Evangelizar, acolher e servir a comunidade da Aldeota e regiao, promovendo a caridade crista como caminho de transformacao espiritual e social.</p>
+   </div>
+   <div class="card">
+    <h3>Visao</h3>
+    <p>Ser referencia de paroquia acolhedora, moderna e engajada, onde a fe se traduz em acoes concretas de amor ao proximo.</p>
+   </div>
+   <div class="card">
+    <h3>Valores</h3>
+    <p>Caridade &middot; Acolhimento &middot; Reverencia &middot; Comunidade &middot; Transparencia &middot; Servico &middot; Esperanca</p>
+   </div>
+  </div>
+
+  <div class="card mt-3" style="border-left:3px solid var(--gold)">
+   <h3>O legado de Sao Vicente de Paulo</h3>
+   <p>Sao Vicente de Paulo (1581&ndash;1660) dedicou sua vida aos pobres, doentes e abandonados. Fundou as Damas da Caridade e a Congregacao da Missao, revolucionando a assistencia social na Franca. Seu vitral em nossa igreja &mdash; com tons de azul celestial, vermelho liturgico, dourado sagrado e verde esperanca &mdash; inspira toda a identidade visual da paroquia.</p>
+  </div>
+
+  <div class="mt-3">
+   <h3 class="font-heading mb-1">Tagline proposta</h3>
+   <div style="display:flex;gap:1rem;flex-wrap:wrap">
+    <span class="tag tag--gold">Tagline principal</span>
+   </div>
+   <p class="quote-block" style="font-size:1.5rem;margin-top:1rem">&ldquo;A caridade e o amor posto em acao.&rdquo;</p>
+   <p class="text-small" style="color:rgba(44,44,44,.55)">Frase atribuida a Sao Vicente de Paulo. Sintetiza a essencia da paroquia: fe que se transforma em servico.</p>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 02 LOGOMARCA -->
+<section id="logomarca" class="section section--white">
+ <div class="container">
+  <p class="section-number">02 / Logomarca</p>
+  <h2 class="section-title">Logo tipografico</h2>
+  <p class="section-desc">Ate que um logotipo ilustrado seja desenvolvido, a paroquia utiliza uma logomarca tipografica baseada em Playfair Display. A composicao hierarquica transmite tradicao, sobriedade e elegancia.</p>
+
+  <h3 class="font-heading mb-2">Variantes</h3>
+  <div class="grid-2 mb-4">
+   <div>
+    <div class="logo-block logo-on-white">
+     <div class="logo-text">
+      <div class="cross">&#10013;</div>
+      <div class="l1">PAROQUIA</div>
+      <div class="l2">SAO VICENTE</div>
+      <div class="l3">DE PAULO</div>
+      <span class="line-accent"></span>
+     </div>
+    </div>
+    <p class="logo-caption">Fundo branco (principal)</p>
+   </div>
+   <div>
+    <div class="logo-block logo-on-navy">
+     <div class="logo-text">
+      <div class="cross" style="color:var(--gold)">&#10013;</div>
+      <div class="l1" style="color:var(--gold)">PAROQUIA</div>
+      <div class="l2">SAO VICENTE</div>
+      <div class="l3">DE PAULO</div>
+      <span class="line-accent"></span>
+     </div>
+    </div>
+    <p class="logo-caption">Fundo navy (digital / destaque)</p>
+   </div>
+  </div>
+  <div class="grid-2 mb-4">
+   <div>
+    <div class="logo-block logo-on-cream">
+     <div class="logo-text">
+      <div class="cross" style="color:var(--gold)">&#10013;</div>
+      <div class="l1">PAROQUIA</div>
+      <div class="l2">SAO VICENTE</div>
+      <div class="l3">DE PAULO</div>
+      <span class="line-accent"></span>
+     </div>
+    </div>
+    <p class="logo-caption">Fundo creme (impresso)</p>
+   </div>
+   <div>
+    <div class="logo-block logo-on-mono">
+     <div class="logo-text">
+      <div class="cross">&#10013;</div>
+      <div class="l1">PAROQUIA</div>
+      <div class="l2">SAO VICENTE</div>
+      <div class="l3">DE PAULO</div>
+      <span class="line-accent"></span>
+     </div>
+    </div>
+    <p class="logo-caption">Monocromatico (PB)</p>
+   </div>
+  </div>
+
+  <h3 class="font-heading mb-2">Icone / Favicon</h3>
+  <div style="display:flex;gap:2rem;align-items:center;flex-wrap:wrap;margin-bottom:3rem">
+   <div style="width:64px;height:64px;background:var(--navy);border-radius:12px;display:flex;align-items:center;justify-content:center">
+    <span style="color:var(--gold);font-family:var(--ff-heading);font-size:1.6rem;font-weight:700">SVP</span>
+   </div>
+   <div style="width:48px;height:48px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center">
+    <span style="color:var(--gold);font-family:var(--ff-heading);font-size:1.1rem;font-weight:700">SVP</span>
+   </div>
+   <div style="width:32px;height:32px;background:var(--navy);border-radius:6px;display:flex;align-items:center;justify-content:center">
+    <span style="color:var(--gold);font-family:var(--ff-heading);font-size:.7rem;font-weight:700">SVP</span>
+   </div>
+   <div style="width:16px;height:16px;background:var(--navy);border-radius:3px;display:flex;align-items:center;justify-content:center">
+    <span style="color:var(--gold);font-family:var(--ff-heading);font-size:.35rem;font-weight:700">SVP</span>
+   </div>
+   <p class="text-small" style="color:rgba(44,44,44,.5)">Icone compacto &ldquo;SVP&rdquo; para favicon, avatar e espacos reduzidos.</p>
+  </div>
+
+  <h3 class="font-heading mb-2">Area de protecao</h3>
+  <div class="protection-box mb-3">
+   <div class="logo-text">
+    <div class="cross" style="color:var(--gold)">&#10013;</div>
+    <div class="l1" style="color:var(--navy)">PAROQUIA</div>
+    <div class="l2" style="color:var(--navy)">SAO VICENTE</div>
+    <div class="l3" style="color:var(--navy)">DE PAULO</div>
+    <span class="line-accent"></span>
+   </div>
+  </div>
+  <p class="text-small" style="color:rgba(44,44,44,.55);max-width:600px">A area de protecao corresponde a altura do &ldquo;X&rdquo; (metade da altura do texto &ldquo;SAO VICENTE&rdquo;) em todos os lados. Nenhum elemento grafico ou textual deve invadir essa area.</p>
+
+  <h3 class="font-heading mb-2 mt-3">Usos proibidos</h3>
+  <div class="prohibited-grid">
+   <div class="prohibited-item">
+    <div class="logo-text" style="transform:rotate(15deg)">
+     <div class="l1" style="color:var(--navy);font-size:.4rem">PAROQUIA</div>
+     <div class="l2" style="color:var(--navy);font-size:1rem">SAO VICENTE</div>
+    </div>
+    <p>Nao rotacionar</p>
+   </div>
+   <div class="prohibited-item">
+    <div class="logo-text" style="transform:scaleX(1.5)">
+     <div class="l1" style="color:var(--navy);font-size:.4rem">PAROQUIA</div>
+     <div class="l2" style="color:var(--navy);font-size:1rem">SAO VICENTE</div>
+    </div>
+    <p>Nao distorcer</p>
+   </div>
+   <div class="prohibited-item">
+    <div class="logo-text" style="opacity:.3">
+     <div class="l1" style="color:var(--navy);font-size:.4rem">PAROQUIA</div>
+     <div class="l2" style="color:var(--navy);font-size:1rem">SAO VICENTE</div>
+    </div>
+    <p>Nao reduzir opacidade</p>
+   </div>
+   <div class="prohibited-item">
+    <div class="logo-text">
+     <div class="l1" style="color:orange;font-size:.4rem">PAROQUIA</div>
+     <div class="l2" style="color:hotpink;font-size:1rem">SAO VICENTE</div>
+    </div>
+    <p>Nao alterar cores</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 03 PALETA DE CORES -->
+<section id="cores" class="section section--cream">
+ <div class="container">
+  <p class="section-number">03 / Paleta de Cores</p>
+  <h2 class="section-title">Cores da marca</h2>
+  <p class="section-desc">A paleta foi extraida do vitral de Sao Vicente de Paulo &mdash; cada cor carrega significado liturgico e emocional. O azul marinho e a cor dominante, com o dourado como acento sagrado.</p>
+
+  <div class="grid-4 mb-4">
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#1B2A4A"></div>
+    <p class="swatch-name">Deep Navy Blue</p>
+    <p class="swatch-hex">#1B2A4A</p>
+    <p class="swatch-hex">HSL 219, 45%, 20%</p>
+    <p class="swatch-usage">Cor principal. Backgrounds, headers, logo.</p>
+   </div>
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#C8A24D"></div>
+    <p class="swatch-name">Sacred Gold</p>
+    <p class="swatch-hex">#C8A24D</p>
+    <p class="swatch-hex">HSL 42, 52%, 54%</p>
+    <p class="swatch-usage">Acento. Destaques, icones, linhas decorativas.</p>
+   </div>
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#8B2332"></div>
+    <p class="swatch-name">Liturgical Crimson</p>
+    <p class="swatch-hex">#8B2332</p>
+    <p class="swatch-hex">HSL 352, 60%, 34%</p>
+    <p class="swatch-usage">Uso moderado. Pentecostes, alertas, destaque liturgico.</p>
+   </div>
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#5A7A3A"></div>
+    <p class="swatch-name">Hope Green</p>
+    <p class="swatch-hex">#5A7A3A</p>
+    <p class="swatch-hex">HSL 99, 35%, 35%</p>
+    <p class="swatch-usage">Terciaria. Tempo Comum, esperanca, natureza.</p>
+   </div>
+  </div>
+
+  <div class="grid-4 mb-3">
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#F5F0E8"></div>
+    <p class="swatch-name">Warm Cream</p>
+    <p class="swatch-hex">#F5F0E8</p>
+    <p class="swatch-usage">Backgrounds claros, impressos.</p>
+   </div>
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#2C2C2C"></div>
+    <p class="swatch-name">Neutral Dark</p>
+    <p class="swatch-hex">#2C2C2C</p>
+    <p class="swatch-usage">Textos, paragrafos.</p>
+   </div>
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#D4CFC5"></div>
+    <p class="swatch-name">Warm Gray</p>
+    <p class="swatch-hex">#D4CFC5</p>
+    <p class="swatch-usage">Bordas, divisores, elementos sutis.</p>
+   </div>
+   <div class="swatch-wrap">
+    <div class="swatch" style="background:#FFFFFF;border:1px solid #D4CFC5"></div>
+    <p class="swatch-name">Branco</p>
+    <p class="swatch-hex">#FFFFFF</p>
+    <p class="swatch-usage">Cards, fundos limpos.</p>
+   </div>
+  </div>
+
+  <h3 class="font-heading mb-1">Proporcao de uso</h3>
+  <div style="display:flex;height:40px;border-radius:8px;overflow:hidden;margin-bottom:1rem">
+   <div style="flex:50;background:var(--navy)" title="Navy 50%"></div>
+   <div style="flex:20;background:var(--cream)" title="Cream 20%"></div>
+   <div style="flex:15;background:var(--gold)" title="Gold 15%"></div>
+   <div style="flex:8;background:var(--green)" title="Green 8%"></div>
+   <div style="flex:7;background:var(--crimson)" title="Crimson 7%"></div>
+  </div>
+  <p class="text-small" style="color:rgba(44,44,44,.5)">Navy 50% &middot; Cream 20% &middot; Gold 15% &middot; Green 8% &middot; Crimson 7%</p>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 04 TIPOGRAFIA -->
+<section id="tipografia" class="section section--white">
+ <div class="container">
+  <p class="section-number">04 / Tipografia</p>
+  <h2 class="section-title">Sistema tipografico</h2>
+  <p class="section-desc">Tres familias tipograficas compoe o sistema: uma serifada classica para titulos, uma sans-serif moderna para corpo, e uma serifada elegante para citacoes e elementos liturgicos.</p>
+
+  <div class="type-specimen mb-3">
+   <h4>Titulos &mdash; Playfair Display</h4>
+   <p class="type-sample" style="font-family:var(--ff-heading);color:var(--navy)">Sao Vicente de Paulo</p>
+   <div class="type-weights">
+    <span class="type-weight" style="font-family:var(--ff-heading);font-weight:400">Regular 400</span>
+    <span class="type-weight" style="font-family:var(--ff-heading);font-weight:500">Medium 500</span>
+    <span class="type-weight" style="font-family:var(--ff-heading);font-weight:600">SemiBold 600</span>
+    <span class="type-weight" style="font-family:var(--ff-heading);font-weight:700">Bold 700</span>
+   </div>
+  </div>
+
+  <div class="type-specimen mb-3">
+   <h4>Corpo &mdash; Inter</h4>
+   <p class="type-sample" style="font-family:var(--ff-body);font-weight:400;color:var(--dark)">A caridade transforma vidas</p>
+   <div class="type-weights">
+    <span class="type-weight" style="font-family:var(--ff-body);font-weight:400">Regular 400</span>
+    <span class="type-weight" style="font-family:var(--ff-body);font-weight:500">Medium 500</span>
+    <span class="type-weight" style="font-family:var(--ff-body);font-weight:600">SemiBold 600</span>
+    <span class="type-weight" style="font-family:var(--ff-body);font-weight:700">Bold 700</span>
+   </div>
+  </div>
+
+  <div class="type-specimen mb-3">
+   <h4>Liturgico / Citacoes &mdash; Cormorant Garamond</h4>
+   <p class="type-sample" style="font-family:var(--ff-accent);font-style:italic;color:var(--navy)">&ldquo;Dai-me um homem de oracao...&rdquo;</p>
+   <div class="type-weights">
+    <span class="type-weight" style="font-family:var(--ff-accent);font-weight:400">Regular 400</span>
+    <span class="type-weight" style="font-family:var(--ff-accent);font-weight:400;font-style:italic">Italic 400</span>
+    <span class="type-weight" style="font-family:var(--ff-accent);font-weight:600">SemiBold 600</span>
+    <span class="type-weight" style="font-family:var(--ff-accent);font-weight:600;font-style:italic">SemiBold Italic</span>
+   </div>
+  </div>
+
+  <h3 class="font-heading mb-1 mt-3">Escala tipografica</h3>
+  <div class="type-scale">
+   <div class="type-scale-item"><span class="size">40px / 2.5rem</span><span class="sample-heading" style="font-size:2.5rem">Titulo Hero</span></div>
+   <div class="type-scale-item"><span class="size">32px / 2rem</span><span class="sample-heading" style="font-size:2rem">Titulo Secao</span></div>
+   <div class="type-scale-item"><span class="size">24px / 1.5rem</span><span class="sample-heading" style="font-size:1.5rem">Subtitulo</span></div>
+   <div class="type-scale-item"><span class="size">20px / 1.25rem</span><span class="sample-heading" style="font-size:1.25rem">Titulo Card</span></div>
+   <div class="type-scale-item"><span class="size">16px / 1rem</span><span class="sample-body" style="font-size:1rem">Corpo de texto principal</span></div>
+   <div class="type-scale-item"><span class="size">14px / .875rem</span><span class="sample-body" style="font-size:.875rem">Texto secundario / descricoes</span></div>
+   <div class="type-scale-item"><span class="size">12px / .75rem</span><span class="sample-body" style="font-size:.75rem">Labels, legendas, metadados</span></div>
+  </div>
+
+  <div class="card mt-3" style="border-left:3px solid var(--gold)">
+   <h3>Regras de uso</h3>
+   <p>&bull; Titulos sempre em Playfair Display, peso 600 ou 700<br>
+   &bull; Corpo em Inter Regular (400) ou Medium (500)<br>
+   &bull; Citacoes biblicas e liturgicas em Cormorant Garamond Italic<br>
+   &bull; Labels e categorias em Inter 600, caixa alta, com letter-spacing de 0.1em+<br>
+   &bull; Nunca usar mais de 3 pesos na mesma peca<br>
+   &bull; Tamanho minimo para impressao: 10px / corpo digital: 14px</p>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 05 TOM DE VOZ -->
+<section id="voz" class="section section--navy">
+ <div class="container">
+  <p class="section-number">05 / Tom de Voz</p>
+  <h2 class="section-title">Como falamos</h2>
+  <p class="section-desc">Nossa comunicacao e acolhedora, reverente e acessivel. Falamos com o coracao, sem arrogancia nem frieza. Somos proximos, mas respeitamos a sacralidade da fe.</p>
+
+  <div class="grid-3 mb-3">
+   <div class="card card--navy">
+    <h3 style="color:var(--gold)">Acolhedor</h3>
+    <p>Tratamos cada pessoa como membro da familia. Usamos linguagem calorosa e convidativa.</p>
+   </div>
+   <div class="card card--navy">
+    <h3 style="color:var(--gold)">Reverente</h3>
+    <p>Respeitamos a tradicao e a liturgia. A linguagem reflete a dignidade da fe sem ser distante.</p>
+   </div>
+   <div class="card card--navy">
+    <h3 style="color:var(--gold)">Acessivel</h3>
+    <p>Evitamos jargoes excessivos. Comunicamos de forma clara, direta e compreensivel para todos.</p>
+   </div>
+  </div>
+
+  <h3 class="font-heading mb-1" style="color:var(--white)">Exemplos praticos</h3>
+
+  <div class="voice-example mb-2">
+   <div class="voice-good">
+    <p class="voice-label">Correto</p>
+    <p>&ldquo;Voce e bem-vindo(a) a nossa comunidade! Venha participar da Missa dominical e conhecer nossos grupos de acolhida.&rdquo;</p>
+   </div>
+   <div class="voice-bad">
+    <p class="voice-label">Evitar</p>
+    <p>&ldquo;Comparecer as celebracoes liturgicas dominicais e obrigacao de todo fiel batizado conforme o Codigo de Direito Canonico.&rdquo;</p>
+   </div>
+  </div>
+
+  <div class="voice-example mb-2">
+   <div class="voice-good">
+    <p class="voice-label">Correto</p>
+    <p>&ldquo;Nesta Quaresma, que tal renovar sua caminhada de fe? Preparamos momentos especiais de reflexao e oracao para voce.&rdquo;</p>
+   </div>
+   <div class="voice-bad">
+    <p class="voice-label">Evitar</p>
+    <p>&ldquo;ATENCAO! QUARESMA COMECA AMANHA!! NAO PERCA!!! COMPARTILHE!!!&rdquo;</p>
+   </div>
+  </div>
+
+  <div class="voice-example">
+   <div class="voice-good">
+    <p class="voice-label">Correto</p>
+    <p>&ldquo;Agradecemos sua generosa contribuicao. Cada gesto de caridade faz a diferenca na vida de quem mais precisa.&rdquo;</p>
+   </div>
+   <div class="voice-bad">
+    <p class="voice-label">Evitar</p>
+    <p>&ldquo;Faca sua doacao agora! Deposite na conta da paroquia! PIX: ...&rdquo;</p>
+   </div>
+  </div>
+
+  <div class="card card--navy mt-3" style="border-left:3px solid var(--gold)">
+   <h3 style="color:var(--gold)">Checklist de comunicacao</h3>
+   <p style="color:rgba(255,255,255,.7)">&bull; A mensagem e acolhedora?<br>
+   &bull; Transmite reverencia sem ser fria?<br>
+   &bull; E acessivel para todos os publicos?<br>
+   &bull; Evita tom comercial ou apelativo?<br>
+   &bull; Respeita a identidade visual (cores, fontes)?<br>
+   &bull; Inclui convite, nao cobranca?</p>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 06 ICONOGRAFIA -->
+<section id="iconografia" class="section section--cream">
+ <div class="container">
+  <p class="section-number">06 / Iconografia</p>
+  <h2 class="section-title">Icones e simbolos</h2>
+  <p class="section-desc">Os icones devem seguir estilo de linha fina (thin line), cantos arredondados e peso visual consistente. Preferencialmente em navy ou gold sobre fundos claros.</p>
+
+  <div class="icon-grid mb-3">
+   <div class="icon-item">
+    <svg class="icon-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="24" y1="6" x2="24" y2="42"/><line x1="12" y1="16" x2="36" y2="16"/></svg>
+    <span>Cruz</span>
+   </div>
+   <div class="icon-item">
+    <svg class="icon-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8c-4-4-12-2-12 6 0 10 12 18 12 18s12-8 12-18c0-8-8-10-12-6z"/></svg>
+    <span>Coracao / Caridade</span>
+   </div>
+   <div class="icon-item">
+    <svg class="icon-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 10c-3-3-9 0-9 5s9 12 9 12 9-7 9-12-6-8-9-5z"/><path d="M20 27c-5 2-10 5-10 9v4h28v-4c0-4-5-7-10-9"/></svg>
+    <span>Pomba</span>
+   </div>
+   <div class="icon-item">
+    <svg class="icon-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 38h12M20 38V26c0-2 2-4 4-4s4 2 4 4v12"/><path d="M24 22v-6M20 18l4-2 4 2"/><ellipse cx="24" cy="12" rx="3" ry="4"/></svg>
+    <span>Chama</span>
+   </div>
+   <div class="icon-item">
+    <svg class="icon-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="18" rx="8" ry="10"/><path d="M16 28c-2 2-3 5-3 8h22c0-3-1-6-3-8"/><line x1="24" y1="28" x2="24" y2="38"/></svg>
+    <span>Calice</span>
+   </div>
+   <div class="icon-item">
+    <svg class="icon-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="10" width="28" height="28" rx="2"/><line x1="10" y1="18" x2="38" y2="18"/><line x1="18" y1="18" x2="18" y2="38"/><line x1="14" y1="24" x2="34" y2="24"/><line x1="14" y1="30" x2="34" y2="30"/></svg>
+    <span>Livro / Biblia</span>
+   </div>
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--gold)">
+   <h3>Diretrizes de iconografia</h3>
+   <p>&bull; Estilo: linha fina (stroke 1.5&ndash;2px), cantos arredondados<br>
+   &bull; Cores: navy (#1B2A4A) ou gold (#C8A24D) sobre fundos claros; branco sobre fundos escuros<br>
+   &bull; Tamanho minimo: 24x24px<br>
+   &bull; Manter peso visual consistente entre todos os icones<br>
+   &bull; Evitar icones preenchidos (filled) &mdash; preferir outline<br>
+   &bull; Fonte recomendada: Lucide Icons, Phosphor Icons (thin)</p>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 07 FOTOGRAFIA -->
+<section id="fotografia" class="section section--white">
+ <div class="container">
+  <p class="section-number">07 / Fotografia</p>
+  <h2 class="section-title">Direcao fotografica</h2>
+  <p class="section-desc">As fotografias devem transmitir autenticidade, calor humano e a beleza da vida comunitaria. Priorizamos luz natural quente, momentos genuinos e a riqueza visual da igreja.</p>
+
+  <div class="grid-2 mb-3">
+   <div>
+    <h3 class="font-heading mb-1" style="color:var(--green)">O que buscar</h3>
+    <div class="photo-grid" style="grid-template-columns:1fr 1fr">
+     <div class="photo-placeholder photo-good">Luz natural<br>dourada</div>
+     <div class="photo-placeholder photo-good">Momentos<br>autenticos</div>
+     <div class="photo-placeholder photo-good">Comunidade<br>reunida</div>
+     <div class="photo-placeholder photo-good">Detalhes<br>da igreja</div>
+    </div>
+   </div>
+   <div>
+    <h3 class="font-heading mb-1" style="color:var(--crimson)">O que evitar</h3>
+    <div class="photo-grid" style="grid-template-columns:1fr 1fr">
+     <div class="photo-placeholder photo-bad">Fotos de<br>banco de imagem</div>
+     <div class="photo-placeholder photo-bad">Flash direto<br>luz fria</div>
+     <div class="photo-placeholder photo-bad">Poses<br>artificiais</div>
+     <div class="photo-placeholder photo-bad">Baixa<br>resolucao</div>
+    </div>
+   </div>
+  </div>
+
+  <div class="grid-3">
+   <div class="card">
+    <h3>Iluminacao</h3>
+    <p>Preferir luz natural quente (golden hour). Em ambientes internos, valorizar a luz das velas e vitrais. Evitar flash direto.</p>
+   </div>
+   <div class="card">
+    <h3>Enquadramento</h3>
+    <p>Regra dos tercos. Valorizar a arquitetura da igreja. Incluir detalhes do vitral, altar e elementos sacros como pontos focais.</p>
+   </div>
+   <div class="card">
+    <h3>Pos-producao</h3>
+    <p>Tons quentes, leve reducao de saturacao, contraste suave. O tratamento deve reforcar a paleta da marca (navy, gold, cream).</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 08 CALENDARIO LITURGICO -->
+<section id="liturgico" class="section section--navy">
+ <div class="container">
+  <p class="section-number">08 / Calendario Liturgico</p>
+  <h2 class="section-title">Sistema visual liturgico</h2>
+  <p class="section-desc">Cada tempo liturgico possui uma cor propria. O sistema visual adapta a paleta da marca ao calendario da Igreja, mantendo a identidade coesa ao longo do ano.</p>
+
+  <div class="lit-grid">
+   <div class="lit-card" style="background:#6B3FA0">
+    <h4>Advento / Quaresma</h4>
+    <p>Preparacao, penitencia, conversao. Cor liturgica: Roxo.</p>
+    <p class="lit-hex">#6B3FA0</p>
+   </div>
+   <div class="lit-card" style="background:linear-gradient(135deg,#FFFFFF 0%,#C8A24D 100%);color:var(--navy)">
+    <h4>Natal / Pascoa</h4>
+    <p>Celebracao, alegria, ressurreicao. Cores: Branco + Dourado.</p>
+    <p class="lit-hex" style="color:var(--navy)">#FFFFFF + #C8A24D</p>
+   </div>
+   <div class="lit-card" style="background:#8B2332">
+    <h4>Pentecostes / Martires</h4>
+    <p>Espirito Santo, coragem, testemunho. Cor: Vermelho.</p>
+    <p class="lit-hex">#8B2332</p>
+   </div>
+   <div class="lit-card" style="background:#5A7A3A">
+    <h4>Tempo Comum</h4>
+    <p>Crescimento, esperanca, caminhada. Cor: Verde.</p>
+    <p class="lit-hex">#5A7A3A</p>
+   </div>
+   <div class="lit-card" style="background:#2C2C2C">
+    <h4>Luto / Sexta-feira Santa</h4>
+    <p>Sobriedade, respeito, silencio. Cor: Preto.</p>
+    <p class="lit-hex">#2C2C2C</p>
+   </div>
+   <div class="lit-card" style="background:linear-gradient(135deg,#D4A5C7,#E8C8DC);color:var(--navy)">
+    <h4>Gaudete / Laetare</h4>
+    <p>Alegria no meio da preparacao. Cor: Rosa (3o Advento, 4a Quaresma).</p>
+    <p class="lit-hex" style="color:var(--navy)">#D4A5C7</p>
+   </div>
+  </div>
+
+  <div class="card card--navy mt-3" style="border-left:3px solid var(--gold)">
+   <h3 style="color:var(--gold)">Como aplicar</h3>
+   <p style="color:rgba(255,255,255,.7)">&bull; Usar a cor liturgica como acento secundario (substituindo o gold em destaques sazonais)<br>
+   &bull; Manter o navy como cor base &mdash; a cor liturgica complementa, nao substitui<br>
+   &bull; Em posts de redes sociais, usar faixa ou borda na cor do tempo liturgico<br>
+   &bull; No boletim impresso, aplicar a cor no cabecalho da edicao<br>
+   &bull; Stories podem ter fundo na cor liturgica com texto branco</p>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 09 SOCIAL MEDIA -->
+<section id="social" class="section section--cream">
+ <div class="container">
+  <p class="section-number">09 / Social Media</p>
+  <h2 class="section-title">Templates para redes sociais</h2>
+  <p class="section-desc">Templates padronizados para o Instagram @saovicentealdeota. Tres categorias principais de feed post, carrossel, stories, programacao semanal e convites para eventos.</p>
+
+  <!-- FEED POSTS -->
+  <h3 class="font-heading mb-2">Feed Posts &mdash; 1080 &times; 1080</h3>
+  <div class="mockup-row">
+   <!-- Evento -->
+   <div>
+    <div class="mockup mockup-feed mockup--evento">
+     <div class="mockup-inner">
+      <p class="mockup-label">Evento</p>
+      <p class="mockup-title" style="font-family:var(--ff-heading);font-size:1.3rem">Missa Solene<br>de Sao Vicente</p>
+      <p class="mockup-body" style="color:rgba(255,255,255,.6)">Domingo, 27 de setembro<br>10h &middot; Igreja Matriz</p>
+      <span class="mockup-cta">Participe</span>
+      <div class="mockup-bottom-bar">
+       <div class="mockup-avatar"></div>
+       <span class="mockup-handle" style="color:rgba(255,255,255,.5)">@saovicentealdeota</span>
+      </div>
+     </div>
+    </div>
+    <p class="logo-caption">Variante: Evento</p>
+   </div>
+   <!-- Frase / Santo do dia -->
+   <div>
+    <div class="mockup mockup-feed mockup--frase">
+     <div class="mockup-inner">
+      <p class="mockup-label" style="color:var(--gold)">Santo do Dia</p>
+      <p class="mockup-title">&ldquo;A caridade e o amor posto em acao.&rdquo;</p>
+      <p class="mockup-body" style="color:rgba(27,42,74,.5)">&mdash; Sao Vicente de Paulo</p>
+      <div class="mockup-bottom-bar">
+       <div class="mockup-avatar" style="background:var(--navy)"></div>
+       <span class="mockup-handle" style="color:var(--navy);opacity:.4">@saovicentealdeota</span>
+      </div>
+     </div>
+    </div>
+    <p class="logo-caption">Variante: Frase / Santo do Dia</p>
+   </div>
+   <!-- Informativo -->
+   <div>
+    <div class="mockup mockup-feed mockup--info">
+     <div class="mockup-inner">
+      <p class="mockup-label" style="color:var(--gold)">Informativo</p>
+      <p class="mockup-title" style="font-family:var(--ff-heading);font-size:1.1rem;color:var(--navy)">Horarios de Confissao</p>
+      <p class="mockup-body" style="color:rgba(44,44,44,.55)">Terca a Sexta: 16h as 17h<br>Sabado: 15h as 17h<br>Ou com hora marcada</p>
+      <div style="width:40px;height:2px;background:var(--gold);margin-top:.75rem"></div>
+      <div class="mockup-bottom-bar">
+       <div class="mockup-avatar" style="background:var(--navy)"></div>
+       <span class="mockup-handle" style="color:var(--navy);opacity:.4">@saovicentealdeota</span>
+      </div>
+     </div>
+    </div>
+    <p class="logo-caption">Variante: Informativo</p>
+   </div>
+  </div>
+
+  <!-- CARROSSEL -->
+  <h3 class="font-heading mb-2">Carrossel &mdash; 1080 &times; 1350</h3>
+  <div class="mockup-row">
+   <div>
+    <div class="mockup mockup-carousel mockup--carousel-capa">
+     <div class="mockup-inner">
+      <p class="mockup-label">Carrossel</p>
+      <div style="width:30px;height:2px;background:var(--gold);margin:0 auto .75rem"></div>
+      <p class="mockup-title" style="font-family:var(--ff-heading);font-size:1.4rem">5 Santos da<br>Caridade</p>
+      <p class="mockup-body" style="color:rgba(255,255,255,.5);margin-top:.5rem">Deslize para conhecer &rarr;</p>
+      <div class="mockup-bottom-bar">
+       <div class="mockup-avatar"></div>
+       <span class="mockup-handle" style="color:rgba(255,255,255,.5)">@saovicentealdeota</span>
+      </div>
+     </div>
+    </div>
+    <p class="logo-caption">Slide 1: Capa</p>
+   </div>
+   <div>
+    <div class="mockup mockup-carousel mockup--carousel-content">
+     <div class="mockup-inner" style="justify-content:flex-start;padding-top:2rem;align-items:flex-start;text-align:left">
+      <p class="mockup-label" style="color:var(--gold)">01</p>
+      <p class="mockup-title" style="font-family:var(--ff-heading);font-size:1.15rem;color:var(--navy)">Sao Vicente de Paulo</p>
+      <div style="width:30px;height:2px;background:var(--gold);margin:.5rem 0"></div>
+      <p class="mockup-body" style="color:rgba(44,44,44,.6);text-align:left;font-size:.8rem;line-height:1.6">Nascido em 1581 na Franca, dedicou sua vida ao servico dos pobres e doentes. Fundou as Damas da Caridade e revolucionou a assistencia social.</p>
+     </div>
+    </div>
+    <p class="logo-caption">Slide 2-4: Conteudo</p>
+   </div>
+   <div>
+    <div class="mockup mockup-carousel mockup--carousel-cta">
+     <div class="mockup-inner">
+      <p style="font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);opacity:.6;margin-bottom:.5rem">Gostou?</p>
+      <p class="mockup-title" style="font-family:var(--ff-heading);font-size:1.3rem;color:var(--navy)">Salve e compartilhe!</p>
+      <div style="width:30px;height:2px;background:var(--navy);margin:.75rem auto"></div>
+      <p class="mockup-body" style="color:rgba(27,42,74,.6)">Siga @saovicentealdeota<br>para mais conteudo de fe</p>
+     </div>
+    </div>
+    <p class="logo-caption">Slide Final: CTA</p>
+   </div>
+  </div>
+
+  <!-- STORIES -->
+  <h3 class="font-heading mb-2">Stories &mdash; 1080 &times; 1920</h3>
+  <div class="mockup-row">
+   <div>
+    <div class="mockup mockup-story mockup--story-frase">
+     <div class="mockup-inner">
+      <p class="mockup-label">Reflexao do Dia</p>
+      <p style="font-family:var(--ff-accent);font-style:italic;font-size:1.05rem;color:var(--white);line-height:1.5;margin:.75rem 0">&ldquo;Onde ha caridade e amor, ai esta Deus.&rdquo;</p>
+      <div style="width:30px;height:1px;background:var(--gold);margin:.5rem auto"></div>
+      <p style="font-size:.7rem;color:var(--gold)">Sao Vicente de Paulo</p>
+     </div>
+    </div>
+    <p class="logo-caption">Story: Frase</p>
+   </div>
+   <div>
+    <div class="mockup mockup-story mockup--story-evento">
+     <div class="mockup-inner">
+      <p class="mockup-label" style="color:var(--gold)">Hoje</p>
+      <p style="font-family:var(--ff-heading);font-size:1.1rem;color:var(--navy);margin:.5rem 0">Adoracao ao<br>Santissimo</p>
+      <div style="background:var(--navy);color:var(--white);padding:.5rem 1rem;border-radius:8px;margin-top:.75rem">
+       <p style="font-size:.75rem;font-weight:600">18h &middot; Capela</p>
+      </div>
+      <p style="font-size:.65rem;color:rgba(27,42,74,.4);margin-top:1rem">Toque para mais informacoes &uarr;</p>
+     </div>
+    </div>
+    <p class="logo-caption">Story: Evento</p>
+   </div>
+   <div>
+    <div class="mockup mockup-story mockup--story-horarios">
+     <div class="mockup-inner" style="justify-content:flex-start;padding-top:2rem">
+      <p class="mockup-label" style="color:var(--gold)">Horarios</p>
+      <p style="font-family:var(--ff-heading);font-size:1rem;color:var(--navy);margin-bottom:1rem">Missas desta semana</p>
+      <div style="text-align:left;width:100%">
+       <div style="display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:.72rem"><span style="font-weight:600;color:var(--navy)">Seg-Sex</span><span style="color:rgba(44,44,44,.5)">7h e 18h</span></div>
+       <div style="display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:.72rem"><span style="font-weight:600;color:var(--navy)">Sabado</span><span style="color:rgba(44,44,44,.5)">7h e 17h</span></div>
+       <div style="display:flex;justify-content:space-between;padding:.4rem 0;font-size:.72rem"><span style="font-weight:600;color:var(--navy)">Domingo</span><span style="color:rgba(44,44,44,.5)">7h, 9h, 11h, 18h</span></div>
+      </div>
+     </div>
+    </div>
+    <p class="logo-caption">Story: Horarios</p>
+   </div>
+  </div>
+
+  <!-- PROGRAMACAO SEMANAL -->
+  <h3 class="font-heading mb-2">Programacao Semanal</h3>
+  <p class="section-desc">Modelo de programacao semanal estilo @paroquiagloriafor &mdash; limpo, organizado e elegante.</p>
+  <div class="schedule-mock mb-4">
+   <div class="schedule-header">
+    <p>PROGRAMACAO SEMANAL</p>
+    <h4>9 a 15 de Marco</h4>
+   </div>
+   <div class="schedule-body">
+    <div class="schedule-day"><span class="schedule-day-name">Segunda</span><span class="schedule-day-time">Missa 7h e 18h</span></div>
+    <div class="schedule-day"><span class="schedule-day-name">Terca</span><span class="schedule-day-time">Missa 7h e 18h &middot; Confissao 16h</span></div>
+    <div class="schedule-day"><span class="schedule-day-name">Quarta</span><span class="schedule-day-time">Missa 7h e 18h &middot; Grupo de Oracao 19h30</span></div>
+    <div class="schedule-day"><span class="schedule-day-name">Quinta</span><span class="schedule-day-time">Missa 7h e 18h &middot; Adoracao 18h30</span></div>
+    <div class="schedule-day"><span class="schedule-day-name">Sexta</span><span class="schedule-day-time">Missa 7h e 18h &middot; Via Sacra 19h</span></div>
+    <div class="schedule-day"><span class="schedule-day-name">Sabado</span><span class="schedule-day-time">Missa 7h e 17h &middot; Confissao 15h</span></div>
+    <div class="schedule-day"><span class="schedule-day-name" style="color:var(--gold)">Domingo</span><span class="schedule-day-time" style="font-weight:600;color:var(--navy)">7h &middot; 9h &middot; 11h &middot; 18h</span></div>
+   </div>
+   <div class="schedule-footer">
+    <p>@saovicentealdeota &middot; Aldeota, Fortaleza/CE</p>
+   </div>
+  </div>
+
+  <!-- CONVITE EVENTO -->
+  <h3 class="font-heading mb-2">Convite para Eventos</h3>
+  <p class="section-desc">Template para eventos especiais: Missas Solenes, Quaresma, Advento, festas do padroeiro, retiros.</p>
+  <div class="grid-2">
+   <div>
+    <div class="invite-mock">
+     <div class="invite-top">
+      <p class="invite-label">Convite Especial</p>
+      <h4>Missa Solene do<br>Padroeiro</h4>
+      <p style="font-family:var(--ff-accent);font-style:italic;font-size:.85rem;color:rgba(255,255,255,.5);margin-top:.5rem">Festa de Sao Vicente de Paulo</p>
+     </div>
+     <div class="invite-bottom">
+      <p class="invite-detail"><strong>27 de Setembro</strong> &middot; Domingo</p>
+      <p class="invite-detail">10h &middot; Igreja Matriz</p>
+      <p class="invite-detail" style="font-size:.78rem;color:rgba(44,44,44,.45)">Presidida por Dom Jose</p>
+      <span class="invite-btn">Confirmar Presenca</span>
+     </div>
+    </div>
+    <p class="logo-caption">Convite: Missa Especial</p>
+   </div>
+   <div>
+    <div class="invite-mock">
+     <div class="invite-top" style="background:var(--purple)">
+      <p class="invite-label" style="color:rgba(255,255,255,.6)">Quaresma 2026</p>
+      <h4>Via Sacra<br>Meditada</h4>
+      <p style="font-family:var(--ff-accent);font-style:italic;font-size:.85rem;color:rgba(255,255,255,.5);margin-top:.5rem">Todas as sextas-feiras</p>
+     </div>
+     <div class="invite-bottom">
+      <p class="invite-detail"><strong>Sextas-feiras</strong> &middot; Quaresma</p>
+      <p class="invite-detail">19h &middot; Igreja Matriz</p>
+      <p class="invite-detail" style="font-size:.78rem;color:rgba(44,44,44,.45)">Venha caminhar com Cristo</p>
+      <span class="invite-btn" style="background:var(--purple);color:var(--white)">Saiba Mais</span>
+     </div>
+    </div>
+    <p class="logo-caption">Convite: Quaresma</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- 10 APLICACOES -->
+<section id="aplicacoes" class="section section--white">
+ <div class="container">
+  <p class="section-number">10 / Aplicacoes</p>
+  <h2 class="section-title">Aplicacoes da marca</h2>
+  <p class="section-desc">Exemplos de como a identidade visual se aplica em diferentes suportes &mdash; do digital ao impresso.</p>
+
+  <!-- AVATAR -->
+  <h3 class="font-heading mb-2">Avatar para Redes Sociais</h3>
+  <div class="text-center mb-4">
+   <div class="app-avatar">
+    <div class="logo-text">
+     <div class="cross" style="color:var(--gold)">&#10013;</div>
+     <div class="l1" style="color:var(--gold)">PAROQUIA</div>
+     <div class="l2" style="color:var(--white)">SAO VICENTE</div>
+     <div class="l3" style="color:var(--white)">DE PAULO</div>
+     <span class="line-accent"></span>
+    </div>
+   </div>
+   <p class="text-small" style="color:rgba(44,44,44,.5)">Avatar circular para Instagram, Facebook e WhatsApp. Fundo navy com logo em branco e dourado.</p>
+  </div>
+
+  <!-- SLIDE -->
+  <h3 class="font-heading mb-2">Apresentacao / Slides</h3>
+  <div class="mb-4">
+   <div class="slide-mock">
+    <div style="margin-bottom:1rem">
+     <span style="color:var(--gold);font-size:1.5rem">&#10013;</span>
+    </div>
+    <p class="slide-title">Paroquia Sao Vicente de Paulo</p>
+    <p class="slide-sub">Assembleia Pastoral &middot; Marco 2026</p>
+    <span class="slide-logo">SVP</span>
+   </div>
+   <p class="logo-caption">Slide de abertura &mdash; apresentacoes e reunioes</p>
+  </div>
+
+  <!-- BOLETIM -->
+  <h3 class="font-heading mb-2">Boletim Paroquial (Impresso)</h3>
+  <div class="mb-4">
+   <div class="boletim-mock">
+    <div class="boletim-header">
+     <h4>Boletim Paroquial</h4>
+     <p>Edicao 42 &middot; Marco 2026 &middot; Quaresma</p>
+    </div>
+    <div class="boletim-body">
+     <h5>Mensagem do Paroco</h5>
+     <p>Queridos irmaos e irmas, neste tempo quaresmal somos convidados a renovar nossa caminhada de fe atraves da oracao, do jejum e da caridade...</p>
+     <div class="boletim-line"></div>
+     <h5>Destaques da Semana</h5>
+     <p>&bull; Via Sacra &mdash; Sexta, 19h<br>&bull; Retiro de Quaresma &mdash; Sabado, 9h<br>&bull; Campanha da Fraternidade &mdash; coleta especial</p>
+     <div class="boletim-line"></div>
+     <p style="text-align:center;font-size:.7rem;color:var(--gold);font-weight:600">@saovicentealdeota &middot; Aldeota, Fortaleza/CE</p>
+    </div>
+   </div>
+   <p class="logo-caption">Modelo de boletim dominical impresso</p>
+  </div>
+
+  <!-- BANNER -->
+  <h3 class="font-heading mb-2">Banner (Digital / Impresso)</h3>
+  <div class="mb-3">
+   <div class="banner-mock">
+    <div class="banner-content">
+     <p style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem">Paroquia Sao Vicente de Paulo</p>
+     <h4>Festa do Padroeiro 2026</h4>
+     <p>27 de Setembro &middot; Aldeota, Fortaleza/CE</p>
+    </div>
+   </div>
+   <p class="logo-caption">Banner horizontal 3:1 &mdash; site, email e impressao</p>
+  </div>
+ </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FOOTER -->
+<footer class="footer">
+ <p class="footer-brand">Paroquia Sao Vicente de Paulo</p>
+ <p>Brand Book v1.0 &mdash; Marco 2026</p>
+ <p>Aldeota &middot; Fortaleza/CE &middot; @saovicentealdeota</p>
+ <p style="margin-top:1rem;font-size:.72rem;opacity:.4">&copy; 2026 Paroquia Sao Vicente de Paulo. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

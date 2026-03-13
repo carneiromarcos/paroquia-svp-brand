@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscricao — Formacao da Quaresma e Campanha da Fraternidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--navy:#501714;--gold:#CC9A1E;--crimson:#B52D1E;--green:#5C7C28;
+--cream:#F5EFE0;--dark:#2E1E1C;--muted:#D4CFC5;
+--purple:#6B3FA0;--white:#FFFFFF;--blue:#1C3B6A;
+--ff-heading:'Playfair Display',Georgia,serif;
+--ff-body:'Inter',system-ui,sans-serif;
+--ff-accent:'Cormorant Garamond',Georgia,serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-body);color:var(--dark);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
+
+/* HEADER */
+.header{background:var(--navy);color:var(--white);text-align:center;padding:2.5rem 1.5rem 2rem;position:relative;overflow:hidden}
+.header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.header-cross{color:var(--gold);font-size:1.6rem;margin-bottom:.4rem;display:block}
+.header-label{font-family:var(--ff-body);font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.header h1{font-family:var(--ff-heading);font-size:clamp(1.4rem,3.5vw,2rem);font-weight:700;line-height:1.25;margin-bottom:.4rem}
+.header h1 span{color:var(--gold)}
+.header-sub{font-family:var(--ff-accent);font-style:italic;font-size:1rem;color:rgba(255,255,255,.6);max-width:460px;margin:0 auto}
+
+/* EVENT INFO BAR */
+.event-bar{background:var(--white);border:1px solid var(--muted);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.event-bar-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;text-align:center}
+@media(max-width:540px){.event-bar-grid{grid-template-columns:1fr;gap:.75rem;text-align:left}}
+.event-item{display:flex;flex-direction:column;align-items:center;gap:.2rem}
+@media(max-width:540px){.event-item{flex-direction:row;gap:.5rem}}
+.event-icon{font-size:1.2rem;color:var(--crimson)}
+.event-detail{font-size:.85rem;font-weight:600;color:var(--dark)}
+.event-detail small{font-weight:400;color:rgba(46,30,28,.55);display:block;font-size:.78rem}
+
+/* SCHEDULE */
+.schedule{background:var(--navy);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;color:var(--white)}
+.schedule-title{font-family:var(--ff-heading);font-size:1.05rem;color:var(--gold);margin-bottom:.75rem;font-weight:600;text-align:center}
+.schedule-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.schedule-list li{display:flex;gap:.75rem;font-size:.88rem;align-items:baseline}
+.schedule-time{font-weight:700;color:var(--gold);min-width:90px;text-align:right;flex-shrink:0}
+.schedule-desc{color:rgba(255,255,255,.8)}
+.schedule-desc strong{color:var(--white)}
+
+/* CONTAINER */
+.container{max-width:640px;margin:0 auto;padding:1.5rem 1.5rem 3rem}
+
+/* WELCOME MESSAGE */
+.welcome{background:var(--white);border:1px solid var(--muted);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;position:relative;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.welcome::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--crimson),var(--gold));border-radius:12px 12px 0 0}
+.welcome p{font-size:.9rem;color:rgba(46,30,28,.75);line-height:1.7;margin-bottom:.5rem}
+.welcome p:last-child{margin-bottom:0}
+.welcome strong{color:var(--navy)}
+
+/* FORM */
+.form-section{background:var(--white);border:1px solid var(--muted);border-radius:12px;padding:1.5rem;margin-bottom:1.25rem;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.form-section-title{font-family:var(--ff-heading);font-size:1.05rem;color:var(--navy);margin-bottom:.2rem;font-weight:600;display:flex;align-items:center;gap:.5rem}
+.form-section-title .icon{color:var(--gold);font-size:1rem}
+.form-section-desc{font-size:.8rem;color:rgba(46,30,28,.5);margin-bottom:1.1rem;line-height:1.5}
+
+.form-group{margin-bottom:1.1rem}
+.form-group:last-child{margin-bottom:0}
+.form-label{display:block;font-size:.84rem;font-weight:600;color:var(--dark);margin-bottom:.35rem;letter-spacing:.02em}
+.form-label .required{color:var(--crimson);margin-left:2px}
+.form-hint{font-size:.76rem;color:rgba(46,30,28,.45);margin-top:.2rem;line-height:1.4}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea{
+  width:100%;padding:.65rem .85rem;border:1px solid var(--muted);border-radius:8px;
+  font-family:var(--ff-body);font-size:.88rem;color:var(--dark);background:var(--white);
+  transition:border-color .2s,box-shadow .2s;outline:none;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(204,154,30,.12)}
+textarea{resize:vertical;min-height:70px}
+select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232E1E1C' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .85rem center;padding-right:2.2rem}
+input[type="number"]{max-width:120px}
+
+/* CHECKBOX / RADIO GROUPS */
+.checkbox-group{display:flex;flex-direction:column;gap:.5rem}
+.checkbox-group label{display:flex;align-items:flex-start;gap:.5rem;font-size:.86rem;color:var(--dark);cursor:pointer;line-height:1.4}
+.checkbox-group input[type="checkbox"],
+.checkbox-group input[type="radio"]{
+  width:17px;height:17px;margin-top:1px;flex-shrink:0;
+  accent-color:var(--navy);cursor:pointer;
+}
+
+/* GRID */
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:540px){.form-row{grid-template-columns:1fr}}
+
+/* SUBMIT */
+.submit-wrap{text-align:center;margin-top:1.5rem}
+.btn-submit{
+  font-family:var(--ff-body);font-size:.88rem;font-weight:600;letter-spacing:.06em;
+  color:var(--white);background:var(--navy);border:none;padding:.8rem 2.5rem;
+  border-radius:8px;cursor:pointer;transition:background .2s,transform .1s;
+  text-transform:uppercase;
+}
+.btn-submit:hover{background:var(--crimson)}
+.btn-submit:active{transform:scale(.98)}
+.submit-note{font-size:.76rem;color:rgba(46,30,28,.45);margin-top:.6rem;line-height:1.5}
+
+/* FOOTER */
+.footer{text-align:center;padding:1.5rem;font-size:.76rem;color:rgba(46,30,28,.45);border-top:1px solid var(--muted)}
+.footer a{color:var(--navy);text-decoration:none;font-weight:500}
+.footer a:hover{color:var(--crimson)}
+
+/* SUCCESS */
+.success-msg{display:none;background:var(--white);border:2px solid var(--green);border-radius:12px;padding:2.5rem;text-align:center;margin:2rem 0}
+.success-msg .check{font-size:3rem;color:var(--green);margin-bottom:1rem;display:block}
+.success-msg h2{font-family:var(--ff-heading);color:var(--navy);font-size:1.4rem;margin-bottom:.5rem}
+.success-msg p{font-size:.92rem;color:rgba(46,30,28,.7);line-height:1.6}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <span class="header-cross">&#10013;</span>
+  <p class="header-label">Inscricao</p>
+  <h1>Formacao da <span>Quaresma</span> e<br>Campanha da <span>Fraternidade</span></h1>
+  <p class="header-sub">Paroquia Sao Vicente de Paulo</p>
+</header>
+
+<!-- CONTENT -->
+<main class="container">
+
+  <!-- EVENT INFO -->
+  <div class="event-bar">
+    <div class="event-bar-grid">
+      <div class="event-item">
+        <span class="event-icon">&#128197;</span>
+        <span class="event-detail">Sabado, 14 de marco<small>2026</small></span>
+      </div>
+      <div class="event-item">
+        <span class="event-icon">&#128336;</span>
+        <span class="event-detail">Inicio as 14h<small>ate 16h30</small></span>
+      </div>
+      <div class="event-item">
+        <span class="event-icon">&#128205;</span>
+        <span class="event-detail">Igreja Sao Vicente de Paulo<small>Av. Desembargador Moreira, 2211</small></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCHEDULE -->
+  <div class="schedule">
+    <h3 class="schedule-title">Programacao</h3>
+    <ul class="schedule-list">
+      <li><span class="schedule-time">14h</span><span class="schedule-desc">Acolhida e Oracao</span></li>
+      <li><span class="schedule-time">14h30</span><span class="schedule-desc">Pregacao com o <strong>Pe. Raphael Maciel</strong> &mdash; Quaresma e a Campanha da Fraternidade</span></li>
+      <li><span class="schedule-time">15h45</span><span class="schedule-desc">Lanche</span></li>
+      <li><span class="schedule-time">16h &ndash; 16h30</span><span class="schedule-desc">Adoracao</span></li>
+    </ul>
+  </div>
+
+  <!-- WELCOME / IMPORTANCE MESSAGE -->
+  <div class="welcome">
+    <p><strong>Sua inscricao e muito importante!</strong> Para que possamos organizar bem o evento e acolher a todos com o carinho que merecem, precisamos saber quem vira. Por favor, preencha o formulario abaixo &mdash; leva menos de 2 minutos.</p>
+    <p><em>"A caridade e o amor posto em acao."</em> &mdash; Sao Vicente de Paulo</p>
+  </div>
+
+  <form id="formCadastro" onsubmit="return handleSubmit(event)">
+
+    <!-- SECAO 1: SEUS DADOS -->
+    <div class="form-section">
+      <h3 class="form-section-title"><span class="icon">&#9653;</span> Seus Dados</h3>
+      <p class="form-section-desc">Precisamos de poucas informacoes para confirmar sua presenca.</p>
+
+      <div class="form-group">
+        <label class="form-label">Nome completo <span class="required">*</span></label>
+        <input type="text" name="nome" required placeholder="Seu nome completo">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Telefone / WhatsApp <span class="required">*</span></label>
+          <input type="tel" name="telefone" required placeholder="(85) 99999-0000">
+        </div>
+        <div class="form-group">
+          <label class="form-label">E-mail</label>
+          <input type="email" name="email" placeholder="seu@email.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Vai levar mais alguem?</label>
+        <input type="number" name="acompanhantes" min="0" max="20" value="0" placeholder="0">
+        <p class="form-hint">Informe o numero de acompanhantes (alem de voce).</p>
+      </div>
+    </div>
+
+    <!-- SECAO 2: DE ONDE VOCE VEM -->
+    <div class="form-section">
+      <h3 class="form-section-title"><span class="icon">&#9653;</span> De onde voce vem?</h3>
+      <p class="form-section-desc">Este evento e aberto a todos. Queremos conhecer um pouco sobre voce.</p>
+
+      <div class="form-group">
+        <label class="form-label">Voce e paroquiano(a) da Sao Vicente de Paulo?</label>
+        <div class="checkbox-group">
+          <label><input type="radio" name="paroquiano" value="sim"> Sim, sou paroquiano(a)</label>
+          <label><input type="radio" name="paroquiano" value="nao_outra"> Nao, frequento outra paroquia</label>
+          <label><input type="radio" name="paroquiano" value="nao_nenhuma"> Nao frequento paroquia no momento</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Se frequenta outra paroquia, qual?</label>
+        <input type="text" name="outra_paroquia" placeholder="Nome da paroquia e cidade">
+      </div>
+    </div>
+
+    <!-- SECAO 3: VINCULO ECLESIAL -->
+    <div class="form-section">
+      <h3 class="form-section-title"><span class="icon">&#9653;</span> Vinculo Eclesial</h3>
+      <p class="form-section-desc">Marque as opcoes que se aplicam a voce. Pode marcar mais de uma.</p>
+
+      <div class="form-group">
+        <label class="form-label">Participa de algum movimento?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="movimentos" value="renovacao"> Renovacao Carismatica Catolica (RCC)</label>
+          <label><input type="checkbox" name="movimentos" value="cursilho"> Cursilho de Cristandade</label>
+          <label><input type="checkbox" name="movimentos" value="encontro_casais"> Encontro de Casais com Cristo (ECC)</label>
+          <label><input type="checkbox" name="movimentos" value="vicentinos"> Sociedade Sao Vicente de Paulo (Vicentinos)</label>
+          <label><input type="checkbox" name="movimentos" value="apostolado"> Apostolado da Oracao</label>
+          <label><input type="checkbox" name="movimentos" value="legiao"> Legiao de Maria</label>
+          <label><input type="checkbox" name="movimentos" value="terco_homens"> Terco dos Homens</label>
+          <label><input type="checkbox" name="movimentos" value="outro_movimento"> Outro movimento</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Participa de alguma pastoral?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="pastorais" value="liturgia"> Pastoral da Liturgia</label>
+          <label><input type="checkbox" name="pastorais" value="musica"> Pastoral da Musica</label>
+          <label><input type="checkbox" name="pastorais" value="catequese"> Pastoral da Catequese</label>
+          <label><input type="checkbox" name="pastorais" value="dizimo"> Pastoral do Dizimo</label>
+          <label><input type="checkbox" name="pastorais" value="comunicacao"> Pastoral da Comunicacao (Pascom)</label>
+          <label><input type="checkbox" name="pastorais" value="acolhida"> Pastoral da Acolhida</label>
+          <label><input type="checkbox" name="pastorais" value="familia"> Pastoral Familiar</label>
+          <label><input type="checkbox" name="pastorais" value="social"> Pastoral Social / Caridade</label>
+          <label><input type="checkbox" name="pastorais" value="jovens"> Pastoral da Juventude</label>
+          <label><input type="checkbox" name="pastorais" value="outra_pastoral"> Outra pastoral</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Pertence a alguma nova comunidade?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="comunidades" value="shalom"> Comunidade Shalom</label>
+          <label><input type="checkbox" name="comunidades" value="cancao_nova"> Cancao Nova</label>
+          <label><input type="checkbox" name="comunidades" value="obra_maria"> Obra de Maria</label>
+          <label><input type="checkbox" name="comunidades" value="alianca"> Comunidade Alianca de Misericordia</label>
+          <label><input type="checkbox" name="comunidades" value="outra_comunidade"> Outra comunidade</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Participa de algum grupo paroquial?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="grupos" value="grupo_oracao"> Grupo de Oracao</label>
+          <label><input type="checkbox" name="grupos" value="grupo_biblia"> Grupo Biblico / Lectio Divina</label>
+          <label><input type="checkbox" name="grupos" value="ej"> Encontro de Jovens (EJ)</label>
+          <label><input type="checkbox" name="grupos" value="grupo_casais"> Grupo de Casais</label>
+          <label><input type="checkbox" name="grupos" value="coroinhas"> Coroinhas / Acolitato</label>
+          <label><input type="checkbox" name="grupos" value="outro_grupo"> Outro grupo</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Se marcou "outro" em alguma opcao acima, especifique:</label>
+        <input type="text" name="outro_especificar" placeholder="Ex: Movimento Focolare, Pastoral do Batismo...">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Nao participo de nenhum grupo, movimento ou pastoral</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="sem_vinculo" value="sim"> Sim, nao participo de nenhum no momento</label>
+        </div>
+        <p class="form-hint">Sem problema! Todos sao bem-vindos.</p>
+      </div>
+    </div>
+
+    <!-- SECAO 4: COMO SOUBE -->
+    <div class="form-section">
+      <div class="form-group">
+        <label class="form-label">Como ficou sabendo do evento?</label>
+        <select name="como_soube">
+          <option value="">Selecione...</option>
+          <option>Aviso na missa</option>
+          <option>Instagram (@saovicentealdeota)</option>
+          <option>WhatsApp</option>
+          <option>Convite de amigo ou familiar</option>
+          <option>Cartaz na paroquia</option>
+          <option>Outro</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- SUBMIT -->
+    <div class="submit-wrap">
+      <button type="submit" class="btn-submit">Confirmar Presenca</button>
+      <p class="submit-note">Ao confirmar, voce nos ajuda a preparar tudo com carinho para recebe-lo(a).</p>
+    </div>
+  </form>
+
+  <!-- SUCCESS MESSAGE -->
+  <div class="success-msg" id="successMsg">
+    <span class="check">&#10003;</span>
+    <h2>Inscricao confirmada!</h2>
+    <p>Obrigado por confirmar sua presenca na <strong>Formacao da Quaresma e Campanha da Fraternidade</strong>.<br>Te esperamos no sabado, 14 de marco, as 14h, na Igreja Sao Vicente de Paulo.<br><br>Que Deus o(a) abencoe!</p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p><strong>Paroquia Sao Vicente de Paulo</strong> &mdash; Aldeota, Fortaleza/CE</p>
+  <p style="margin-top:.3rem">Av. Desembargador Moreira, 2211 &bull; @saovicentealdeota</p>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('formCadastro');
+  const formData = new FormData(form);
+  const data = {};
+  for (const [key, value] of formData.entries()) {
+    if (data[key]) {
+      if (Array.isArray(data[key])) {
+        data[key].push(value);
+      } else {
+        data[key] = [data[key], value];
+      }
+    } else {
+      data[key] = value;
+    }
+  }
+  console.log('Inscricao:', data);
+
+  form.style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  return false;
+}
+</script>
+</body>
+</html>

@@ -7,248 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
---navy:#501714;--gold:#CC9A1E;--crimson:#B52D1E;--green:#5C7C28;
---cream:#F5EFE0;--dark:#2E1E1C;--muted:#D4CFC5;
---purple:#6B3FA0;--white:#FFFFFF;--blue:#1C3B6A;
---ff-heading:'Playfair Display',Georgia,serif;
---ff-body:'Inter',system-ui,sans-serif;
---ff-accent:'Cormorant Garamond',Georgia,serif;
-}
-html{scroll-behavior:smooth}
-body{font-family:var(--ff-body);color:var(--dark);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-
-/* NAV */
-.nav{position:sticky;top:0;z-index:100;padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;
-background:rgba(80,23,20,.88);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
-border-bottom:1px solid rgba(200,162,77,.18)}
-.nav-brand{font-family:var(--ff-heading);color:var(--gold);font-size:1.05rem;font-weight:600;letter-spacing:.04em}
-.nav-links{display:flex;gap:1.25rem;flex-wrap:wrap}
-.nav-links a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;transition:color .2s}
-.nav-links a:hover{color:var(--gold)}
-
-/* HERO */
-.hero{background:var(--navy);color:var(--white);text-align:center;padding:6rem 2rem 5rem}
-.hero-label{font-family:var(--ff-body);font-size:.75rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
-.hero h1{font-family:var(--ff-heading);font-size:clamp(2.2rem,5vw,4rem);font-weight:700;line-height:1.15;margin-bottom:1rem}
-.hero h1 span{color:var(--gold)}
-.hero-tagline{font-family:var(--ff-accent);font-style:italic;font-size:1.35rem;color:rgba(255,255,255,.7);max-width:600px;margin:0 auto 2rem}
-.hero-line{width:60px;height:2px;background:var(--gold);margin:0 auto}
-
-/* SECTIONS */
-.section{padding:5rem 2rem}
-.section--navy{background:var(--navy);color:var(--white)}
-.section--cream{background:var(--cream)}
-.section--white{background:var(--white)}
-.container{max-width:1100px;margin:0 auto}
-.section-number{font-family:var(--ff-body);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
-.section-title{font-family:var(--ff-heading);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;margin-bottom:1.5rem;line-height:1.2}
-.section--navy .section-title{color:var(--white)}
-.section-desc{max-width:680px;font-size:1.02rem;color:rgba(44,44,44,.72);line-height:1.75;margin-bottom:2.5rem}
-.section--navy .section-desc{color:rgba(255,255,255,.65)}
-
-/* GRID */
-.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2.5rem;align-items:start}
-.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
-.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
-
-/* CARDS */
-.card{background:var(--white);border:1px solid var(--muted);border-radius:12px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,.04)}
-.card--navy{background:var(--navy);border-color:rgba(200,162,77,.15);color:var(--white)}
-.card h3{font-family:var(--ff-heading);font-size:1.2rem;margin-bottom:.75rem}
-.card p{font-size:.92rem;line-height:1.65;color:rgba(44,44,44,.7)}
-.card--navy p{color:rgba(255,255,255,.6)}
-
-/* GOLD DIVIDER */
-.divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0}
-
-/* COLOR SWATCH */
-.swatch-wrap{text-align:center}
-.swatch{width:100%;aspect-ratio:1;border-radius:12px;margin-bottom:1rem;border:1px solid rgba(0,0,0,.06)}
-.swatch-name{font-family:var(--ff-heading);font-size:1rem;font-weight:600;margin-bottom:.25rem}
-.swatch-hex{font-family:var(--ff-body);font-size:.82rem;color:rgba(44,44,44,.55);font-weight:500}
-.swatch-usage{font-size:.78rem;color:rgba(44,44,44,.5);margin-top:.35rem;line-height:1.5}
-
-/* LOGO */
-.logo-block{display:flex;align-items:center;justify-content:center;padding:3rem 2rem;border-radius:12px;min-height:220px}
-.logo-text{text-align:center;position:relative}
-.logo-text .l1{font-family:var(--ff-body);font-size:.65rem;font-weight:600;letter-spacing:.35em;text-transform:uppercase;margin-bottom:.2rem}
-.logo-text .l2{font-family:var(--ff-heading);font-size:2rem;font-weight:700;line-height:1.1;letter-spacing:.02em}
-.logo-text .l3{font-family:var(--ff-heading);font-size:1.1rem;font-weight:400;letter-spacing:.08em;margin-top:.1rem}
-.logo-text .cross{color:var(--gold);font-size:1.4rem;margin-bottom:.35rem}
-.logo-text .line-accent{display:block;width:50px;height:2px;background:var(--gold);margin:.6rem auto 0}
-.logo-on-white{background:var(--white);border:1px solid var(--muted)}
-.logo-on-white .l1,.logo-on-white .l2,.logo-on-white .l3{color:var(--navy)}
-.logo-on-navy{background:var(--navy)}
-.logo-on-navy .l1,.logo-on-navy .l2,.logo-on-navy .l3{color:var(--white)}
-.logo-on-cream{background:var(--cream);border:1px solid var(--muted)}
-.logo-on-cream .l1,.logo-on-cream .l2,.logo-on-cream .l3{color:var(--navy)}
-.logo-on-mono{background:var(--white);border:1px solid var(--muted)}
-.logo-on-mono .l1,.logo-on-mono .l2,.logo-on-mono .l3{color:var(--dark)}
-.logo-on-mono .cross,.logo-on-mono .line-accent{color:var(--dark)!important;background:var(--dark)!important}
-.logo-caption{text-align:center;font-size:.78rem;color:rgba(44,44,44,.5);margin-top:.75rem;font-weight:500}
-
-/* PROTECTION */
-.protection-box{border:2px dashed var(--gold);padding:3rem;display:flex;align-items:center;justify-content:center;border-radius:12px;position:relative;background:var(--white)}
-.protection-box::before{content:'X';position:absolute;top:.5rem;left:.75rem;font-size:.7rem;color:var(--gold);font-weight:700}
-.protection-box::after{content:'X';position:absolute;bottom:.5rem;right:.75rem;font-size:.7rem;color:var(--gold);font-weight:700}
-
-/* PROHIBITED */
-.prohibited-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
-.prohibited-item{background:var(--white);border:1px solid var(--muted);border-radius:10px;padding:1.5rem;text-align:center;position:relative}
-.prohibited-item::after{content:'\\2716';position:absolute;top:.75rem;right:.75rem;color:var(--crimson);font-size:1.2rem;font-weight:700}
-.prohibited-item p{font-size:.82rem;color:rgba(44,44,44,.6);margin-top:.5rem}
-
-/* TYPO SPECIMEN */
-.type-specimen{margin-bottom:2rem}
-.type-specimen h4{font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
-.type-sample{font-size:2.5rem;line-height:1.3;margin-bottom:.5rem}
-.type-weights{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:.75rem}
-.type-weight{font-size:1.1rem}
-.type-scale{display:flex;flex-direction:column;gap:.5rem;margin-top:1.5rem}
-.type-scale-item{display:flex;align-items:baseline;gap:1rem;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,.06)}
-.type-scale-item .size{font-size:.75rem;color:var(--gold);font-weight:600;min-width:70px}
-.type-scale-item .sample-heading{font-family:var(--ff-heading)}
-.type-scale-item .sample-body{font-family:var(--ff-body)}
-
-/* VOICE */
-.voice-example{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
-.voice-good,.voice-bad{padding:1.5rem;border-radius:10px;font-size:.9rem;line-height:1.6}
-.voice-good{background:rgba(90,122,58,.08);border-left:3px solid var(--green)}
-.voice-bad{background:rgba(139,35,50,.06);border-left:3px solid var(--crimson)}
-.voice-label{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:.5rem}
-.voice-good .voice-label{color:var(--green)}
-.voice-bad .voice-label{color:var(--crimson)}
-
-/* ICONS */
-.icon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1.5rem}
-.icon-item{text-align:center;padding:1.5rem 1rem;background:var(--white);border:1px solid var(--muted);border-radius:10px}
-.icon-svg{width:48px;height:48px;margin:0 auto .75rem;color:var(--navy)}
-.icon-item span{font-size:.78rem;color:rgba(44,44,44,.6)}
-
-/* PHOTO */
-.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.photo-placeholder{aspect-ratio:4/3;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.8);text-align:center;padding:1rem}
-.photo-good{background:linear-gradient(135deg,rgba(80,23,20,.6),rgba(90,122,58,.5));border:2px solid var(--green)}
-.photo-bad{background:linear-gradient(135deg,rgba(139,35,50,.4),rgba(44,44,44,.5));border:2px solid var(--crimson)}
-
-/* LITURGICAL CALENDAR */
-.lit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem}
-.lit-card{border-radius:12px;padding:1.5rem;text-align:center;color:var(--white);position:relative;overflow:hidden}
-.lit-card h4{font-family:var(--ff-heading);font-size:1.1rem;margin-bottom:.5rem}
-.lit-card p{font-size:.82rem;opacity:.8;line-height:1.5}
-.lit-card .lit-hex{font-size:.72rem;opacity:.6;margin-top:.5rem;font-family:var(--ff-body);font-weight:500}
-
-/* SOCIAL MOCKUPS */
-.mockup-row{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem}
-.mockup{border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);flex-shrink:0}
-.mockup-feed{width:300px;height:300px}
-.mockup-carousel{width:270px;height:338px}
-.mockup-story{width:200px;height:356px}
-.mockup-inner{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.5rem;text-align:center;position:relative}
-.mockup-label{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
-.mockup-title{font-family:var(--ff-heading);font-size:1.2rem;line-height:1.3;margin-bottom:.5rem}
-.mockup-body{font-size:.78rem;line-height:1.5;opacity:.7}
-.mockup-cta{display:inline-block;margin-top:.75rem;padding:.4rem 1.2rem;border-radius:20px;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
-.mockup-bottom-bar{position:absolute;bottom:0;left:0;right:0;padding:.6rem;display:flex;align-items:center;gap:.5rem}
-.mockup-avatar{width:24px;height:24px;border-radius:50%;background:var(--gold);flex-shrink:0}
-.mockup-handle{font-size:.65rem;font-weight:600}
-.mockup--evento .mockup-inner{background:linear-gradient(160deg,var(--navy) 0%,#6B2420 100%);color:var(--white)}
-.mockup--evento .mockup-cta{background:var(--gold);color:var(--navy)}
-.mockup--frase .mockup-inner{background:var(--cream);color:var(--navy)}
-.mockup--frase .mockup-title{font-family:var(--ff-accent);font-style:italic;font-size:1.1rem}
-.mockup--info .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
-.mockup--carousel-capa .mockup-inner{background:var(--navy);color:var(--white)}
-.mockup--carousel-content .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
-.mockup--carousel-cta .mockup-inner{background:var(--gold);color:var(--navy)}
-.mockup--story-frase .mockup-inner{background:linear-gradient(180deg,var(--navy),#6B2420);color:var(--white)}
-.mockup--story-evento .mockup-inner{background:var(--cream);color:var(--navy)}
-.mockup--story-horarios .mockup-inner{background:var(--white);color:var(--navy);border:1px solid var(--muted)}
-
-/* WEEKLY SCHEDULE */
-.schedule-mock{max-width:400px;margin:0 auto;background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);border:1px solid var(--muted)}
-.schedule-header{background:var(--navy);color:var(--white);padding:1.25rem 1.5rem;text-align:center}
-.schedule-header h4{font-family:var(--ff-heading);font-size:1.1rem;margin-bottom:.2rem}
-.schedule-header p{font-size:.72rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase}
-.schedule-body{padding:1rem 1.5rem}
-.schedule-day{padding:.65rem 0;border-bottom:1px solid rgba(0,0,0,.05);display:flex;justify-content:space-between;align-items:center}
-.schedule-day:last-child{border-bottom:none}
-.schedule-day-name{font-weight:600;font-size:.85rem;color:var(--navy)}
-.schedule-day-time{font-size:.8rem;color:rgba(44,44,44,.55)}
-.schedule-footer{background:var(--cream);padding:1rem 1.5rem;text-align:center}
-.schedule-footer p{font-size:.72rem;color:var(--gold);font-weight:600;letter-spacing:.1em}
-
-/* EVENT INVITE */
-.invite-mock{max-width:400px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1)}
-.invite-mock .invite-top{background:var(--navy);color:var(--white);padding:2.5rem 2rem;text-align:center;position:relative}
-.invite-mock .invite-top::before{content:'+';position:absolute;top:1rem;left:50%;transform:translateX(-50%);font-size:2rem;color:var(--gold);font-weight:300}
-.invite-mock .invite-top .invite-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem;margin-top:1.5rem}
-.invite-mock .invite-top h4{font-family:var(--ff-heading);font-size:1.5rem;line-height:1.3}
-.invite-mock .invite-bottom{background:var(--white);padding:1.5rem 2rem;text-align:center}
-.invite-mock .invite-detail{font-size:.85rem;color:rgba(44,44,44,.65);margin-bottom:.3rem}
-.invite-mock .invite-btn{display:inline-block;margin-top:1rem;padding:.6rem 2rem;background:var(--gold);color:var(--navy);border-radius:24px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-
-/* APPLICATIONS */
-.app-avatar{width:100px;height:100px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 4px 16px rgba(80,23,20,.3)}
-.app-avatar .logo-text .l1{font-size:.35rem}
-.app-avatar .logo-text .l2{font-size:.85rem}
-.app-avatar .logo-text .l3{font-size:.5rem}
-.app-avatar .logo-text .cross{font-size:.7rem;margin-bottom:.15rem}
-.app-avatar .logo-text .line-accent{width:20px;height:1px;margin-top:.3rem}
-
-.slide-mock{max-width:520px;margin:0 auto;aspect-ratio:16/9;background:var(--navy);border-radius:10px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--white);padding:2rem;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.12);position:relative;overflow:hidden}
-.slide-mock::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold)}
-.slide-mock .slide-title{font-family:var(--ff-heading);font-size:1.4rem;margin-bottom:.5rem}
-.slide-mock .slide-sub{font-size:.82rem;color:rgba(255,255,255,.6)}
-.slide-mock .slide-logo{position:absolute;bottom:1rem;right:1.5rem;font-family:var(--ff-heading);font-size:.6rem;color:var(--gold)}
-
-.boletim-mock{max-width:380px;margin:0 auto;background:var(--white);border:1px solid var(--muted);border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.boletim-header{background:var(--navy);color:var(--white);padding:1.25rem;text-align:center}
-.boletim-header h4{font-family:var(--ff-heading);font-size:1rem}
-.boletim-header p{font-size:.7rem;color:var(--gold);margin-top:.2rem}
-.boletim-body{padding:1.25rem}
-.boletim-body h5{font-family:var(--ff-heading);font-size:.9rem;color:var(--navy);margin-bottom:.5rem}
-.boletim-body p{font-size:.78rem;line-height:1.6;color:rgba(44,44,44,.65);margin-bottom:.75rem}
-.boletim-body .boletim-line{height:1px;background:var(--muted);margin:.75rem 0}
-
-.banner-mock{max-width:600px;margin:0 auto;aspect-ratio:3/1;background:linear-gradient(135deg,var(--navy),#6B2420);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--white);padding:2rem;text-align:center;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.12)}
-.banner-mock::after{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,transparent,rgba(200,162,77,.08))}
-.banner-mock .banner-content{position:relative;z-index:1}
-.banner-mock h4{font-family:var(--ff-heading);font-size:1.5rem;margin-bottom:.4rem}
-.banner-mock p{font-size:.85rem;color:rgba(255,255,255,.6)}
-
-/* FOOTER */
-.footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;padding:3rem 2rem}
-.footer p{font-size:.82rem;margin-bottom:.3rem}
-.footer .footer-brand{color:var(--gold);font-family:var(--ff-heading);font-size:1rem;margin-bottom:.5rem}
-
-/* RESPONSIVE */
-@media(max-width:768px){
- .nav-links{display:none}
- .grid-2,.voice-example{grid-template-columns:1fr}
- .photo-grid{grid-template-columns:1fr 1fr}
- .mockup-row{flex-direction:column;align-items:center}
-}
-
-/* UTILS */
-.mb-1{margin-bottom:1rem}.mb-2{margin-bottom:2rem}.mb-3{margin-bottom:3rem}.mb-4{margin-bottom:4rem}
-.mt-1{margin-top:1rem}.mt-2{margin-top:2rem}.mt-3{margin-top:3rem}
-.text-center{text-align:center}
-.text-gold{color:var(--gold)}
-.text-navy{color:var(--navy)}
-.text-small{font-size:.85rem}
-.font-heading{font-family:var(--ff-heading)}
-.font-accent{font-family:var(--ff-accent)}
-.italic{font-style:italic}
-.quote-block{font-family:var(--ff-accent);font-style:italic;font-size:1.3rem;color:var(--navy);border-left:3px solid var(--gold);padding-left:1.5rem;margin:2rem 0;line-height:1.6}
-.section--navy .quote-block{color:rgba(255,255,255,.8)}
-.tag{display:inline-block;padding:.25rem .75rem;border-radius:20px;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
-.tag--gold{background:rgba(200,162,77,.12);color:var(--gold)}
-.tag--navy{background:rgba(80,23,20,.08);color:var(--navy)}
-</style>
+<link rel="stylesheet" href="tokens/tokens.css">
+<link rel="stylesheet" href="components/components.css">
 </head>
 <body>
 
@@ -271,7 +31,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 
 <!-- HERO -->
 <header class="hero">
- <div class="hero-label">Brand Book &mdash; v1.0</div>
+ <div class="hero-label">Brand Book &mdash; v2.0</div>
  <h1>Paroquia<br><span>Sao Vicente de Paulo</span></h1>
  <p class="hero-tagline">&ldquo;A caridade e o amor posto em acao.&rdquo;</p>
  <div class="hero-line"></div>
@@ -318,7 +78,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
     <span class="tag tag--gold">Tagline principal</span>
    </div>
    <p class="quote-block" style="font-size:1.5rem;margin-top:1rem">&ldquo;A caridade e o amor posto em acao.&rdquo;</p>
-   <p class="text-small" style="color:rgba(44,44,44,.55)">Frase atribuida a Sao Vicente de Paulo. Sintetiza a essencia da paroquia: fe que se transforma em servico.</p>
+   <p class="text-small" style="color:var(--text-tertiary)">Frase atribuida a Sao Vicente de Paulo. Sintetiza a essencia da paroquia: fe que se transforma em servico.</p>
   </div>
  </div>
 </section>
@@ -400,7 +160,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
    <div style="width:16px;height:16px;background:var(--navy);border-radius:3px;display:flex;align-items:center;justify-content:center">
     <span style="color:var(--gold);font-family:var(--ff-heading);font-size:.35rem;font-weight:700">SVP</span>
    </div>
-   <p class="text-small" style="color:rgba(44,44,44,.5)">Icone compacto &ldquo;SVP&rdquo; para favicon, avatar e espacos reduzidos.</p>
+   <p class="text-small" style="color:var(--text-muted)">Icone compacto &ldquo;SVP&rdquo; para favicon, avatar e espacos reduzidos.</p>
   </div>
 
   <h3 class="font-heading mb-2">Area de protecao</h3>
@@ -413,7 +173,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
     <span class="line-accent"></span>
    </div>
   </div>
-  <p class="text-small" style="color:rgba(44,44,44,.55);max-width:600px">A area de protecao corresponde a altura do &ldquo;X&rdquo; (metade da altura do texto &ldquo;SAO VICENTE&rdquo;) em todos os lados. Nenhum elemento grafico ou textual deve invadir essa area.</p>
+  <p class="text-small" style="color:var(--text-tertiary);max-width:600px">A area de protecao corresponde a altura do &ldquo;X&rdquo; (metade da altura do texto &ldquo;SAO VICENTE&rdquo;) em todos os lados. Nenhum elemento grafico ou textual deve invadir essa area.</p>
 
   <h3 class="font-heading mb-2 mt-3">Usos proibidos</h3>
   <div class="prohibited-grid">
@@ -461,28 +221,28 @@ border-bottom:1px solid rgba(200,162,77,.18)}
   <h3 class="font-heading mb-1">Cores principais</h3>
   <div class="grid-4 mb-4">
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#501714"></div>
+    <div class="swatch" style="background:var(--navy)"></div>
     <p class="swatch-name">Deep Burgundy</p>
     <p class="swatch-hex">#501714</p>
     <p class="swatch-hex">HSL 4, 58%, 20%</p>
     <p class="swatch-usage">Cor dominante. Backgrounds, headers, nav. Vermelho do vitral escurecido para fundos.</p>
    </div>
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#B52D1E"></div>
+    <div class="swatch" style="background:var(--crimson)"></div>
     <p class="swatch-name">Vitral Red</p>
     <p class="swatch-hex">#B52D1E</p>
     <p class="swatch-hex">HSL 6, 72%, 41%</p>
     <p class="swatch-usage">Cor vibrante. CTAs, destaques, bordas, elementos de acao. Moldura circular do vitral.</p>
    </div>
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#CC9A1E"></div>
+    <div class="swatch" style="background:var(--gold)"></div>
     <p class="swatch-name">Amber Gold</p>
     <p class="swatch-hex">#CC9A1E</p>
     <p class="swatch-hex">HSL 43, 75%, 46%</p>
     <p class="swatch-usage">Acento sagrado. Icones, linhas decorativas, labels. Arabescos dourados da moldura.</p>
    </div>
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#5C7C28"></div>
+    <div class="swatch" style="background:var(--green)"></div>
     <p class="swatch-name">Olive Green</p>
     <p class="swatch-hex">#5C7C28</p>
     <p class="swatch-hex">HSL 83, 51%, 32%</p>
@@ -493,25 +253,25 @@ border-bottom:1px solid rgba(200,162,77,.18)}
   <h3 class="font-heading mb-1">Cores de suporte</h3>
   <div class="grid-4 mb-3">
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#1C3B6A"></div>
+    <div class="swatch" style="background:var(--blue)"></div>
     <p class="swatch-name">Cobalt Blue</p>
     <p class="swatch-hex">#1C3B6A</p>
     <p class="swatch-usage">Uso pontual. Mariano, liturgico, links. Ceu do vitral.</p>
    </div>
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#F5EFE0"></div>
+    <div class="swatch" style="background:var(--cream)"></div>
     <p class="swatch-name">Warm Cream</p>
     <p class="swatch-hex">#F5EFE0</p>
     <p class="swatch-usage">Backgrounds claros, impressos. Pedras claras do vitral.</p>
    </div>
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#2E1E1C"></div>
+    <div class="swatch" style="background:var(--dark)"></div>
     <p class="swatch-name">Cassock Dark</p>
     <p class="swatch-hex">#2E1E1C</p>
     <p class="swatch-usage">Textos, paragrafos. Vestes escuras de Sao Vicente.</p>
    </div>
    <div class="swatch-wrap">
-    <div class="swatch" style="background:#D4CFC5"></div>
+    <div class="swatch" style="background:var(--muted)"></div>
     <p class="swatch-name">Warm Gray</p>
     <p class="swatch-hex">#D4CFC5</p>
     <p class="swatch-usage">Bordas, divisores, elementos sutis.</p>
@@ -527,7 +287,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
    <div style="flex:8;background:var(--green)" title="Green 8%"></div>
    <div style="flex:5;background:var(--blue)" title="Blue 5%"></div>
   </div>
-  <p class="text-small" style="color:rgba(44,44,44,.5)">Burgundy 35% &middot; Cream 25% &middot; Gold 15% &middot; Vitral Red 12% &middot; Green 8% &middot; Blue 5%</p>
+  <p class="text-small" style="color:var(--text-muted)">Burgundy 35% &middot; Cream 25% &middot; Gold 15% &middot; Vitral Red 12% &middot; Green 8% &middot; Blue 5%</p>
  </div>
 </section>
 
@@ -772,32 +532,32 @@ border-bottom:1px solid rgba(200,162,77,.18)}
   <p class="section-desc">Cada tempo liturgico possui uma cor propria. O sistema visual adapta a paleta da marca ao calendario da Igreja, mantendo a identidade coesa ao longo do ano.</p>
 
   <div class="lit-grid">
-   <div class="lit-card" style="background:#6B3FA0">
+   <div class="lit-card" style="background:var(--liturgical-purple)">
     <h4>Advento / Quaresma</h4>
     <p>Preparacao, penitencia, conversao. Cor liturgica: Roxo.</p>
     <p class="lit-hex">#6B3FA0</p>
    </div>
-   <div class="lit-card" style="background:linear-gradient(135deg,#FFFFFF 0%,#CC9A1E 100%);color:var(--navy)">
+   <div class="lit-card" style="background:var(--gradient-christmas);color:var(--navy)">
     <h4>Natal / Pascoa</h4>
     <p>Celebracao, alegria, ressurreicao. Cores: Branco + Dourado.</p>
     <p class="lit-hex" style="color:var(--navy)">#FFFFFF + #CC9A1E</p>
    </div>
-   <div class="lit-card" style="background:#B52D1E">
+   <div class="lit-card" style="background:var(--liturgical-red)">
     <h4>Pentecostes / Martires</h4>
     <p>Espirito Santo, coragem, testemunho. Cor: Vermelho.</p>
     <p class="lit-hex">#B52D1E</p>
    </div>
-   <div class="lit-card" style="background:#5C7C28">
+   <div class="lit-card" style="background:var(--liturgical-green)">
     <h4>Tempo Comum</h4>
     <p>Crescimento, esperanca, caminhada. Cor: Verde.</p>
     <p class="lit-hex">#5C7C28</p>
    </div>
-   <div class="lit-card" style="background:#2E1E1C">
+   <div class="lit-card" style="background:var(--liturgical-black)">
     <h4>Luto / Sexta-feira Santa</h4>
     <p>Sobriedade, respeito, silencio. Cor: Preto.</p>
     <p class="lit-hex">#2C2C2C</p>
    </div>
-   <div class="lit-card" style="background:linear-gradient(135deg,#D4A5C7,#E8C8DC);color:var(--navy)">
+   <div class="lit-card" style="background:var(--gradient-rose);color:var(--navy)">
     <h4>Gaudete / Laetare</h4>
     <p>Alegria no meio da preparacao. Cor: Rosa (3o Advento, 4a Quaresma).</p>
     <p class="lit-hex" style="color:var(--navy)">#D4A5C7</p>
@@ -827,7 +587,6 @@ border-bottom:1px solid rgba(200,162,77,.18)}
   <!-- FEED POSTS -->
   <h3 class="font-heading mb-2">Feed Posts &mdash; 1080 &times; 1080</h3>
   <div class="mockup-row">
-   <!-- Evento -->
    <div>
     <div class="mockup mockup-feed mockup--evento">
      <div class="mockup-inner">
@@ -843,7 +602,6 @@ border-bottom:1px solid rgba(200,162,77,.18)}
     </div>
     <p class="logo-caption">Variante: Evento</p>
    </div>
-   <!-- Frase / Santo do dia -->
    <div>
     <div class="mockup mockup-feed mockup--frase">
      <div class="mockup-inner">
@@ -858,7 +616,6 @@ border-bottom:1px solid rgba(200,162,77,.18)}
     </div>
     <p class="logo-caption">Variante: Frase / Santo do Dia</p>
    </div>
-   <!-- Informativo -->
    <div>
     <div class="mockup mockup-feed mockup--info">
      <div class="mockup-inner">
@@ -1005,7 +762,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
    </div>
    <div>
     <div class="invite-mock">
-     <div class="invite-top" style="background:var(--purple)">
+     <div class="invite-top" style="background:var(--liturgical-purple)">
       <p class="invite-label" style="color:rgba(255,255,255,.6)">Quaresma 2026</p>
       <h4>Via Sacra<br>Meditada</h4>
       <p style="font-family:var(--ff-accent);font-style:italic;font-size:.85rem;color:rgba(255,255,255,.5);margin-top:.5rem">Todas as sextas-feiras</p>
@@ -1014,7 +771,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
       <p class="invite-detail"><strong>Sextas-feiras</strong> &middot; Quaresma</p>
       <p class="invite-detail">19h &middot; Igreja Matriz</p>
       <p class="invite-detail" style="font-size:.78rem;color:rgba(44,44,44,.45)">Venha caminhar com Cristo</p>
-      <span class="invite-btn" style="background:var(--purple);color:var(--white)">Saiba Mais</span>
+      <span class="invite-btn" style="background:var(--liturgical-purple);color:var(--white)">Saiba Mais</span>
      </div>
     </div>
     <p class="logo-caption">Convite: Quaresma</p>
@@ -1044,7 +801,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
      <span class="line-accent"></span>
     </div>
    </div>
-   <p class="text-small" style="color:rgba(44,44,44,.5)">Avatar circular para Instagram, Facebook e WhatsApp. Fundo navy com logo em branco e dourado.</p>
+   <p class="text-small" style="color:var(--text-muted)">Avatar circular para Instagram, Facebook e WhatsApp. Fundo navy com logo em branco e dourado.</p>
   </div>
 
   <!-- SLIDE -->
@@ -1102,7 +859,7 @@ border-bottom:1px solid rgba(200,162,77,.18)}
 <!-- FOOTER -->
 <footer class="footer">
  <p class="footer-brand">Paroquia Sao Vicente de Paulo</p>
- <p>Brand Book v1.0 &mdash; Marco 2026</p>
+ <p>Brand Book v2.0 &mdash; Marco 2026</p>
  <p>Aldeota &middot; Fortaleza/CE &middot; @saovicentealdeota</p>
  <p style="margin-top:1rem;font-size:.72rem;opacity:.4">&copy; 2026 Paroquia Sao Vicente de Paulo. Todos os direitos reservados.</p>
 </footer>

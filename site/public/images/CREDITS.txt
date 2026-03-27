@@ -1,0 +1,57 @@
+IMAGE CREDITS & ATTRIBUTION
+============================
+All images sourced from Unsplash (https://unsplash.com)
+License: Unsplash License (free for commercial and non-commercial use)
+Status: PROVISIONAL PLACEHOLDERS - To be replaced with parish's own photos
+
+NOTE: Although Unsplash License does not require attribution, we list credits
+as a courtesy to the photographers.
+
+Images:
+-------
+
+1. hero-church.jpg
+   - Description: Baroque church with twin towers and dome
+   - Unsplash ID: K60B0GolW40
+   - URL: https://unsplash.com/photos/K60B0GolW40
+
+2. interior-church.jpg
+   - Description: Church interior with pews and stained glass windows
+   - Photographer: Drew Dempsey
+   - Unsplash ID: 00d_O912MqY
+   - URL: https://unsplash.com/photos/00d_O912MqY
+
+3. altar.jpg
+   - Description: Church altar with lit candles (monstrance/Eucharistic adoration)
+   - Photographer: Sergio Sanchez
+   - Unsplash ID: -wo8HDaT0Mc
+   - URL: https://unsplash.com/photos/-wo8HDaT0Mc
+
+4. stained-glass.jpg
+   - Description: Stained glass window inside a church (blue tones)
+   - Unsplash ID: M2jvNnY58iY
+   - URL: https://unsplash.com/photos/M2jvNnY58iY
+
+5. community.jpg
+   - Description: Group of people gathered indoors in church, heads bowed
+   - Photographer: Christian Harb
+   - Unsplash ID: lvRhfpLmnYw
+   - URL: https://unsplash.com/photos/lvRhfpLmnYw
+
+6. priest-placeholder.jpg
+   - Description: Black and white photo of priest with monstrance
+   - Photographer: Matea Gregg
+   - Unsplash ID: GpihKISyzjc
+   - URL: https://unsplash.com/photos/GpihKISyzjc
+
+7. charity.jpg
+   - Description: Group of people reaching out their hands (unity/community)
+   - Photographer: Hannah Busing
+   - Unsplash ID: RvF2R_qMpRk
+   - URL: https://unsplash.com/photos/RvF2R_qMpRk
+
+8. prayer.jpg
+   - Description: Person sitting on pew inside church, contemplative
+   - Photographer: Stefan Kunze
+   - Unsplash ID: oLdm7mnhDic
+   - URL: https://unsplash.com/photos/oLdm7mnhDic

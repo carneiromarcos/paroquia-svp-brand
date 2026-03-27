@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "wouter";
 import { IconInstagram } from "@/components/shared/SocialIcons";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { PageHero } from "@/components/sections/PageHero";

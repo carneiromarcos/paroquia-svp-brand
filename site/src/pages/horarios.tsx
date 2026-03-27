@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "wouter";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { PageHero } from "@/components/sections/PageHero";
 import { fadeInUp, scaleIn, staggerContainer } from "@/lib/animations";

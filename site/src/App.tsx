@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router } from "wouter";
 import { PageLayout } from "@/components/layout/PageLayout";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const HomePage = lazy(() => import("@/pages/home"));
 const SobrePage = lazy(() => import("@/pages/sobre"));
@@ -20,24 +22,26 @@ function Loading() {
 
 export default function App() {
   return (
-    <PageLayout>
-      <Suspense fallback={<Loading />}>
-        <Switch>
-          <Route path="/" component={HomePage} />
-          <Route path="/sobre" component={SobrePage} />
-          <Route path="/horarios" component={HorariosPage} />
-          <Route path="/pastorais" component={PastoraisPage} />
-          <Route path="/eventos" component={EventosPage} />
-          <Route path="/dizimo" component={DizimoPage} />
-          <Route path="/contato" component={ContatoPage} />
-          <Route>
-            <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-6">
-              <h1 className="font-[var(--font-heading)] text-4xl text-navy mb-4">404</h1>
-              <p className="text-dark/60">Pagina nao encontrada.</p>
-            </div>
-          </Route>
-        </Switch>
-      </Suspense>
-    </PageLayout>
+    <Router base={base}>
+      <PageLayout>
+        <Suspense fallback={<Loading />}>
+          <Switch>
+            <Route path="/" component={HomePage} />
+            <Route path="/sobre" component={SobrePage} />
+            <Route path="/horarios" component={HorariosPage} />
+            <Route path="/pastorais" component={PastoraisPage} />
+            <Route path="/eventos" component={EventosPage} />
+            <Route path="/dizimo" component={DizimoPage} />
+            <Route path="/contato" component={ContatoPage} />
+            <Route>
+              <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-6">
+                <h1 className="font-[var(--font-heading)] text-4xl text-navy mb-4">404</h1>
+                <p className="text-dark/60">Pagina nao encontrada.</p>
+              </div>
+            </Route>
+          </Switch>
+        </Suspense>
+      </PageLayout>
+    </Router>
   );
 }

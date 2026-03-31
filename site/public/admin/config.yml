@@ -1,0 +1,164 @@
+backend:
+  name: github
+  repo: carneiromarcos/paroquia-svp-brand
+  branch: main
+  base_url: https://psvp-oauth.YOUR_CF_SUBDOMAIN.workers.dev
+  auth_endpoint: /auth
+
+media_folder: "site/public/images"
+public_folder: "/images"
+
+collections:
+  # --- Dados da Paróquia ---
+  - name: "settings"
+    label: "Configuracoes"
+    editor:
+      preview: false
+    files:
+      - name: "parish"
+        label: "Dados da Paroquia"
+        file: "site/content/parish.json"
+        fields:
+          - { name: "name", label: "Nome completo", widget: "string" }
+          - { name: "shortName", label: "Sigla", widget: "string" }
+          - { name: "tagline", label: "Tagline", widget: "string" }
+          - { name: "address", label: "Endereco", widget: "string" }
+          - { name: "neighborhood", label: "Bairro", widget: "string" }
+          - { name: "city", label: "Cidade/UF", widget: "string" }
+          - { name: "cep", label: "CEP", widget: "string" }
+          - { name: "phone", label: "Telefone", widget: "string" }
+          - { name: "whatsapp", label: "WhatsApp (somente numeros)", widget: "string" }
+          - { name: "whatsappDisplay", label: "WhatsApp (formato exibicao)", widget: "string" }
+          - { name: "email", label: "E-mail", widget: "string" }
+          - { name: "instagram", label: "URL Instagram", widget: "string" }
+          - { name: "instagramHandle", label: "@ Instagram", widget: "string" }
+          - { name: "youtube", label: "URL YouTube", widget: "string" }
+          - { name: "facebook", label: "URL Facebook", widget: "string" }
+          - { name: "pix", label: "Chave PIX", widget: "string" }
+          - { name: "bankName", label: "Nome do Banco", widget: "string" }
+          - { name: "bankAgency", label: "Agencia", widget: "string" }
+          - { name: "bankAccount", label: "Conta", widget: "string" }
+
+      - name: "schedule"
+        label: "Horarios"
+        file: "site/content/schedule.json"
+        fields:
+          - name: "masses"
+            label: "Missas"
+            widget: "list"
+            fields:
+              - { name: "day", label: "Dia(s)", widget: "string" }
+              - { name: "time", label: "Horario(s)", widget: "string" }
+          - { name: "confessions", label: "Confissoes", widget: "string" }
+          - { name: "adoration", label: "Adoracao", widget: "string" }
+          - { name: "officeWeekdays", label: "Secretaria (dias uteis)", widget: "string" }
+          - { name: "officeSaturday", label: "Secretaria (sabado)", widget: "string" }
+          - { name: "officeSunday", label: "Secretaria (domingo)", widget: "string" }
+
+      - name: "transparency"
+        label: "Transparencia do Dizimo"
+        file: "site/content/transparency.json"
+        fields:
+          - name: "items"
+            label: "Categorias"
+            widget: "list"
+            fields:
+              - { name: "label", label: "Categoria", widget: "string" }
+              - { name: "pct", label: "Percentual (%)", widget: "number", value_type: "int", min: 0, max: 100 }
+              - name: "icon"
+                label: "Icone"
+                widget: "select"
+                options: ["building", "heart", "users", "book-open", "hand-heart", "church", "coins"]
+
+  # --- Pastorais, Movimentos e Servicos ---
+  - name: "community"
+    label: "Comunidade"
+    editor:
+      preview: false
+    files:
+      - name: "pastorals"
+        label: "Pastorais, Movimentos e Servicos"
+        file: "site/content/pastorals.json"
+        fields:
+          - name: "pastorals"
+            label: "Pastorais"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Nome", widget: "string" }
+              - { name: "desc", label: "Descricao", widget: "text" }
+              - name: "icon"
+                label: "Icone"
+                widget: "select"
+                options: ["heart", "droplets", "baby", "home", "megaphone", "hand-heart", "book-open", "users", "church", "cross", "flame", "star", "globe", "music", "wheat"]
+              - { name: "contact", label: "Contato", widget: "string" }
+          - name: "movements"
+            label: "Movimentos"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Nome", widget: "string" }
+              - { name: "desc", label: "Descricao", widget: "text" }
+              - name: "icon"
+                label: "Icone"
+                widget: "select"
+                options: ["heart", "droplets", "baby", "home", "megaphone", "hand-heart", "book-open", "users", "church", "cross", "flame", "star", "globe", "music", "wheat"]
+              - { name: "contact", label: "Contato", widget: "string" }
+          - name: "services"
+            label: "Servicos"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Nome", widget: "string" }
+              - { name: "desc", label: "Descricao", widget: "text" }
+              - name: "icon"
+                label: "Icone"
+                widget: "select"
+                options: ["heart", "droplets", "baby", "home", "megaphone", "hand-heart", "book-open", "users", "church", "cross", "flame", "star", "globe", "music", "wheat"]
+              - { name: "contact", label: "Contato", widget: "string" }
+
+  # --- Eventos ---
+  - name: "events"
+    label: "Eventos"
+    editor:
+      preview: false
+    files:
+      - name: "events"
+        label: "Lista de Eventos"
+        file: "site/content/events.json"
+        fields:
+          - name: "items"
+            label: "Eventos"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Titulo", widget: "string" }
+              - { name: "date", label: "Data curta (ex: 27 Set)", widget: "string" }
+              - { name: "fullDate", label: "Data completa (ex: 27 de Setembro, Domingo)", widget: "string" }
+              - { name: "time", label: "Horario", widget: "string" }
+              - { name: "location", label: "Local", widget: "string" }
+              - name: "tag"
+                label: "Categoria"
+                widget: "select"
+                options: ["Celebracao", "Retiro", "Formacao", "Quaresma", "Advento", "Natal", "Festa", "Social", "Outro"]
+              - { name: "featured", label: "Destaque na Home?", widget: "boolean", default: false }
+              - { name: "desc", label: "Descricao", widget: "text" }
+              - { name: "image", label: "Imagem (opcional)", widget: "image", required: false }
+
+  # --- Avisos ---
+  - name: "announcements"
+    label: "Avisos"
+    editor:
+      preview: false
+    files:
+      - name: "announcements"
+        label: "Lista de Avisos"
+        file: "site/content/announcements.json"
+        fields:
+          - name: "items"
+            label: "Avisos"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Titulo", widget: "string" }
+              - { name: "date", label: "Data (ex: 25 Mar 2026)", widget: "string" }
+              - name: "tag"
+                label: "Tipo"
+                widget: "select"
+                options: ["Aviso", "Inscricoes", "Cancelamento", "Urgente", "Celebracao", "Outro"]
+              - { name: "excerpt", label: "Texto resumido", widget: "text" }

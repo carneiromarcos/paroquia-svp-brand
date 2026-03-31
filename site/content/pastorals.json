@@ -1,0 +1,21 @@
+{
+  "pastorals": [
+    { "name": "Pastoral da Acolhida", "desc": "Recebe e orienta os fieis que chegam a paroquia.", "icon": "heart", "contact": "Maria - (85) 99111-1111" },
+    { "name": "Pastoral do Batismo", "desc": "Prepara familias para o sacramento do Batismo.", "icon": "droplets", "contact": "Joao - (85) 99222-2222" },
+    { "name": "Pastoral da Crianca", "desc": "Acompanha gestantes e criancas ate 6 anos.", "icon": "baby", "contact": "Ana - (85) 99333-3333" },
+    { "name": "Pastoral Familiar", "desc": "Fortalece os lacos familiares e a vida conjugal.", "icon": "home", "contact": "Pe. Carlos - (85) 99444-4444" },
+    { "name": "Pastoral da Comunicacao", "desc": "Produz conteudo e gerencia redes sociais.", "icon": "megaphone", "contact": "Lucas - (85) 99555-5555" },
+    { "name": "Pastoral do Dizimo", "desc": "Conscientiza sobre a importancia do dizimo.", "icon": "hand-heart", "contact": "Rosa - (85) 99666-6666" }
+  ],
+  "movements": [
+    { "name": "RCC", "desc": "Renovacao Carismatica Catolica — oracao, louvor e dons.", "icon": "flame", "contact": "Pedro - (85) 99777-7777" },
+    { "name": "Terco dos Homens", "desc": "Encontro semanal de oracao masculina.", "icon": "users", "contact": "Francisco - (85) 99888-8888" },
+    { "name": "Legiao de Maria", "desc": "Devocao mariana e apostolado comunitario.", "icon": "star", "contact": "Lucia - (85) 99999-9999" },
+    { "name": "Apostolado da Oracao", "desc": "Rede mundial de oracao pelo Papa.", "icon": "globe", "contact": "Teresa - (85) 99000-0000" }
+  ],
+  "services": [
+    { "name": "Coro e Musica", "desc": "Animacao liturgica com cantos e instrumentos.", "icon": "music", "contact": "Rafael - (85) 98111-1111" },
+    { "name": "Ministros da Eucaristia", "desc": "Distribuicao da comunhao nas celebracoes.", "icon": "wheat", "contact": "Jose - (85) 98222-2222" },
+    { "name": "Catequese", "desc": "Formacao para Primeira Eucaristia e Crisma.", "icon": "book-open", "contact": "Marta - (85) 98333-3333" }
+  ]
+}

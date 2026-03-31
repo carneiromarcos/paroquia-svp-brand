@@ -1,0 +1,12 @@
+{
+  "masses": [
+    { "day": "Segunda a Sexta", "time": "7h e 18h" },
+    { "day": "Sabado", "time": "7h e 17h" },
+    { "day": "Domingo", "time": "7h, 9h, 11h e 18h" }
+  ],
+  "confessions": "Terca a Sabado: 15h as 17h",
+  "adoration": "Quintas-feiras: 18h30 as 20h",
+  "officeWeekdays": "Segunda a Sexta: 8h - 12h / 14h - 17h",
+  "officeSaturday": "Sabado: 8h - 12h",
+  "officeSunday": "Domingo: Fechada"
+}

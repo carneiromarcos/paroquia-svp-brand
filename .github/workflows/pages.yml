@@ -24,10 +24,9 @@ jobs:
         run: |
           npm ci
           npm run build
-      - name: Copy DS assets to dist
+      - name: Copy Brand Book to dist
         run: |
           cp brand-book.html site/dist/brand-book.html
-          cp docs-viewer.html site/dist/docs-viewer.html
           cp -r tokens site/dist/tokens
           cp -r components site/dist/components
       - uses: actions/configure-pages@v5

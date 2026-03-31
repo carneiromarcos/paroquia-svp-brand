@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "label": "Manutencao da Igreja", "pct": 35, "icon": "building" },
+    { "label": "Acao Social", "pct": 25, "icon": "heart" },
+    { "label": "Funcionarios", "pct": 20, "icon": "users" },
+    { "label": "Pastoral", "pct": 20, "icon": "book-open" }
+  ]
+}

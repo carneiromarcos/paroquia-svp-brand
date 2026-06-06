@@ -1,6 +1,6 @@
 # Guia de Instagram — PSVP
 
-> Guia prático para posts, stories, carrosséis e materiais da Pastoral da Comúnicação.
+> Guia prático para posts, stories, carrosséis e materiais da Pastoral da Comunicação.
 
 ## Princípio
 

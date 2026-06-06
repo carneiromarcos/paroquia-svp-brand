@@ -1,0 +1,37 @@
+{
+  "heroSlides": [
+    {
+      "image": "/images/hero-church.jpg",
+      "eyebrow": "Paróquia",
+      "title": "São Vicente de Paulo",
+      "highlight": "de Paulo",
+      "subtitle": "A caridade é o amor posto em ação.",
+      "primaryLabel": "Ver Horários",
+      "primaryHref": "/horarios",
+      "secondaryLabel": "Fale Conosco",
+      "secondaryHref": "/contato"
+    },
+    {
+      "image": "/images/altar.jpg",
+      "eyebrow": "Celebrações",
+      "title": "Horários de Missas",
+      "highlight": "Missas",
+      "subtitle": "Confira a programação semanal da paróquia.",
+      "primaryLabel": "Ver Horários",
+      "primaryHref": "/horarios",
+      "secondaryLabel": "Pastorais",
+      "secondaryHref": "/pastorais"
+    },
+    {
+      "image": "/images/community.jpg",
+      "eyebrow": "Comunidade",
+      "title": "Pastorais e Movimentos",
+      "highlight": "Movimentos",
+      "subtitle": "Participe da vida pastoral e caminhe conosco.",
+      "primaryLabel": "Conhecer Pastorais",
+      "primaryHref": "/pastorais",
+      "secondaryLabel": "Eventos",
+      "secondaryHref": "/eventos"
+    }
+  ]
+}

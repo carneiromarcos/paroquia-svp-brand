@@ -26,11 +26,11 @@ function PastoralCard({ name, desc, icon, contact }: { name: string; desc: strin
 }
 
 export default function PastoraisPage() {
-  usePageMeta({ title: "Pastorais", description: "Pastorais, movimentos e servicos da Paroquia SVP." });
+  usePageMeta({ title: "Pastorais", description: "Pastorais, movimentos e serviços da Paróquia SVP." });
 
   return (
     <>
-      <PageHero title="Pastorais & Movimentos" subtitle="Servicos e grupos de nossa comunidade" />
+      <PageHero title="Pastorais & Movimentos" subtitle="Serviços e grupos de nossa comunidade" />
       <div className="divider-gold" />
 
       <section className="bg-cream py-16 px-6">
@@ -59,8 +59,8 @@ export default function PastoraisPage() {
 
       <section className="bg-cream py-16 px-6">
         <div className="max-w-[1100px] mx-auto">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">03 / Servicos</p>
-          <span className="inline-block px-3 py-0.5 rounded-full text-[0.65rem] font-semibold tracking-wide uppercase bg-gold/10 text-gold mb-4">Servicos</span>
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">03 / Serviços</p>
+          <span className="inline-block px-3 py-0.5 rounded-full text-[0.65rem] font-semibold tracking-wide uppercase bg-gold/10 text-gold mb-4">Serviços</span>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-3 gap-5">
             {services.map((s) => <PastoralCard key={s.name} {...s} />)}
           </motion.div>

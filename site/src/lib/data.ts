@@ -1,4 +1,5 @@
 import parishRaw from "@content/parish.json";
+import homeRaw from "@content/home.json";
 import scheduleRaw from "@content/schedule.json";
 import pastoralsData from "@content/pastorals.json";
 import eventsRaw from "@content/events.json";
@@ -13,6 +14,8 @@ export const parish = {
     account: parishRaw.bankAccount,
   },
 };
+
+export const heroSlides = homeRaw.heroSlides;
 
 export const schedule = {
   masses: scheduleRaw.masses,

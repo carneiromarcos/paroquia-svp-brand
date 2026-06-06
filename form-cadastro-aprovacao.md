@@ -1,7 +1,7 @@
-# Formulario de Inscricao — Formacao da Quaresma e Campanha da Fraternidade
-## Paroquia Sao Vicente de Paulo — Aldeota, Fortaleza/CE
+# Formulario de Inscricao — Formação da Quaresma e Campanha da Fraternidade
+## Paróquia São Vicente de Paulo — Aldeota, Fortaleza/CE
 
-**Documento para aprovacao — Pe. Savio**
+**Documento para aprovação — Pe. Savio**
 **Data:** 13/03/2026
 
 ---
@@ -10,31 +10,31 @@
 
 | Item | Detalhe |
 |------|---------|
-| **Evento** | Formacao da Quaresma e Campanha da Fraternidade |
-| **Data** | Sabado, 14 de marco de 2026 |
-| **Horario** | 14h as 16h30 |
-| **Local** | Igreja Sao Vicente de Paulo — Av. Desembargador Moreira, 2211 |
+| **Evento** | Formação da Quaresma e Campanha da Fraternidade |
+| **Data** | Sábado, 14 de março de 2026 |
+| **Horario** | 14h às 16h30 |
+| **Local** | Igreja São Vicente de Paulo — Av. Desembargador Moreira, 2211 |
 | **Pregador** | Pe. Raphael Maciel |
 
-### Programacao
-- **14h** — Acolhida e Oracao
-- **14h30** — Pregacao com o Pe. Raphael Maciel (Quaresma e Campanha da Fraternidade)
+### Programação
+- **14h** — Acolhida e Oração
+- **14h30** — Pregação com o Pe. Raphael Maciel (Quaresma e Campanha da Fraternidade)
 - **15h45** — Lanche
-- **16h a 16h30** — Adoracao
+- **16h a 16h30** — Adoração
 
 ---
 
 ## Objetivo do Formulario
 
-Permitir a inscricao previa dos participantes para **organizar adequadamente o evento** (logistica, acolhida e lanche). O evento e **aberto a todos** — paroquianos, fieis de outras paroquias, membros de movimentos, novas comunidades ou pessoas sem vinculo eclesial.
+Permitir a inscrição previa dos participantes para **organizar adequadamente o evento** (logística, acolhida e lanche). O evento e **aberto a todos** — paróquianos, fieis de outras paróquias, membros de movimentos, novas comunidades ou pessoas sem vinculo eclesial.
 
 ---
 
 ## Mensagem de Abertura (no formulario)
 
-> **Sua inscricao e muito importante!** Para que possamos organizar bem o evento e acolher a todos com o carinho que merecem, precisamos saber quem vira. Por favor, preencha o formulario abaixo — leva menos de 2 minutos.
+> **Sua inscrição e muito importante!** Para que possamos organizar bem o evento e acolher a todos com o carinho que merecem, precisamos saber quem vira. Por favor, preencha o formulario abaixo — leva menos de 2 minutos.
 >
-> *"A caridade e o amor posto em acao."* — Sao Vicente de Paulo
+> *"A caridade é o amor posto em ação."* — São Vicente de Paulo
 
 ---
 
@@ -46,81 +46,81 @@ Permitir a inscricao previa dos participantes para **organizar adequadamente o e
 |-------|------|-------------|
 | Nome completo | Texto | Sim |
 | Telefone / WhatsApp | Telefone | Sim |
-| E-mail | E-mail | Nao |
-| Vai levar mais alguem? | Numero (0-20) | Nao |
+| E-mail | E-mail | Não |
+| Vai levar mais alguem? | Numero (0-20) | Não |
 
 > O campo "acompanhantes" ajuda a prever o numero total de pessoas.
 
 ---
 
-### Secao 2: De onde voce vem?
+### Secao 2: De onde você vem?
 
-**Voce e paroquiano(a) da Sao Vicente de Paulo?** (selecao unica)
-- ( ) Sim, sou paroquiano(a)
-- ( ) Nao, frequento outra paroquia
-- ( ) Nao frequento paroquia no momento
+**Você e paróquiano(a) da São Vicente de Paulo?** (seleção única)
+- ( ) Sim, sou paróquiano(a)
+- ( ) Não, frequento outra paróquia
+- ( ) Não frequento paróquia no momento
 
-**Se frequenta outra paroquia, qual?** (campo texto)
+**Se frequenta outra paróquia, qual?** (campo texto)
 
 ---
 
 ### Secao 3: Vinculo Eclesial
 
-> "Marque as opcoes que se aplicam a voce. Pode marcar mais de uma."
+> "Marque as opções que se aplicam a você. Pode marcar mais de uma."
 
-**Participa de algum movimento?** (multipla escolha)
-- [ ] Renovacao Carismatica Catolica (RCC)
+**Participa de algum movimento?** (múltipla escolha)
+- [ ] Renovação Carismatica Catolica (RCC)
 - [ ] Cursilho de Cristandade
 - [ ] Encontro de Casais com Cristo (ECC)
-- [ ] Sociedade Sao Vicente de Paulo (Vicentinos)
-- [ ] Apostolado da Oracao
-- [ ] Legiao de Maria
+- [ ] Sociedade São Vicente de Paulo (Vicentinos)
+- [ ] Apostolado da Oração
+- [ ] Legião de Maria
 - [ ] Terco dos Homens
 - [ ] Outro movimento
 
-**Participa de alguma pastoral?** (multipla escolha)
+**Participa de alguma pastoral?** (múltipla escolha)
 - [ ] Pastoral da Liturgia
-- [ ] Pastoral da Musica
+- [ ] Pastoral da Música
 - [ ] Pastoral da Catequese
-- [ ] Pastoral do Dizimo
-- [ ] Pastoral da Comunicacao (Pascom)
+- [ ] Pastoral do Dízimo
+- [ ] Pastoral da Comunicação (Pascom)
 - [ ] Pastoral da Acolhida
 - [ ] Pastoral Familiar
 - [ ] Pastoral Social / Caridade
 - [ ] Pastoral da Juventude
 - [ ] Outra pastoral
 
-**Pertence a alguma nova comunidade?** (multipla escolha)
+**Pertence a alguma nova comunidade?** (múltipla escolha)
 - [ ] Comunidade Shalom
 - [ ] Cancao Nova
 - [ ] Obra de Maria
 - [ ] Comunidade Alianca de Misericordia
 - [ ] Outra comunidade
 
-**Participa de algum grupo paroquial?** (multipla escolha)
-- [ ] Grupo de Oracao
+**Participa de algum grupo paróquial?** (múltipla escolha)
+- [ ] Grupo de Oração
 - [ ] Grupo Biblico / Lectio Divina
 - [ ] Encontro de Jovens (EJ)
 - [ ] Grupo de Casais
 - [ ] Coroinhas / Acolitato
 - [ ] Outro grupo
 
-**Se marcou "outro" em alguma opcao, especifique:** (campo texto)
+**Se marçou "outro" em alguma opcao, especifique:** (campo texto)
 
-**Nao participo de nenhum grupo, movimento ou pastoral**
-- [ ] Sim, nao participo de nenhum no momento
+**Não participo de nenhum grupo, movimento ou pastoral**
+- [ ] Sim, não participo de nenhum no momento
 > *"Sem problema! Todos sao bem-vindos."*
 
 ---
 
 ### Secao 4: Como ficou sabendo do evento?
 
-(selecao unica)
+(seleção única)
 - Aviso na missa
 - Instagram (@saovicentealdeota)
 - WhatsApp
 - Convite de amigo ou familiar
-- Cartaz na paroquia
+- Cartaz na paróquia
 - Outro
 
 ---
@@ -128,20 +128,20 @@ Permitir a inscricao previa dos participantes para **organizar adequadamente o e
 ### Botao de Envio
 
 **Texto do botao:** "Confirmar Presenca"
-**Mensagem apos envio:** "Inscricao confirmada! Obrigado por confirmar sua presenca na Formacao da Quaresma e Campanha da Fraternidade. Te esperamos no sabado, 14 de marco, as 14h, na Igreja Sao Vicente de Paulo. Que Deus o(a) abencoe!"
+**Mensagem apos envio:** "Inscricao confirmada! Obrigado por confirmar sua presença na Formação da Quaresma e Campanha da Fraternidade. Te esperamos no sábado, 14 de março, às 14h, na Igreja São Vicente de Paulo. Que Deus o(a) abençoe!"
 
 ---
 
-## Proximos Passos
+## Próximos Passos
 
 1. Pe. Savio revisa e aprova a estrutura
 2. Confirmar se a lista de movimentos, pastorais e comunidades esta completa
-3. Decidir plataforma de publicacao:
+3. Decidir plataforma de publicação:
    - **Google Forms** (mais rapido para publicar agora) ou
-   - **Pagina HTML propria** (com identidade visual da paroquia — ja pronta)
-4. Gerar link / QR Code para divulgacao
+   - **Página HTML própria** (com identidade visual da paróquia — ja pronta)
+4. Gerar link / QR Code para divulgação
 5. Compartilhar via WhatsApp, Instagram e avisos na missa
 
 ---
 
-*Documento preparado por Marcos — 13/03/2026*
+*Documento preparado por Marços — 13/03/2026*

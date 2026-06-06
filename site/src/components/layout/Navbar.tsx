@@ -3,12 +3,12 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "/", label: "Inicio" },
+  { href: "/", label: "Início" },
   { href: "/sobre", label: "Sobre" },
-  { href: "/horarios", label: "Horarios" },
+  { href: "/horarios", label: "Horários" },
   { href: "/pastorais", label: "Pastorais" },
   { href: "/eventos", label: "Eventos" },
-  { href: "/dizimo", label: "Dizimo" },
+  { href: "/dizimo", label: "Dízimo" },
   { href: "/contato", label: "Contato" },
 ];
 

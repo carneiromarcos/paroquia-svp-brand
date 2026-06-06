@@ -1,11 +1,11 @@
 /* ==========================================================================
    PSVP Design System — Design Tokens
-   v1.0.0 | Paroquia Sao Vicente de Paulo
+   v1.0.0 | Paróquia São Vicente de Paulo
 
    Usage:
      <link rel="stylesheet" href="tokens/tokens.css">
 
-   Source: Vitral da paroquia (cores extraidas da moldura, arabescos, manto)
+   Source: Vitral da paróquia (cores extraídas da moldura, arabescos, manto)
    ========================================================================== */
 
 :root {
@@ -38,7 +38,7 @@
   /* Warm Cream — Light backgrounds (25%). Print. Light stones of the vitral. */
   --cream: #F5EFE0;
 
-  /* Cassock Dark — Text color. Dark vestments of Sao Vicente. */
+  /* Cassock Dark — Text color. Dark vestments of São Vicente. */
   --dark: #2E1E1C;
 
   /* Warm Gray — Borders, dividers, subtle elements. */
@@ -189,7 +189,7 @@
   /* ══════════════════════════════════════════════════════════════════════════
      SOCIAL MEDIA DIMENSIONS (reference)
      ══════════════════════════════════════════════════════════════════════════ */
-  /* --social-feed: 1080x1080 (1:1) */
+  /* --social-féed: 1080x1080 (1:1) */
   /* --social-carousel: 1080x1350 (4:5) */
   /* --social-story: 1080x1920 (9:16) */
   /* --social-banner: 3:1 */

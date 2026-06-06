@@ -6,13 +6,13 @@ import { fadeInUp, scaleIn, staggerContainer } from "@/lib/animations";
 import { events, parish } from "@/lib/data";
 
 export default function EventosPage() {
-  usePageMeta({ title: "Eventos", description: "Eventos e programacao da Paroquia SVP." });
+  usePageMeta({ title: "Eventos", description: "Eventos e programação da Paróquia SVP." });
   const featured = events.find((e) => e.featured) ?? events[0];
   const upcoming = events.filter((e) => !e.featured);
 
   return (
     <>
-      <PageHero title="Eventos" subtitle="Programacao e atividades da paroquia" />
+      <PageHero title="Eventos" subtitle="Programação e atividades da paróquia" />
       <div className="divider-gold" />
 
       {/* Featured */}
@@ -41,7 +41,7 @@ export default function EventosPage() {
       {/* Upcoming */}
       <section className="bg-surface py-16 px-6">
         <div className="max-w-[1100px] mx-auto">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">02 / Proximos Eventos</p>
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">02 / Próximos Eventos</p>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-2 gap-6">
             {upcoming.map((evt) => (
               <motion.div key={evt.title} variants={fadeInUp} className="bg-surface border border-muted rounded-xl p-6 shadow-sm flex gap-4">
@@ -89,7 +89,7 @@ export default function EventosPage() {
       {/* Instagram CTA */}
       <section className="bg-navy text-white py-14 px-6 text-center">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
-          <h3 className="font-[var(--font-heading)] text-xl mb-2">Siga-nos para atualizacoes</h3>
+          <h3 className="font-[var(--font-heading)] text-xl mb-2">Siga-nos para atualizações</h3>
           <p className="text-white/50 text-sm mb-5">{parish.instagramHandle}</p>
           <a href={parish.instagram} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-gold text-navy px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wide no-underline hover:brightness-110 transition">
             <IconInstagram size={16} /> Seguir no Instagram

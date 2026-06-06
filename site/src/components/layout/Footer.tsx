@@ -10,16 +10,16 @@ export function Footer() {
         <div className="max-w-[1100px] mx-auto grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <p className="text-gold font-[var(--font-heading)] text-base mb-2">Paroquia Sao Vicente de Paulo</p>
+            <p className="text-gold font-[var(--font-heading)] text-base mb-2">Paróquia São Vicente de Paulo</p>
             <p className="text-sm italic font-[var(--font-accent)] text-white/40">"{parish.tagline}"</p>
             <p className="text-xs mt-3 text-white/30">Aldeota · Fortaleza/CE</p>
           </div>
 
           {/* Navigation */}
           <div>
-            <p className="text-gold text-xs font-semibold tracking-widest uppercase mb-3">Navegacao</p>
+            <p className="text-gold text-xs font-semibold tracking-widest uppercase mb-3">Navegação</p>
             <div className="flex flex-col gap-1.5">
-              {["Inicio:/", "Sobre:/sobre", "Horarios:/horarios", "Pastorais:/pastorais", "Eventos:/eventos", "Dizimo:/dizimo", "Contato:/contato"].map((item) => {
+              {["Início:/", "Sobre:/sobre", "Horários:/horarios", "Pastorais:/pastorais", "Eventos:/eventos", "Dízimo:/dizimo", "Contato:/contato"].map((item) => {
                 const [label, href] = item.split(":");
                 return <Link key={href} href={href} className="text-sm text-white/50 hover:text-gold no-underline transition-colors">{label}</Link>;
               })}
@@ -41,7 +41,7 @@ export function Footer() {
         </div>
 
         <div className="divider-gold mt-8 mb-4" />
-        <p className="text-center text-xs text-white/30">&copy; 2026 Paroquia Sao Vicente de Paulo. Todos os direitos reservados.</p>
+        <p className="text-center text-xs text-white/30">&copy; 2026 Paróquia São Vicente de Paulo. Todos os direitos reservados.</p>
       </footer>
     </>
   );

@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { parish, schedule } from "@/lib/data";
 
 export default function ContatoPage() {
-  usePageMeta({ title: "Contato", description: "Entre em contato com a Paroquia SVP." });
+  usePageMeta({ title: "Contato", description: "Entre em contato com a Paróquia SVP." });
   const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -19,19 +19,19 @@ export default function ContatoPage() {
 
   return (
     <>
-      <PageHero title="Contato" subtitle="Fale com a Paroquia Sao Vicente de Paulo" />
+      <PageHero title="Contato" subtitle="Fale com a Paróquia São Vicente de Paulo" />
       <div className="divider-gold" />
 
       {/* Info */}
       <section className="bg-cream py-16 px-6">
         <div className="max-w-[1100px] mx-auto">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">01 / Informacoes</p>
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">01 / Informações</p>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-2 gap-8">
             <motion.div variants={fadeInUp}>
               <div className="flex items-start gap-3 mb-4">
                 <MapPin size={20} className="text-gold mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-sm text-navy">Endereco</p>
+                  <p className="font-semibold text-sm text-navy">Endereço</p>
                   <p className="text-sm text-dark/60">{parish.address}</p>
                   <p className="text-sm text-dark/60">{parish.neighborhood}, {parish.city}</p>
                   <p className="text-sm text-dark/60">CEP {parish.cep}</p>
@@ -103,10 +103,10 @@ export default function ContatoPage() {
               <label className="text-xs font-semibold text-dark/60 uppercase tracking-wider block mb-1">Assunto</label>
               <select required className="w-full px-4 py-2.5 rounded-lg border border-muted bg-surface text-sm focus:outline-none focus:border-gold transition">
                 <option value="">Selecione...</option>
-                <option>Dizimo</option>
+                <option>Dízimo</option>
                 <option>Pastoral</option>
                 <option>Batizado</option>
-                <option>Matrimonio</option>
+                <option>Matrimônio</option>
                 <option>Outro</option>
               </select>
             </div>

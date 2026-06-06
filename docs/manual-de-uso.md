@@ -1,179 +1,182 @@
 # Manual de Uso — Site PSVP
 
-> Guia pratico para a equipe da Paroquia Sao Vicente de Paulo
+> Guia prático para a equipe da Paróquia São Vicente de Paulo.
 
----
+## 1. Visão Geral
 
-## 1. Visao Geral
+O site funciona como um hot site estático. Não existe CMS visual nesta fase. A edição de conteúdo é feita pelo GitHub, alterando arquivos JSON simples em `site/content/`.
 
-O site da paroquia e totalmente gerenciavel por voces, sem precisar de um programador. Existem duas ferramentas:
+| Ferramenta | Para que serve | Onde fica |
+|---|---|---|
+| GitHub | Editar textos, horários, eventos e banners | `site/content/*.json` |
+| Imagens do site | Guardar banners e fotos públicas | `site/public/images/` |
+| Canva | Criar posts, stories e banners | Pasta `PSVP — Templates` |
+| Brand Book | Consultar identidade visual | `brand/BRAND-BOOK.md` |
 
-| Ferramenta | Para que serve | Como acessar |
-|------------|---------------|--------------|
-| **Admin do Site** | Editar horarios, eventos, avisos, pastorais, fotos | `seusite.com/admin/` |
-| **Canva (Templates)** | Criar posts para Instagram, Stories, convites | `canva.com` → pasta "PSVP — Templates" |
+## 2. Como Editar Conteúdo Pelo GitHub
 
----
+1. Acesse o repositório `carneiromarços/paróquia-svp-brand`.
+2. Entre com a conta autorizada.
+3. Abra o arquivo desejado em `site/content/`.
+4. Clique no ícone de lápis.
+5. Edite apenas o texto necessário, mantendo vírgulas, aspas e chaves.
+6. No fim da página, escreva uma mensagem curta de commit.
+7. Clique em **Commit changes**.
+8. Aguarde alguns minutos até o deploy atualizar o site.
 
-## 2. Admin do Site
+Mensagem de commit recomendada:
 
-### 2.1 Como acessar
+```text
+Atualiza horários de missa
+Atualiza banner da home
+Adiciona evento de formação
+```
 
-1. Abra o navegador (Chrome ou Safari)
-2. Acesse: **`https://seusite.com/admin/`**
-3. Clique em **"Login with GitHub"**
-4. Use o login e senha da conta GitHub da paroquia
-5. Pronto — voce vera o painel de administracao
+## 3. Trocar Banners Do Carrossel
 
-### 2.2 Editar Horarios de Missa
+Os banners da home ficam em:
 
-1. No menu lateral, clique em **"Configuracoes"**
-2. Clique em **"Horarios"**
-3. Na secao **"Missas"**, edite o dia e horario desejado
-4. Para adicionar um novo horario, clique no botao **"+ Adicionar"**
-5. Para remover, clique no **"X"** ao lado do item
-6. Clique em **"Publicar"** (botao no topo)
-7. Aguarde ~3 minutos — o site sera atualizado automaticamente
+```text
+site/content/home.json
+```
 
-### 2.3 Criar um Evento
+As imagens usadas pelos banners ficam em:
 
-1. No menu lateral, clique em **"Eventos"**
-2. Clique em **"Lista de Eventos"**
-3. Na lista, clique em **"+ Adicionar"**
-4. Preencha:
-   - **Titulo:** Nome do evento (ex: "Retiro de Quaresma")
-   - **Data curta:** Formato resumido (ex: "15 Abr")
-   - **Data completa:** Formato extenso (ex: "15 de Abril, Sabado")
-   - **Horario:** (ex: "8h as 17h")
-   - **Local:** (ex: "Salao Paroquial")
-   - **Categoria:** Escolha uma opcao (Celebracao, Retiro, Formacao, etc.)
-   - **Destaque na Home?** Marque se quiser que apareca na pagina inicial
-   - **Descricao:** Texto sobre o evento
-   - **Imagem:** (opcional) Clique para fazer upload de uma foto
-5. Clique em **"Publicar"**
+```text
+site/public/images/
+```
 
-### 2.4 Publicar um Aviso
+### Passo a passo
 
-1. Menu lateral → **"Avisos"** → **"Lista de Avisos"**
-2. Clique em **"+ Adicionar"**
-3. Preencha titulo, data, tipo e texto
-4. Clique em **"Publicar"**
+1. Prepare uma imagem horizontal, de preferência `1920x800` ou proporção parecida.
+2. No GitHub, entre em `site/public/images/`.
+3. Clique em **Add file → Upload files**.
+4. Envie a imagem.
+5. Faça commit com a mensagem `Adiciona banner [nome]`.
+6. Abra `site/content/home.json`.
+7. Altere ou adicione um item em `heroSlides`.
+8. Faça commit com a mensagem `Atualiza carrossel da home`.
 
-> **Dica:** Para remover um aviso antigo, abra a lista, clique no **"X"** ao lado do item e publique.
+Modelo de slide:
 
-### 2.5 Atualizar Pastorais / Movimentos / Servicos
+```json
+{
+  "image": "/images/hero-church.jpg",
+  "eyebrow": "Paróquia",
+  "title": "São Vicente de Paulo",
+  "highlight": "de Paulo",
+  "subtitle": "A caridade é o amor posto em ação.",
+  "primaryLabel": "Ver Horários",
+  "primaryHref": "/horários",
+  "secondaryLabel": "Fale Conosco",
+  "secondaryHref": "/contato"
+}
+```
 
-1. Menu lateral → **"Comunidade"** → **"Pastorais, Movimentos e Servicos"**
-2. Encontre a secao desejada (Pastorais, Movimentos ou Servicos)
-3. Edite nome, descricao, icone ou contato
-4. Para adicionar, clique em **"+ Adicionar"** na secao correspondente
-5. Clique em **"Publicar"**
+Campos:
+- `image`: caminho da imagem.
+- `eyebrow`: texto pequeno acima do título.
+- `title`: título principal.
+- `highlight`: parte do título que aparece em dourado.
+- `subtitle`: frase de apoio.
+- `primaryLabel` e `primaryHref`: botão principal.
+- `secondaryLabel` e `secondaryHref`: botão secundário.
 
-### 2.6 Trocar Foto / Banner
+## 4. Editar Horários
 
-1. Ao editar um evento ou qualquer campo de imagem, clique no campo
-2. Clique em **"Escolher imagem"** ou arraste o arquivo
-3. Selecione a foto do seu computador ou celular
-4. A imagem sera enviada automaticamente
-5. Clique em **"Publicar"**
+Arquivo:
 
-> **Dicas para fotos:**
-> - Use fotos com boa iluminacao (prefira luz natural)
-> - Formato horizontal para banners, quadrado para eventos
-> - Tamanho minimo recomendado: 1200px de largura
-> - Formatos aceitos: JPG, PNG
+```text
+site/content/schedule.json
+```
 
-### 2.7 Editar Dados da Paroquia
+Exemplo:
 
-1. Menu lateral → **"Configuracoes"** → **"Dados da Paroquia"**
-2. Edite o que precisar: telefone, WhatsApp, e-mail, redes sociais, PIX, banco
-3. Clique em **"Publicar"**
+```json
+{
+  "day": "Domingo",
+  "time": "6h30, 9h, 11h30, 17h e 19h"
+}
+```
 
----
+Mantenha o formato `6h30`, `17h`, `19h`.
 
-## 3. Templates Canva
+## 5. Publicar Evento
 
-### 3.1 Como acessar
+Arquivo:
 
-1. Acesse **canva.com** e faca login na conta da paroquia
-2. No menu lateral, va em **"Projetos"**
-3. Abra a pasta **"PSVP — Templates"**
-4. Escolha o template desejado
+```text
+site/content/events.json
+```
 
-### 3.2 Templates disponiveis
+Para destacar um evento na home, use:
 
-| Template | Uso | Formato |
-|----------|-----|---------|
-| **Post Instagram — Evento** | Divulgar eventos, missas especiais | 1080x1080 |
-| **Story — Aviso** | Avisos rapidos, lembretes | 1080x1920 |
-| **Convite** | Retiros, festas, encontros | Convite |
-| **Programacao da Semana** | Agenda semanal da paroquia | 1080x1920 |
-| **Reflexao / Evangelho** | Citacao biblica, reflexao diaria | 1080x1080 |
-| **Thumbnail YouTube** | Miniatura para videos e lives | 1280x720 |
+```json
+"featured": true
+```
 
-### 3.3 Como usar um template
+Evite deixar mais de um evento com `featured: true`.
 
-1. Clique no template desejado
-2. Clique em **"Usar este modelo"** (cria uma copia — o original nao muda)
-3. **Edite os textos:** Clique sobre o texto e digite o novo conteudo
-4. **Troque a foto:** Clique na imagem → "Substituir" → escolha uma nova foto
-5. **Nao mude:** As cores, fontes e layout ja estao configurados conforme a identidade visual
-6. Clique em **"Compartilhar"** → **"Baixar"** → escolha **PNG** (para posts) ou **JPG** (para Stories)
-7. Publique no Instagram, YouTube ou onde precisar
+## 6. Publicar Aviso
 
-### 3.4 Regras de identidade visual
+Arquivo:
 
-Para manter a consistencia visual da paroquia:
+```text
+site/content/announcements.json
+```
 
-| Elemento | Padrao | Nao fazer |
-|----------|--------|-----------|
-| **Cor principal** | Burgundy escuro (#501714) | Nao usar vermelho vivo ou rosa |
-| **Cor de destaque** | Dourado (#CC9A1E) | Nao usar amarelo neon |
-| **Fundo** | Creme claro (#F5EFE0) | Nao usar branco puro |
-| **Fonte titulo** | Cormorant Garamond (serif) | Nao usar fontes informais |
-| **Fonte corpo** | Inter (sans-serif) | Nao usar Comic Sans ou similares |
-| **Tom de voz** | Acolhedor, respeitoso, caloroso | Evitar linguagem muito informal |
+Use avisos curtos. Se o texto for grande, deixe o resumo no site e explique melhor na legenda do Instagram.
 
-> **Regra de ouro:** Na duvida, mantenha simples. Menos e mais.
+## 7. Atualizar Pastorais
 
----
+Arquivo:
 
-## 4. Fluxo de Trabalho Sugerido
+```text
+site/content/pastorals.json
+```
 
-### Semanal
-1. **Segunda:** Atualizar avisos da semana no admin
-2. **Segunda:** Criar Story da "Programacao da Semana" no Canva
-3. **Conforme necessario:** Adicionar/remover eventos
+Cada pastoral, movimento ou serviço deve ter:
+- `name`
+- `desc`
+- `icon`
+- `contact`
 
-### Mensal
-1. Revisar lista de pastorais (contatos atualizados?)
-2. Verificar se horarios estao corretos
-3. Trocar banner/foto da home se desejar
+## 8. Usar Canva E Instagram
 
-### Quando houver evento especial
-1. Criar evento no admin do site (com destaque)
-2. Criar post e Story no Canva usando os templates
-3. Publicar no Instagram e compartilhar no WhatsApp
+Consulte:
 
----
+- `brand/BRAND-BOOK.md`
+- `brand/SOCIAL-MEDIA-GUIDE.md`
+- `brand/CANVA-TEMPLATES.md`
 
-## 5. Solucao de Problemas
+Fluxo sugerido:
+1. Criar ou atualizar o conteúdo no site.
+2. Abrir o template Canva correspondente.
+3. Inserir título, data, horário e foto.
+4. Baixar em PNG/JPG.
+5. Publicar no Instagram com legenda clara.
 
-| Problema | Solucao |
-|----------|---------|
-| Mudanca nao aparece no site | Aguarde 3-5 minutos. O site precisa ser reconstruido apos cada edicao |
-| Nao consigo fazer login no admin | Verifique login/senha do GitHub. Tente em aba anonima |
-| Imagem nao carrega | Verifique se o arquivo e JPG ou PNG e tem menos de 5 MB |
-| Template Canva sumiu | Abra a pasta "PSVP — Templates". Os originais nunca sao alterados |
-| Site fora do ar | Isso e muito raro (GitHub Pages tem 99.9% uptime). Aguarde alguns minutos |
+## 9. Boas Práticas De Imagem
 
----
+- Banner do site: imagem horizontal, clara, com área livre para texto.
+- Post Instagram: imagem quadrada ou vertical, sem excesso de detalhes.
+- Story: imagem vertical, texto grande e direto.
+- Evite arquivos muito pesados. Use JPG para fotos e PNG para artes.
+- Não publique rostos de crianças em destaque sem autorização.
 
-## 6. Contatos de Suporte
+## 10. Solução De Problemas
+
+| Problema | O que fazer |
+|---|---|
+| Site não atualizou | Aguarde 3-5 minutos e confira se o commit foi feito na branch `main` |
+| Build falhou | Verifique se o JSON tem vírgulas e aspas corretas |
+| Imagem não aparece | Confirme se o caminho começa com `/images/` e se o nome do arquivo está igual |
+| Texto quebrou no banner | Reduza o título ou a frase de apoio |
+| Precisa de CMS visual | Registrar demanda para fase futura; Decap CMS está adiado |
+
+## 11. Contatos De Suporte
 
 | Quem | Quando acionar |
-|------|---------------|
-| **Marcos (ResultX)** | Problemas tecnicos graves, mudancas estruturais no site |
-| **GitHub Support** | Site fora do ar por mais de 1 hora |
-
-> Este manual cobre todas as operacoes do dia a dia. Para qualquer duvida, consulte este documento antes de entrar em contato.
+|---|---|
+| Marços / ResultX | Problemas técnicos, domínio, deploy, alterações estruturais |
+| Pastoral da Comúnicação | Posts, banners, calendário e fotos |

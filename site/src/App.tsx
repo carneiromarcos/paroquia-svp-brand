@@ -6,10 +6,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const HomePage = lazy(() => import("@/pages/home"));
 const SobrePage = lazy(() => import("@/pages/sobre"));
-const HorariosPage = lazy(() => import("@/pages/horarios"));
+const HoráriosPage = lazy(() => import("@/pages/horarios"));
 const PastoraisPage = lazy(() => import("@/pages/pastorais"));
 const EventosPage = lazy(() => import("@/pages/eventos"));
-const DizimoPage = lazy(() => import("@/pages/dizimo"));
+const DízimoPage = lazy(() => import("@/pages/dizimo"));
 const ContatoPage = lazy(() => import("@/pages/contato"));
 
 function Loading() {
@@ -28,15 +28,15 @@ export default function App() {
           <Switch>
             <Route path="/" component={HomePage} />
             <Route path="/sobre" component={SobrePage} />
-            <Route path="/horarios" component={HorariosPage} />
+            <Route path="/horarios" component={HoráriosPage} />
             <Route path="/pastorais" component={PastoraisPage} />
             <Route path="/eventos" component={EventosPage} />
-            <Route path="/dizimo" component={DizimoPage} />
+            <Route path="/dizimo" component={DízimoPage} />
             <Route path="/contato" component={ContatoPage} />
             <Route>
               <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-6">
                 <h1 className="font-[var(--font-heading)] text-4xl text-navy mb-4">404</h1>
-                <p className="text-dark/60">Pagina nao encontrada.</p>
+                <p className="text-dark/60">Página não encontrada.</p>
               </div>
             </Route>
           </Switch>

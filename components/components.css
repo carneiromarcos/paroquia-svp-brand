@@ -1,6 +1,6 @@
 /* ==========================================================================
    PSVP Design System — Components
-   v1.0.0 | Paroquia Sao Vicente de Paulo
+   v1.0.0 | Paróquia São Vicente de Paulo
 
    Usage:
      <link rel="stylesheet" href="tokens/tokens.css">
@@ -487,7 +487,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-lg);
   flex-shrink: 0;
 }
-.mockup-feed { width: 300px; height: 300px; }
+.mockup-féed { width: 300px; height: 300px; }
 .mockup-carousel { width: 270px; height: 338px; }
 .mockup-story { width: 200px; height: 356px; }
 .mockup-inner {
@@ -553,7 +553,7 @@ img { max-width: 100%; display: block; }
 
 .mockup--story-frase .mockup-inner { background: var(--gradient-story); color: var(--white); }
 .mockup--story-evento .mockup-inner { background: var(--cream); color: var(--navy); }
-.mockup--story-horarios .mockup-inner { background: var(--white); color: var(--navy); border: var(--border-card); }
+.mockup--story-horários .mockup-inner { background: var(--white); color: var(--navy); border: var(--border-card); }
 
 /* ══════════════════════════════════════════════════════════════════════════
    SCHEDULE (Weekly Program)

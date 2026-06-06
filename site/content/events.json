@@ -1,8 +1,8 @@
 {
   "items": [
-    { "title": "Missa Solene do Padroeiro", "date": "27 Set", "fullDate": "27 de Setembro, Domingo", "time": "10h", "location": "Igreja Matriz", "tag": "Celebracao", "featured": true, "desc": "Missa solene em honra a Sao Vicente de Paulo, padroeiro da paroquia." },
-    { "title": "Retiro de Quaresma", "date": "15 Abr", "fullDate": "15 de Abril, Sabado", "time": "8h as 17h", "location": "Salao Paroquial", "tag": "Retiro", "featured": false, "desc": "Dia de reflexao e oracao para renovar a caminhada de fe." },
-    { "title": "Via Sacra Meditada", "date": "22 Abr", "fullDate": "22 de Abril, Sexta", "time": "19h", "location": "Igreja Matriz", "tag": "Quaresma", "featured": false, "desc": "Meditacao sobre os passos de Cristo ate o Calvario." },
-    { "title": "Encontro de Casais", "date": "03 Mai", "fullDate": "3 de Maio, Sabado", "time": "15h", "location": "Salao Paroquial", "tag": "Formacao", "featured": false, "desc": "Momento de partilha e fortalecimento da vida conjugal." }
+    { "title": "Missa Solene do Padroeiro", "date": "27 Set", "fullDate": "27 de Setembro, Domingo", "time": "10h", "location": "Igreja Matriz", "tag": "Celebração", "featured": true, "desc": "Missa solene em honra a São Vicente de Paulo, padroeiro da paróquia." },
+    { "title": "Retiro de Quaresma", "date": "15 Abr", "fullDate": "15 de Abril, Sábado", "time": "8h às 17h", "location": "Salão Paroquial", "tag": "Retiro", "featured": false, "desc": "Dia de reflexão e oração para renovar a caminhada de fé." },
+    { "title": "Via Sacra Meditada", "date": "22 Abr", "fullDate": "22 de Abril, Sexta", "time": "19h", "location": "Igreja Matriz", "tag": "Quaresma", "featured": false, "desc": "Meditação sobre os passos de Cristo até o Calvario." },
+    { "title": "Encontro de Casais", "date": "03 Mai", "fullDate": "3 de Maio, Sábado", "time": "15h", "location": "Salão Paroquial", "tag": "Formação", "featured": false, "desc": "Momento de partilha e fortalecimento da vida conjugal." }
   ]
 }

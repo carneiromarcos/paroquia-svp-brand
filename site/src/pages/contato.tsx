@@ -72,7 +72,7 @@ export default function ContatoPage() {
         <div className="max-w-[1100px] mx-auto">
           <div className="rounded-xl overflow-hidden shadow-md" style={{ height: 400 }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3!2d-38.51!3d-3.74!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAldeota%2C+Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1"
+              src="https://maps.google.com/maps?q=Av.+Desembargador+Moreira,+2211,+Dion%C3%ADsio+Torres,+Fortaleza+-+CE,+60170-002&z=16&output=embed&hl=pt-BR"
               width="100%" height="100%" style={{ border: 0 }} loading="lazy" title="Mapa"
             />
           </div>

@@ -1,0 +1,4 @@
+# Cloudflare Pages — SPA fallback para o roteamento client-side (Wouter).
+# Arquivos estáticos (assets, brand-book.html, tokens/, components/) têm precedência;
+# qualquer outra rota cai no index.html com status 200.
+/*    /index.html    200

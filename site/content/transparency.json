@@ -1,8 +1,8 @@
 {
   "items": [
-    { "label": "Manutenção da Igreja", "pct": 35, "icon": "building" },
-    { "label": "Ação Social", "pct": 25, "icon": "heart" },
-    { "label": "Funcionarios", "pct": 20, "icon": "users" },
-    { "label": "Pastoral", "pct": 20, "icon": "book-open" }
+    { "label": "Manutenção do culto", "pct": 35, "icon": "building" },
+    { "label": "Caridade aos pobres", "pct": 25, "icon": "heart" },
+    { "label": "Formação de seminaristas e padres", "pct": 20, "icon": "users" },
+    { "label": "Apostolado e missões", "pct": 20, "icon": "book-open" }
   ]
 }

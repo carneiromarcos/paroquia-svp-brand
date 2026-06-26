@@ -7,7 +7,7 @@ import { fadeInUp, staggerContainer, scaleIn } from "@/lib/animations";
 import { parish, heroSlides, schedule, events, announcements, getCurrentSeason } from "@/lib/data";
 
 export default function HomePage() {
-  usePageMeta({ title: "Início", description: "Paróquia São Vicente de Paulo — Aldeota, Fortaleza/CE" });
+  usePageMeta({ title: "Início", description: "Paróquia São Vicente de Paulo — Dionísio Torres, Fortaleza/CE" });
   const featured = events.find((e) => e.featured) ?? events[0];
   const season = getCurrentSeason();
 

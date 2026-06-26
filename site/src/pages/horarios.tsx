@@ -31,7 +31,7 @@ export default function HoráriosPage() {
               ))}
             </div>
             <div className="bg-cream py-3 text-center">
-              <p className="text-xs text-gold font-semibold tracking-wider">{parish.instagramHandle} · Aldeota, Fortaleza/CE</p>
+              <p className="text-xs text-gold font-semibold tracking-wider">{parish.instagramHandle} · Dionísio Torres, Fortaleza/CE</p>
             </div>
           </motion.div>
         </div>

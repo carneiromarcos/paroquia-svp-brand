@@ -1,12 +1,12 @@
 {
   "masses": [
-    { "day": "Segunda a Sexta", "time": "6h30, 11h30 e 17h" },
-    { "day": "Sábado", "time": "6h30, 12h e 17h" },
+    { "day": "Segunda a Sexta", "time": "6h30, 12h e 17h" },
+    { "day": "Sábado", "time": "6h30, 11h30 e 17h30" },
     { "day": "Domingo", "time": "6h30, 9h, 11h30, 17h e 19h" }
   ],
-  "confessions": "Terça a Sábado: 15h às 17h",
-  "adoration": "Quintas-feiras: 18h30 às 20h",
+  "confessions": "Terça a Quinta: 16h às 17h (por ordem de chegada)",
+  "adoration": "Segunda a Sexta: 15h às 17h — Capela de Adoração ao Santíssimo",
   "officeWeekdays": "Segunda a Sexta: 8h - 11h30 / 13h30 - 17h30",
-  "officeSaturday": "Sábado: 8h - 12h",
+  "officeSaturday": "Sábado: Fechada",
   "officeSunday": "Domingo: Fechada"
 }

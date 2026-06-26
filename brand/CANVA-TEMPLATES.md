@@ -1,8 +1,10 @@
 # Templates Canva — PSVP
 
-Este arquivo lista os templates recomendados para criar no Canva e compartilhar com a equipe da Pastoral da Comúnicação.
+Este arquivo lista os templates recomendados para criar no Canva e compartilhar com a equipe da Pastoral da Comunicação.
 
-## Templates Essênciais
+Os previews HTML ficam em [`canva-templates/`](canva-templates/). Eles servem como referência visual para recriar os modelos no Canva.
+
+## Templates Essenciais
 
 | Template | Formato | Uso |
 |---|---|---|
@@ -32,7 +34,11 @@ Cada template deve ter:
 
 ## Próximo Passo
 
-Depois de criar os templates no Canva, adicionar os links compartilháveis abaixo:
+1. Abrir cada preview HTML em `brand/canva-templates/`.
+2. Criar o design correspondente no Canva.
+3. Travar elementos fixos de marca.
+4. Deixar editáveis apenas conteúdo operacional.
+5. Adicionar os links compartilháveis abaixo:
 
 ```text
 Post de evento:

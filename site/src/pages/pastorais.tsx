@@ -4,7 +4,7 @@ import { Heart, Droplets, Baby, Home, Megaphone, HandHeart, Flame, Users, Star, 
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { PageHero } from "@/components/sections/PageHero";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
-import { pastorals, movements, services } from "@/lib/data";
+import { pastorals, movements, services, communities } from "@/lib/data";
 
 const iconMap: Record<string, React.ReactNode> = {
   heart: <Heart size={24} />, droplets: <Droplets size={24} />, baby: <Baby size={24} />,
@@ -63,6 +63,19 @@ export default function PastoraisPage() {
           <span className="inline-block px-3 py-0.5 rounded-full text-[0.65rem] font-semibold tracking-wide uppercase bg-gold/10 text-gold mb-4">Serviços</span>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-3 gap-5">
             {services.map((s) => <PastoralCard key={s.name} {...s} />)}
+          </motion.div>
+        </div>
+      </section>
+
+      <div className="divider-gold" />
+
+      <section className="bg-surface py-16 px-6">
+        <div className="max-w-[1100px] mx-auto">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">04 / Comunidades</p>
+          <span className="inline-block px-3 py-0.5 rounded-full text-[0.65rem] font-semibold tracking-wide uppercase bg-navy/8 text-navy mb-4">Comunidades</span>
+          <p className="text-sm text-dark/60 mb-6 max-w-2xl">Comunidades e capelas que integram o território da paróquia, com seus endereços e horários de missa.</p>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-2 gap-5">
+            {communities.map((c) => <PastoralCard key={c.name} {...c} />)}
           </motion.div>
         </div>
       </section>

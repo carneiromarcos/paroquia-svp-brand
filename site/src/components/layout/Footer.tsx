@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <p className="text-gold font-[var(--font-heading)] text-base mb-2">Paróquia São Vicente de Paulo</p>
             <p className="text-sm italic font-[var(--font-accent)] text-white/40">"{parish.tagline}"</p>
-            <p className="text-xs mt-3 text-white/30">Aldeota · Fortaleza/CE</p>
+            <p className="text-xs mt-3 text-white/30">Dionísio Torres · Fortaleza/CE</p>
           </div>
 
           {/* Navigation */}

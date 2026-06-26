@@ -1,0 +1,26 @@
+{
+  "title": "Festa do Padroeiro",
+  "theme": "São Vicente de Paulo e a Oração do Pai Nosso",
+  "period": "18 a 27 de setembro",
+  "intro": [
+    "A Paróquia São Vicente de Paulo, no bairro Dionísio Torres, realiza a festa de seu padroeiro com o tema \"São Vicente de Paulo e a Oração do Pai Nosso\".",
+    "A paróquia convida todas as suas forças vivas — pastorais, movimentos, ministérios, serviços, novas comunidades, paroquianos e devotos de São Vicente — a participar de mais uma festa de seu ínclito padroeiro, com o novenário e a festa.",
+    "Que São Vicente de Paulo — que em sua vida de oração dizia que o verdadeiro orante passa pelo crivo da ação — conceda a todos nós a graça de unir sempre oração e ação, evangelização e promoção humana."
+  ],
+  "info": "Informações pela Secretaria: (85) 3224-6489",
+  "religiosa": ["Novenário", "Missas", "Procissão", "Adoração ao Santíssimo Sacramento", "Unção dos Enfermos"],
+  "social": ["Quermesses (18, 19, 20, 23 e 24/09)", "Feijoada de São Vicente (22/09)", "Festa com os Pobres (21/09)", "Gincana de São Vicente (25/09)", "Sopa e cestas para idosos carentes (27/09)"],
+  "festaDay": "Dia da Festa — 27 de setembro: Missas às 6h30, 8h30, 11h30 e 18h30 (Missa Solene, seguida de procissão).",
+  "days": [
+    { "date": "18/09", "weekday": "Quarta-feira", "title": "Aniversário da Dedicação da Igreja Matriz e das forças vivas da Paróquia", "schedule": "17h — Adoração ao Santíssimo · 17h30 — Missa e Novena" },
+    { "date": "19/09", "weekday": "Quinta-feira", "title": "Dia dos Ministérios (MESC e Intercessão)", "schedule": "17h — Adoração ao Santíssimo · 17h30 — Missa e Novena" },
+    { "date": "20/09", "weekday": "Sexta-feira", "title": "Dia das Pastorais e Movimentos", "schedule": "17h — Adoração ao Santíssimo · 17h30 — Missa e Novena" },
+    { "date": "21/09", "weekday": "Sábado", "title": "Dia das Novas Comunidades (Lúmen, Um Novo Caminho, Shalom, Nova Evangelização, Canção Nova e Face de Cristo)", "schedule": "9h às 11h30 — Animação cultural com os pobres (Centro Comunitário) · 16h30 — Adoração · 17h — Missa" },
+    { "date": "22/09", "weekday": "Domingo", "title": "Novenário em todas as missas (Idosos, Crianças, Famílias, Jovens e Casais)", "schedule": "Missas às 6h30, 9h, 11h30, 17h e 19h (Adoração 30 min antes de cada missa) · 12h30 — Feijoada de São Vicente (Centro Comunitário)" },
+    { "date": "23/09", "weekday": "Segunda-feira", "title": "Dia dos Enfermos e do Terço dos Homens", "schedule": "17h — Adoração ao Santíssimo · 17h30 — Missa e Novena" },
+    { "date": "24/09", "weekday": "Terça-feira", "title": "Dia das Comunidades (Conjunto São Vicente, São Vicente do Trilho, João XXIII, Jardim Aldeota e Vila Vicentina)", "schedule": "17h — Adoração ao Santíssimo · 17h30 — Missa e Novena" },
+    { "date": "25/09", "weekday": "Quarta-feira", "title": "Dia das Comunidades de Vida Religiosa e Consagrada (Filhas da Caridade, Irmãs da Instrução Cristã e Irmãs Paulinas)", "schedule": "17h — Adoração · 17h30 — Missa e Novena · 18h30 — Gincana de São Vicente (Salão Paroquial)" },
+    { "date": "26/09", "weekday": "Quinta-feira", "title": "Dia das Senhoras da Caridade (AIC), Família Vicentina, Casa do Filho Pródigo, Funcionários e Idosos Carentes", "schedule": "17h — Adoração ao Santíssimo · 17h30 — Missa e Novena" },
+    { "date": "27/09", "weekday": "Sexta-feira", "title": "Dia da Festa", "schedule": "Missas às 6h30, 8h30, 11h30 e 18h30 (Solene, seguida de procissão) · 15h às 18h — Adoração · Após a missa das 8h30, sopa e cestas básicas para os idosos carentes" }
+  ]
+}

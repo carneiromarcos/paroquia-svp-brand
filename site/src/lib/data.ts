@@ -5,6 +5,7 @@ import pastoralsData from "@content/pastorals.json";
 import eventsRaw from "@content/events.json";
 import announcementsRaw from "@content/announcements.json";
 import transparencyRaw from "@content/transparency.json";
+import festaRaw from "@content/festa.json";
 
 export const parish = { ...parishRaw };
 
@@ -28,6 +29,7 @@ export const communities = pastoralsData.communities;
 export const events = eventsRaw.items;
 export const announcements = announcementsRaw.items;
 export const transparency = transparencyRaw.items;
+export const festa = festaRaw;
 
 export type LiturgicalSeason = "ordinary" | "advent" | "christmas" | "lent" | "easter" | "pentecost";
 

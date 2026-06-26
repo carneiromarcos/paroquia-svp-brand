@@ -16,18 +16,18 @@ export default function SobrePage() {
         <div className="max-w-[1100px] mx-auto">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">01 / Historia</p>
           <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl font-bold mb-6">Nossa caminhada</h2>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-2 gap-10 items-start">
-            <motion.div variants={fadeInUp}>
-              <img src="/images/hero-church.jpg" alt="Fachada da igreja" className="rounded-xl w-full aspect-[4/3] object-cover" />
-            </motion.div>
-            <motion.div variants={fadeInUp}>
-              <p className="text-dark/70 leading-relaxed mb-4">Desmembrada da Paróquia da Piedade, a Paróquia de São Vicente de Paulo foi criada pelo Arcebispo de Fortaleza, Dom José de Medeiros Delgado, para atender espiritualmente os moradores do bairro Dionísio Torres. Em 27 de março de 1971 foi erigida a paróquia, tendo como primeiro pároco o Pe. Antônio Souto Ribeiro da Silva.</p>
-              <p className="text-dark/70 leading-relaxed mb-6">Após a reforma, nossa Igreja Matriz foi inaugurada em 18 de setembro de 2001, tornando-se referência para toda a cidade. Inspirada pelo legado de São Vicente de Paulo — padroeiro da caridade — nossa missão é ser ponte entre a fé e a ação social.</p>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
+            <img src="/images/hero-church.jpg" alt="Igreja Matriz de São Vicente de Paulo, Dionísio Torres" className="rounded-xl w-full aspect-[3/2] object-cover mb-8" />
+            <div className="max-w-3xl">
+              <p className="text-dark/70 leading-relaxed mb-4">Desmembrada da Paróquia da Piedade, a Paróquia de São Vicente de Paulo foi criada pelo Arcebispo de Fortaleza, Dom José de Medeiros Delgado, que sentiu a imperiosa necessidade de atender espiritualmente os habitantes do bairro Dionísio Torres, que se expandia aceleradamente. No coração do bairro residiam — e ainda residem — as Filhas da Caridade, cuja capela, na Avenida Desembargador Moreira, oferecia aos fiéis a oportunidade de participar das celebrações, presididas pelos diretores espirituais das Irmãs e, muitas vezes, pelos jesuítas residentes no vizinho Colégio Santo Inácio.</p>
+              <p className="text-dark/70 leading-relaxed mb-4">Dom Miguel Fenelon Câmara, Bispo Auxiliar, dirigiu-se à Ir. Cals, então Visitadora das Filhas da Caridade, pedindo-lhe a cessão temporária da capela, a fim de que a paróquia recém-criada tivesse ali a sua matriz. Dotadas de ilimitada benevolência, as Irmãs cederam não somente o templo, mas todo o material litúrgico, os vasos sagrados e o material de apoio de que a capela dispunha.</p>
+              <p className="text-dark/70 leading-relaxed mb-4">Em 27 de março de 1971 foi erigida a Paróquia de São Vicente de Paulo, sendo nomeado seu primeiro pároco o Pe. Antônio Souto Ribeiro da Silva. Sucederam-lhe os párocos Pe. Francisco Benedito de Albuquerque, Pe. Eduardo Bezerra Fialho e Pe. Mariano Rocha Matos. Este último, afastado das atividades paroquiais por motivos de saúde, foi substituído primeiramente pelo Pe. Clairton Alexandrino de Oliveira e, posteriormente, pelo Pe. Raimundo Nonato de Oliveira Neto, em cuja administração os paroquianos viram realizado seu grande sonho: o de que a paróquia tivesse sede própria.</p>
+              <p className="text-dark/70 leading-relaxed mb-6">Nossa Igreja Matriz, após a reforma, foi inaugurada em 18 de setembro de 2001, tornando-se referência para toda a cidade. Atualmente, o pároco é o Pe. José Sávio Xavier Pereira.</p>
               <blockquote className="font-[var(--font-accent)] italic text-xl text-navy border-l-3 border-gold pl-5 leading-relaxed">
                 "A caridade é o amor posto em ação."
                 <span className="block text-sm text-gold mt-2 not-italic">— São Vicente de Paulo</span>
               </blockquote>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -85,8 +85,9 @@ export default function SobrePage() {
             </motion.div>
             <motion.div variants={fadeInUp}>
               <h3 className="font-[var(--font-heading)] text-xl mb-1">Pe. José Sávio Xavier Pereira</h3>
-              <p className="text-gold text-sm mb-4">Pároco</p>
-              <p className="text-dark/60 leading-relaxed">Pe. José Sávio conduz a Paróquia São Vicente de Paulo com acolhimento e dedicação pastoral, sempre inspirado pela caridade de seu padroeiro. Conta com o auxílio do vigário paroquial, Pe. Raimundo Nonato de Oliveira Neto, no serviço à comunidade do Dionísio Torres.</p>
+              <p className="text-gold text-sm mb-4">Pároco desde novembro de 2025</p>
+              <p className="text-dark/60 leading-relaxed mb-3">Ordenado sacerdote em 29 de junho de 2002, o Pe. José Sávio assumiu a Paróquia São Vicente de Paulo em novembro de 2025. Ao longo de seu ministério, foi Diretor Espiritual do Seminário Arquidiocesano São José, vigário paroquial na Paróquia Jesus, Maria e José e pároco nas paróquias Nossa Senhora Mãe da Igreja (Parque Rio Branco) e São José (Maracanaú).</p>
+              <p className="text-dark/60 leading-relaxed">Conduz a paróquia com acolhimento e dedicação pastoral, sempre inspirado pela caridade de seu padroeiro, contando com o auxílio do vigário paroquial, Pe. Raimundo Nonato de Oliveira Neto.</p>
             </motion.div>
           </motion.div>
         </div>

@@ -1,21 +1,34 @@
 {
   "pastorals": [
-    { "name": "Pastoral da Acolhida", "desc": "Recebe e orienta os fieis que chegam a paróquia.", "icon": "heart", "contact": "Maria - (85) 99111-1111" },
-    { "name": "Pastoral do Batismo", "desc": "Prepara familias para o sacramento do Batismo.", "icon": "droplets", "contact": "João - (85) 99222-2222" },
-    { "name": "Pastoral da Criança", "desc": "Acompanha gestantes e crianças ate 6 anos.", "icon": "baby", "contact": "Ana - (85) 99333-3333" },
-    { "name": "Pastoral Familiar", "desc": "Fortalece os laços familiares e a vida conjugal.", "icon": "home", "contact": "Pe. Carlos - (85) 99444-4444" },
-    { "name": "Pastoral da Comúnicação", "desc": "Produz conteúdo e gerencia redes sociais.", "icon": "megaphone", "contact": "Lucas - (85) 99555-5555" },
-    { "name": "Pastoral do Dízimo", "desc": "Conscientiza sobre a importância do dízimo.", "icon": "hand-heart", "contact": "Rosa - (85) 99666-6666" }
+    { "name": "Pastoral do Acolhimento", "desc": "Recebe e acolhe os fiéis. Reuniões na 2ª segunda-feira do mês, às 20h, no Centro Comunitário.", "icon": "heart", "contact": "Fátima Tostes — (85) 99647-1439" },
+    { "name": "Pastoral do Acolhimento das Crianças", "desc": "Acolhe as crianças nas missas de domingo (11h30, 17h e 19h), na Sala das Crianças da Matriz.", "icon": "baby", "contact": "Luiza — (85) 99671-9768" },
+    { "name": "Pastoral do Batismo", "desc": "Reuniões preparatórias aos domingos, 8h às 11h, no Centro Comunitário. Batizados aos domingos às 15h, mediante inscrição na secretaria.", "icon": "droplets", "contact": "Pedro e Iliana — (85) 99987-4864" },
+    { "name": "Pastoral da Catequese", "desc": "Catequese de iniciação à vida cristã. Aos sábados, das 9h às 10h30, na Matriz.", "icon": "book-open", "contact": "Maria do Céu — (85) 98883-6443" },
+    { "name": "Pastoral da Crisma", "desc": "Preparação para o sacramento da Crisma. Às quintas-feiras, às 19h.", "icon": "flame", "contact": "Barroso — (85) 9809-7425" },
+    { "name": "Pastoral do Canto", "desc": "Anima as celebrações com o canto litúrgico. Reuniões às quintas-feiras, às 20h, no Centro Comunitário.", "icon": "music", "contact": "Laurinha — (85) 98858-1206" },
+    { "name": "Pastoral da Juventude (GSV)", "desc": "Grupo de jovens São Vicente. Oração às terças, 19h; reunião aos sábados, 17h, no Centro Comunitário.", "icon": "users", "contact": "Kelly — (85) 99805-9206" },
+    { "name": "Pastoral da Liturgia", "desc": "Organiza e prepara as celebrações litúrgicas da paróquia.", "icon": "book-open", "contact": "Orlando Felipe — (85) 98873-5476" },
+    { "name": "Pastoral do Dízimo", "desc": "Conscientiza e acompanha os dizimistas da paróquia.", "icon": "hand-heart", "contact": "Léo e Emília — (85) 99104-7263" },
+    { "name": "Pastoral dos Noivos", "desc": "Acompanha os casais na preparação para o matrimônio.", "icon": "home", "contact": "Soraya e Berlindes — (85) 99969-8273" },
+    { "name": "Pastoral do Terço dos Homens", "desc": "Encontro de oração masculina às segundas-feiras, às 20h, na Matriz.", "icon": "users", "contact": "Silvio Costa Gurgel — (85) 98644-6492" },
+    { "name": "Pastoral do Idoso Carente N. Sra. das Graças", "desc": "Cuida dos idosos em situação de carência. Reuniões na 2ª e 4ª terça do mês, após a missa das 6h30, no Salão Paroquial.", "icon": "heart", "contact": "Jeroncio — (85) 98521-3315" },
+    { "name": "Pastoral Bíblica", "desc": "Curso Bíblico Básico às segundas-feiras, das 19h30 às 21h, no Centro Comunitário.", "icon": "book-open", "contact": "Ana Karina — (85) 98611-0930" }
   ],
   "movements": [
-    { "name": "RCC", "desc": "Renovação Carismatica Catolica — oração, louvor e dons.", "icon": "flame", "contact": "Pedro - (85) 99777-7777" },
-    { "name": "Terco dos Homens", "desc": "Encontro semanal de oração masculina.", "icon": "users", "contact": "Francisco - (85) 99888-8888" },
-    { "name": "Legião de Maria", "desc": "Devocao mariana e apostolado comunitario.", "icon": "star", "contact": "Lucia - (85) 99999-9999" },
-    { "name": "Apostolado da Oração", "desc": "Rede mundial de oração pelo Papa.", "icon": "globe", "contact": "Teresa - (85) 99000-0000" }
+    { "name": "Apostolado da Mãe Rainha", "desc": "Reuniões na 2ª quarta-feira do mês, das 15h30 às 17h, na Matriz.", "icon": "star", "contact": "Júlia Pessoa — (85) 99949-7781" },
+    { "name": "Apostolado da Oração", "desc": "Adoração ao Santíssimo na 1ª sexta-feira do mês, das 15h às 17h, na Sala das Crianças (Matriz).", "icon": "globe", "contact": "Vilma Paiva — (85) 98713-5655" },
+    { "name": "Ministério da Intercessão", "desc": "Oração de intercessão às segundas-feiras, das 18h às 19h, na Sala das Crianças (Matriz).", "icon": "flame", "contact": "Aliana — (85) 98866-5124" },
+    { "name": "MESC — Min. Extraordinário da Sagrada Comunhão", "desc": "Adoração ao Santíssimo às quintas, às 19h. Reuniões na última terça do mês, às 18h.", "icon": "wheat", "contact": "Arsênio — (85) 98832-6107" }
   ],
   "services": [
-    { "name": "Coro e Música", "desc": "Animação liturgica com cantos e instrumentos.", "icon": "music", "contact": "Rafael - (85) 98111-1111" },
-    { "name": "Ministros da Eucaristia", "desc": "Distribuicao da comunhão nàs celebrações.", "icon": "wheat", "contact": "Jose - (85) 98222-2222" },
-    { "name": "Catequese", "desc": "Formação para Primeira Eucaristia e Crisma.", "icon": "book-open", "contact": "Marta - (85) 98333-3333" }
+    { "name": "ECC — Encontro de Casais com Cristo", "desc": "Pastoral de casais: encontros e formação para a vida conjugal cristã.", "icon": "heart", "contact": "Informações na secretaria" },
+    { "name": "Conselho Econômico", "desc": "Zela pela transparência e boa gestão dos recursos da paróquia.", "icon": "building", "contact": "Arsênio Flexa — (85) 98832-6107" },
+    { "name": "Atendimento do Dízimo", "desc": "Plantão para inscrição e contribuição do dízimo, na secretaria.", "icon": "hand-heart", "contact": "(85) 3244-5104 · Ricardo (85) 98712-7354" }
+  ],
+  "communities": [
+    { "name": "Face de Cristo", "desc": "Missas: Seg–Sex 7h e 12h · Sáb 8h · Dom 8h, 11h e 18h30 · Feriado 8h.", "icon": "building", "contact": "R. Barros de Oliveira, 191 — Cocó · (85) 3258-1188" },
+    { "name": "Canção Nova", "desc": "Missas: Seg–Sex 18h30 · Dom 10h e 19h.", "icon": "building", "contact": "R. Gen. Tertuliano Potyguara, 452 — Dionísio Torres · (85) 3393-4190" },
+    { "name": "Um Novo Caminho / Nova Evangelização", "desc": "Missas: Seg 17h · Qua 10h30 e 19h · Sex 17h e 19h · Dom 10h e 19h.", "icon": "building", "contact": "R. Dom Expedito Lopes, 1949 — Dionísio Torres · (85) 3242-7766" },
+    { "name": "Comunidade Obra Lumen", "desc": "Missas: Seg–Sex 18h20 · Sáb 8h30.", "icon": "building", "contact": "R. Cel. Jucá, 2040 · (85) 3277-1713" }
   ]
 }

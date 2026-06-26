@@ -21,8 +21,8 @@ export default function SobrePage() {
               <img src="/images/hero-church.jpg" alt="Fachada da igreja" className="rounded-xl w-full aspect-[4/3] object-cover" />
             </motion.div>
             <motion.div variants={fadeInUp}>
-              <p className="text-dark/70 leading-relaxed mb-4">A Paróquia São Vicente de Paulo, situada no coração da Aldeota em Fortaleza, é uma comunidade de fé que une tradição e acolhimento. Fundada há décadas, nossa igreja é um marco de caridade e esperança no bairro.</p>
-              <p className="text-dark/70 leading-relaxed mb-6">Inspirada pelo legado de São Vicente de Paulo — padroeiro da caridade — nossa missão é ser ponte entre a fé e a ação social, servindo a todos com reverência e amor.</p>
+              <p className="text-dark/70 leading-relaxed mb-4">Desmembrada da Paróquia da Piedade, a Paróquia de São Vicente de Paulo foi criada pelo Arcebispo de Fortaleza, Dom José de Medeiros Delgado, para atender espiritualmente os moradores do bairro Dionísio Torres. Em 27 de março de 1971 foi erigida a paróquia, tendo como primeiro pároco o Pe. Antônio Souto Ribeiro da Silva.</p>
+              <p className="text-dark/70 leading-relaxed mb-6">Após a reforma, nossa Igreja Matriz foi inaugurada em 18 de setembro de 2001, tornando-se referência para toda a cidade. Inspirada pelo legado de São Vicente de Paulo — padroeiro da caridade — nossa missão é ser ponte entre a fé e a ação social.</p>
               <blockquote className="font-[var(--font-accent)] italic text-xl text-navy border-l-3 border-gold pl-5 leading-relaxed">
                 "A caridade é o amor posto em ação."
                 <span className="block text-sm text-gold mt-2 not-italic">— São Vicente de Paulo</span>
@@ -41,7 +41,7 @@ export default function SobrePage() {
           <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl font-bold mb-6">O que nos move</h2>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "Missão", text: "Evangelizar, acolher e servir à comunidade da Aldeota e região, promovendo a caridade cristã como caminho de transformação espiritual e social." },
+              { title: "Missão", text: "Evangelizar, acolher e servir à comunidade do Dionísio Torres e região, promovendo a caridade cristã como caminho de transformação espiritual e social." },
               { title: "Visão", text: "Ser referência de paróquia acolhedora, moderna e engajada, onde a fé se traduz em ações concretas de amor ao próximo." },
               { title: "Valores", text: "Caridade · Acolhimento · Reverência · Comunidade · Transparência · Serviço · Esperança" },
             ].map((item) => (
@@ -84,9 +84,9 @@ export default function SobrePage() {
               <img src="/images/priest-placeholder.jpg" alt="Paroco" className="rounded-xl w-full max-w-sm mx-auto aspect-[3/4] object-cover" />
             </motion.div>
             <motion.div variants={fadeInUp}>
-              <h3 className="font-[var(--font-heading)] text-xl mb-1">Pe. Nome Sobrenome</h3>
-              <p className="text-gold text-sm mb-4">Paroco desde 2020</p>
-              <p className="text-dark/60 leading-relaxed">Ordenado em 2005, Pe. Nome dedica sua vida ao serviço pastoral. Com formação em Teologia pela Universidade Catolica, ele conduz a paróquia com acolhimento e compromisso comunitario, sempre inspirado pela caridade de São Vicente.</p>
+              <h3 className="font-[var(--font-heading)] text-xl mb-1">Pe. José Sávio Xavier Pereira</h3>
+              <p className="text-gold text-sm mb-4">Pároco</p>
+              <p className="text-dark/60 leading-relaxed">Pe. José Sávio conduz a Paróquia São Vicente de Paulo com acolhimento e dedicação pastoral, sempre inspirado pela caridade de seu padroeiro. Conta com o auxílio do vigário paroquial, Pe. Raimundo Nonato de Oliveira Neto, no serviço à comunidade do Dionísio Torres.</p>
             </motion.div>
           </motion.div>
         </div>

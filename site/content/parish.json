@@ -3,9 +3,9 @@
   "shortName": "PSVP",
   "tagline": "A caridade é o amor posto em ação.",
   "address": "Avenida Desembargador Moreira, 2211",
-  "neighborhood": "Dionisio Torres",
+  "neighborhood": "Dionísio Torres",
   "city": "Fortaleza/CE",
-  "cep": "",
+  "cep": "60170-002",
   "phone": "(85) 3224-6489",
   "whatsapp": "558532246489",
   "whatsappDisplay": "(85) 3224-6489",
@@ -14,8 +14,5 @@
   "instagramHandle": "@saovicentealdeota",
   "youtube": "https://youtube.com/@saovicentealdeota",
   "facebook": "https://facebook.com/saovicentealdeota",
-  "pix": "07210925003806",
-  "bankName": "Bradesco",
-  "bankAgency": "0600",
-  "bankAccount": "4670-1"
+  "pix": "07210925003806"
 }

@@ -6,14 +6,7 @@ import eventsRaw from "@content/events.json";
 import announcementsRaw from "@content/announcements.json";
 import transparencyRaw from "@content/transparency.json";
 
-export const parish = {
-  ...parishRaw,
-  bank: {
-    name: parishRaw.bankName,
-    agency: parishRaw.bankAgency,
-    account: parishRaw.bankAccount,
-  },
-};
+export const parish = { ...parishRaw };
 
 export const heroSlides = homeRaw.heroSlides;
 
@@ -31,6 +24,7 @@ export const schedule = {
 export const pastorals = pastoralsData.pastorals;
 export const movements = pastoralsData.movements;
 export const services = pastoralsData.services;
+export const communities = pastoralsData.communities;
 export const events = eventsRaw.items;
 export const announcements = announcementsRaw.items;
 export const transparency = transparencyRaw.items;

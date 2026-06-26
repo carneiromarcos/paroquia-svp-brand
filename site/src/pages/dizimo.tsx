@@ -72,19 +72,13 @@ export default function DízimoPage() {
       <section className="bg-navy text-white py-16 px-6">
         <div className="max-w-[1100px] mx-auto">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-2">03 / Formas de Contribuição</p>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="grid md:grid-cols-2 gap-6">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer} className="max-w-md mx-auto">
             <motion.div variants={fadeInUp} className="border border-gold/15 rounded-xl p-6">
               <h3 className="font-[var(--font-heading)] text-lg text-gold mb-3">PIX</h3>
               <p className="text-white/60 text-sm mb-1">Chave PIX (CNPJ):</p>
               <p className="text-white font-mono text-lg mb-1">{parish.pix}</p>
               <CopyButton text={parish.pix} label="Copiar chave" />
-            </motion.div>
-            <motion.div variants={fadeInUp} className="border border-gold/15 rounded-xl p-6">
-              <h3 className="font-[var(--font-heading)] text-lg text-gold mb-3">Transferência Bancária</h3>
-              <p className="text-white/60 text-sm">Banco: <span className="text-white">{parish.bank.name}</span></p>
-              <p className="text-white/60 text-sm">Agência: <span className="text-white">{parish.bank.agency}</span></p>
-              <p className="text-white/60 text-sm">Conta: <span className="text-white">{parish.bank.account}</span></p>
-              <CopyButton text={`${parish.bank.name} | Ag: ${parish.bank.agency} | CC: ${parish.bank.account}`} label="Copiar dados" />
+              <p className="text-white/40 text-xs mt-4">Você também pode contribuir por carnê ou presencialmente na secretaria. Envie o comprovante pelo WhatsApp da paróquia.</p>
             </motion.div>
           </motion.div>
         </div>

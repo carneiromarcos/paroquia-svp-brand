@@ -1,20 +1,18 @@
 CRÉDITOS DAS IMAGENS
 ====================
-A maior parte das imagens agora são fotos reais da Paróquia São Vicente de Paulo
-(Dionísio Torres, Fortaleza/CE), fornecidas pela paróquia.
-
-Fotos reais da paróquia (fachada e interior da Matriz):
-- hero-church.jpg ....... Fachada da Matriz ao entardecer (marca: Cançãonova Fortaleza)
+Fotos reais da Paróquia São Vicente de Paulo (Dionísio Torres, Fortaleza/CE),
+fornecidas pela paróquia:
+- hero-church.jpg ....... Fachada diurna da Matriz (capa)
+- prayer.jpg ............ Fachada ao entardecer (marca: Cançãonova Fortaleza)
 - stained-glass.jpg ..... Fachada em contra-plongée (rosácea)
-- prayer.jpg ............ Fachada diurna
 - interior-church.jpg ... Interior da Matriz (nave e altar)
 - altar.jpg ............. Interior da Matriz (vista do mezanino)
-- community.jpg ......... Celebração na Matriz (preto e branco)
 
-Imagem de terceiros (uso provisório, a substituir por foto da própria paróquia):
-- priest-mass.jpg ....... Sacerdote na consagração — origem: Pinterest (pascom da
-                          Arquidiocese de Rio Preto). Conteúdo de terceiros.
+Imagem de licença livre (Creative Commons), com atribuição:
+- priest-mass.jpg ....... "Elevation Tridentine Mass 2", por User:JoeJ10,
+                          CC BY-SA 4.0, via Wikimedia Commons. Elevação da hóstia.
 
-Placeholders remanescentes do Unsplash (Unsplash License, livre):
-- priest-placeholder.jpg . Sacerdote (genérico) — usar foto real do Pe. José Sávio quando disponível.
-- charity.jpg ............ Mãos em comunidade.
+Placeholders do Unsplash (Unsplash License, livre):
+- community.jpg ......... Fiéis reunidos em oração.
+- priest-placeholder.jpg . Sacerdote (genérico) — substituir por foto do Pe. José Sávio.
+- charity.jpg ........... Mãos em comunidade.

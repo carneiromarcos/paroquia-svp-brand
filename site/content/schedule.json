@@ -1,7 +1,7 @@
 {
   "masses": [
-    { "day": "Segunda a Sexta", "time": "6h30, 12h e 17h" },
-    { "day": "Sábado", "time": "6h30, 11h30 e 17h30" },
+    { "day": "Segunda a Sexta", "time": "6h30, 11h30 e 17h30" },
+    { "day": "Sábado", "time": "6h30, 12h e 17h" },
     { "day": "Domingo", "time": "6h30, 9h, 11h30, 17h e 19h" }
   ],
   "confessions": "Terça a Quinta: 16h às 17h (por ordem de chegada)",

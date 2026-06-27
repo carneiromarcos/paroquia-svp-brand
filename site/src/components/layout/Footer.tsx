@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { IconInstagram, IconYoutube, IconFacebook } from "@/components/shared/SocialIcons";
+import { Logo } from "@/components/shared/Logo";
 import { parish } from "@/lib/data";
 
 export function Footer() {
@@ -10,7 +11,7 @@ export function Footer() {
         <div className="max-w-[1100px] mx-auto grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <p className="text-gold font-[var(--font-heading)] text-base mb-2">Paróquia São Vicente de Paulo</p>
+            <Logo variant="light" align="start" className="mb-4" />
             <p className="text-sm italic font-[var(--font-accent)] text-white/40">"{parish.tagline}"</p>
             <p className="text-xs mt-3 text-white/30">Dionísio Torres · Fortaleza/CE</p>
           </div>

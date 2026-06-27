@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
+import { LogoCompact } from "@/components/shared/Logo";
 
 const links = [
   { href: "/", label: "Início" },
@@ -18,8 +19,8 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 px-6 py-3 flex items-center justify-between border-b border-gold/20" style={{ background: "rgba(80,23,20,0.92)", backdropFilter: "blur(16px)" }}>
-      <Link href="/" className="font-[var(--font-heading)] text-gold font-semibold tracking-wide text-sm no-underline">
-        PSVP
+      <Link href="/" className="no-underline" aria-label="Paróquia São Vicente de Paulo — Início">
+        <LogoCompact />
       </Link>
 
       {/* Desktop */}
